@@ -1,0 +1,14 @@
+Test Dr_AT_llsca-base Allowed
+Histogram (3 states)
+3     *>0:X0=0; 1:X0=0;
+49991503:>0:X0=1; 1:X0=0;
+49996835:>0:X0=0; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 3, Negative: 99988338
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=b39058c153c70d16e76b9a93b7526c59
+Observation Dr_AT_llsca-base Sometimes 3 99988338
+Time Dr_AT_llsca-base 14.84
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,15 @@
+Test MPr_AA_plain-addr Allowed
+Histogram (4 states)
+50003218:>1:X0=0; 1:X1=0;
+18    *>1:X0=1; 1:X1=0;
+150190:>1:X0=0; 1:X1=1;
+49846574:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 18, Negative: 99999982
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=2d5b3d3721ae189ab7a27776c17ef787
+Observation MPr_AA_plain-addr Sometimes 18 99999982
+Time MPr_AA_plain-addr 15.27
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

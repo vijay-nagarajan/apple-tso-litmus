@@ -1,0 +1,8 @@
+AArch64 SB_TT_stlxrswpa
+{ int64_t x; int64_t y; int64_t z; int64_t w; 0:X10=x; 0:X11=y; int64_t 0:X12=1; int64_t 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; int64_t 1:X12=1; int64_t 1:X13=2; 1:X14=z; 1:X15=w; int64_t 0:X0; int64_t 0:X3; int64_t 1:X0; int64_t 1:X3; }
+ P0                   | P1 ;
+ LDXR X3,[X10]        | LDXR X3,[X11] ;
+ STLXR W20,X12,[X10]  | STLXR W20,X12,[X11] ;
+ SWPA X13,X0,[X11]    | SWPA X13,X0,[X10] ;
+filter (0:X20=0 /\ 1:X20=0)
+exists (0:X0=0 /\ 1:X0=0)

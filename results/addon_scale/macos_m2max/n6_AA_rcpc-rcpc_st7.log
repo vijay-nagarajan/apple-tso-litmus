@@ -1,0 +1,18 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_n6/n6_AA_rcpc-rcpc.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 13:26:46
+Test n6_AA_rcpc-rcpc Allowed
+Histogram (4 states)
+12478193942:>0:X0=1; 0:X1=2; [x]=1;
+12499606797:>0:X0=1; 0:X1=0; [x]=2;
+22189890:>0:X0=1; 0:X1=2; [x]=2;
+9371  :>0:X0=2; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=aacdfeda0ac424412a9c1a4d76307704
+Observation n6_AA_rcpc-rcpc Never 0 25000000000
+Time n6_AA_rcpc-rcpc 1399.64
+# rc=0
+2026-11-09 13:50:06

@@ -1,0 +1,15 @@
+Test Df_AT_llsca-base Allowed
+Histogram (4 states)
+92189 *>0:X1=0; 1:X0=0;
+49910545:>0:X1=1; 1:X0=0;
+49982727:>0:X1=0; 1:X0=1;
+2462  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 92189, Negative: 99895734
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=53a0dc3458738ee21b57ac234b9259ed
+Observation Df_AT_llsca-base Sometimes 92189 99895734
+Time Df_AT_llsca-base 7.88
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

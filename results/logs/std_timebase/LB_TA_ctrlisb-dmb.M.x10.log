@@ -1,0 +1,14 @@
+Test LB_TA_ctrlisb-dmb Allowed
+Histogram (3 states)
+26814 :>0:X0=0; 1:X0=0;
+49979388:>0:X0=1; 1:X0=0;
+49993798:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=261f89ae88b8c2d068b42980ed8a720f
+Observation LB_TA_ctrlisb-dmb Never 0 100000000
+Time LB_TA_ctrlisb-dmb 20.86
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

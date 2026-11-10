@@ -1,0 +1,8 @@
+AArch64 LB_TT_ctrl-plain
+{ 0:X10=x; 0:X11=y; 0:X12=1; 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; 1:X12=1; 1:X13=2; 1:X14=z; 1:X15=w; }
+ P0             | P1 ;
+ LDR X0,[X10]   | LDR X0,[X11] ;
+ CBNZ X0,LC00   | STR X12,[X10] ;
+ LC00:          | ;
+ STR X12,[X11]  | ;
+exists (0:X0=1 /\ 1:X0=1)

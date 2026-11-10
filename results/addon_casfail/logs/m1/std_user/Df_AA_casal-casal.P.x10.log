@@ -1,0 +1,14 @@
+Test Df_AA_casal-casal Allowed
+Histogram (3 states)
+49989913:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49990075:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+20012 :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is NOT validated
+Hash=8bde6e232968c4bec5daf386fc64923a
+Observation Df_AA_casal-casal Never 0 100000000
+Time Df_AA_casal-casal 6.82
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

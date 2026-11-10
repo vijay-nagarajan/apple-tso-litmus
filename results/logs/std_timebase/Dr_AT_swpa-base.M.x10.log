@@ -1,0 +1,15 @@
+Test Dr_AT_swpa-base Allowed
+Histogram (4 states)
+25    *>0:X0=0; 1:X0=0;
+49996663:>0:X0=1; 1:X0=0;
+49997335:>0:X0=0; 1:X0=1;
+5977  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 25, Negative: 99999975
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=be67ae07522bc56137bd271d631f9322
+Observation Dr_AT_swpa-base Sometimes 25 99999975
+Time Dr_AT_swpa-base 21.85
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,18 @@
+Test WRC_AAA_o-data-ldapr.ldr Allowed
+Histogram (7 states)
+33669706:>1:X0=0; 2:X0=0; 2:X1=0;
+3851059:>1:X0=1; 2:X0=0; 2:X1=0;
+25440708:>1:X0=0; 2:X0=1; 2:X1=0;
+592363:>1:X0=0; 2:X0=0; 2:X1=1;
+20677407:>1:X0=1; 2:X0=0; 2:X1=1;
+11619232:>1:X0=0; 2:X0=1; 2:X1=1;
+4149525:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=400a3106bc5d51b4d9f7f6afb2f41723
+Observation WRC_AAA_o-data-ldapr.ldr Never 0 100000000
+Time WRC_AAA_o-data-ldapr.ldr 12.79
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

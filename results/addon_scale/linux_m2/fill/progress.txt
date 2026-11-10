@@ -1,0 +1,21 @@
+2026-11-09T23:26:27-07:00 START m2 Dw_AA_swpl-swpl [control U st7] r=125
+2026-11-09T23:26:30-07:00 END m2 Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 203357 24796643 3s
+2026-11-09T23:26:30-07:00 START m2 Dr_AA_swpl-swpl [test U st7] r=125000
+2026-11-10T00:16:03-07:00 END m2 Dr_AA_swpl-swpl [test U st7] Observation Dr_AA_swpl-swpl Never 0 25000000000 2973s
+2026-11-10T00:16:03-07:00 START m2 SB_AA_plain-dmb [control U st7] r=125
+2026-11-10T00:16:06-07:00 END m2 SB_AA_plain-dmb [control U st7] Observation SB_AA_plain-dmb Sometimes 544 24999456 3s
+2026-11-10T00:16:06-07:00 START m2 SB_AA_dmb-dmb [test U st7] r=125000
+2026-11-10T01:03:53-07:00 END m2 SB_AA_dmb-dmb [test U st7] Observation SB_AA_dmb-dmb Never 0 25000000000 2867s
+2026-11-10T01:03:53-07:00 START m2 n6_AA_plain-rcpc [control U st7] r=125
+2026-11-10T01:03:55-07:00 END m2 n6_AA_plain-rcpc [control U st7] Observation n6_AA_plain-rcpc Sometimes 21 24999979 2s
+2026-11-10T01:03:55-07:00 START m2 n6_AA_rcpc-rcpc [test U st7] r=125000
+2026-11-10T01:49:35-07:00 END m2 n6_AA_rcpc-rcpc [test U st7] Observation n6_AA_rcpc-rcpc Never 0 25000000000 2740s
+2026-11-10T01:49:35-07:00 START m2 n6_AT_plain-plain [control U st7] r=125
+2026-11-10T01:49:37-07:00 END m2 n6_AT_plain-plain [control U st7] Observation n6_AT_plain-plain Sometimes 20 24999980 2s
+2026-11-10T01:49:37-07:00 START m2 n6_AT_rcpc-plain [test U st7] r=125000
+2026-11-10T02:34:30-07:00 END m2 n6_AT_rcpc-plain [test U st7] Observation n6_AT_rcpc-plain Never 0 25000000000 2693s
+2026-11-10T02:34:30-07:00 ALLDONE fill m2
+Dr_AA_swpl-swpl hits 0 / 2.5e+10
+SB_AA_dmb-dmb hits 0 / 2.5e+10
+n6_AA_rcpc-rcpc hits 0 / 2.5e+10
+n6_AT_rcpc-plain hits 0 / 2.5e+10

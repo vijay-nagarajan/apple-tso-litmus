@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:17 MST 2026
+Test Dw_AA_swpa-swpa Allowed
+Histogram (3 states)
+99695 :>0:X1=1; 1:X1=0;
+99969 :>0:X1=0; 1:X1=1;
+336   :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=542bde607a64c733672a52b8a3c16e61
+Observation Dw_AA_swpa-swpa Never 0 200000
+Time Dw_AA_swpa-swpa 0.02
+# rc=0
+Tue Nov 10 07:16:18 MST 2026

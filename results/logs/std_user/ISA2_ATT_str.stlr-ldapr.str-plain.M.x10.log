@@ -1,0 +1,18 @@
+Test ISA2_ATT_str.stlr-ldapr.str-plain Allowed
+Histogram (7 states)
+25826438:>1:X0=0; 2:X0=0; 2:X1=0;
+8144454:>1:X0=1; 2:X0=0; 2:X1=0;
+14059836:>1:X0=0; 2:X0=1; 2:X1=0;
+6248170:>1:X0=0; 2:X0=0; 2:X1=1;
+20722091:>1:X0=1; 2:X0=0; 2:X1=1;
+23581400:>1:X0=0; 2:X0=1; 2:X1=1;
+1417611:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=4c331adb824b05fbbc1bb92441c88bc4
+Observation ISA2_ATT_str.stlr-ldapr.str-plain Never 0 100000000
+Time ISA2_ATT_str.stlr-ldapr.str-plain 31.28
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

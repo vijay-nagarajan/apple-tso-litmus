@@ -1,0 +1,14 @@
+Test Dr_AT_swpa-llsc Allowed
+Histogram (3 states)
+49999935:>0:X0=1; 1:X0=0;
+49989504:>0:X0=0; 1:X0=1;
+1807  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99991246
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=6a43ae85aaa2573afb57fcadc2ea5019
+Observation Dr_AT_swpa-llsc Never 0 99991246
+Time Dr_AT_swpa-llsc 8.61
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

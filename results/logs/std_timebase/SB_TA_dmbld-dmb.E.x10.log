@@ -1,0 +1,14 @@
+Test SB_TA_dmbld-dmb Allowed
+Histogram (3 states)
+49997591:>0:X0=1; 1:X0=0;
+49995758:>0:X0=0; 1:X0=1;
+6651  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=3fbeb75ba21f7541646d8a7433633a17
+Observation SB_TA_dmbld-dmb Never 0 100000000
+Time SB_TA_dmbld-dmb 9.58
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,15 @@
+Test Dw_AA_llscal-llscal Allowed
+Histogram (4 states)
+12181 *>0:X1=0; 1:X1=0;
+49984624:>0:X1=1; 1:X1=0;
+49982690:>0:X1=0; 1:X1=1;
+1620  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 12181, Negative: 99968934
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=de78004286a5b25f42a6c87d0d75d309
+Observation Dw_AA_llscal-llscal Sometimes 12181 99968934
+Time Dw_AA_llscal-llscal 5.85
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

@@ -1,0 +1,6 @@
+tables/
+hw/scale/out_*/
+hw/scale/harness_*/
+hw/scale/src_*/
+__pycache__/
+.DS_Store

@@ -1,0 +1,17 @@
+scale/std_user	Dw_AA_swpl-swpl	U	125	34506	25000000	arm_sets=500/tso_sets=0	3	3	7	control	all
+scale/std_user	Dw_AA_swpal-swpal	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2670	2670	7	test	all
+scale/std_user	SB_AA_plain-dmb	U	125	453	25000000	arm_sets=500/tso_sets=0	3	3	7	control	all
+scale/std_user	SB_AA_dmbld-dmb	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2725	2725	7	test	all
+scale/std_user	SB_AA_dsbld-dmb	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2701	2701	7	test	all
+scale/std_user	SB_TT_plain-dmb	U	125	260	25000000	arm_sets=0/tso_sets=500	3	3	7	control	all
+scale/std_user	SB_TT_dmbld-dmb	U	125000	0	25000000000	arm_sets=0/tso_sets=500000	2712	2712	7	test	all
+scale/std_user	SB_TT_dsbld-dmb	U	125000	0	25000000000	arm_sets=0/tso_sets=500000	2732	2732	7	test	all
+scale/std_user	LB_AA_plain-dmb	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2741	2741	7	test	all
+scale/std_user	Df_AA_casfail-casfail	U	125	48	25000000	arm_sets=500/tso_sets=0	3	3	7	control	all
+scale/std_user	Df_AA_casalfail-casalfail	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2858	2858	7	test	all
+scale/std_user	fwd7_str-ldr-addr	U	250	109	25000000	arm_sets=750/tso_sets=0	8	8	7	control	all
+scale/std_user	fwd3_str-ldapr	U	50000	0	5000000000	arm_sets=150000/tso_sets=0	1592	1592	7	test	all
+scale/std_user	fwd6_str-ldar	U	50000	0	5000000000	arm_sets=150000/tso_sets=0	3262	3262	7	test	all
+scale/std_user	fwd12_str-ldr_TTT	U	250	5816	25000000	arm_sets=0/tso_sets=750	8	8	7	control	all
+scale/std_user	fwd3_str-ldapr_TTT	U	50000	0	5000000000	arm_sets=0/tso_sets=150000	5100	5100	7	test	all
+scale/std_user	fwd6_str-ldar_TTT	U	50000	0	5000000000	arm_sets=0/tso_sets=150000	3814	3814	7	test	all

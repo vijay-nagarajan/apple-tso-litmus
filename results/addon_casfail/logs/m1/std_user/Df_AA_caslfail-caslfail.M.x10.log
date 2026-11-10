@@ -1,0 +1,15 @@
+Test Df_AA_caslfail-caslfail Allowed
+Histogram (4 states)
+86    *>0:X1=0; 0:X16=0; 1:X1=0; 1:X16=0;
+49999892:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49999845:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+177   :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+Ok
+
+Witnesses
+Positive: 86, Negative: 99999914
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is validated
+Hash=cba55ced1141f0b528e98a61c2661405
+Observation Df_AA_caslfail-caslfail Sometimes 86 99999914
+Time Df_AA_caslfail-caslfail 13.43
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

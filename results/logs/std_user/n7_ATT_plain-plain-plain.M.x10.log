@@ -1,0 +1,19 @@
+Test n7_ATT_plain-plain-plain Allowed
+Histogram (8 states)
+22266773:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+11042660:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+3715297*>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+6563238:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+20318087:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1691  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+13424599:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+22667655:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 3715297, Negative: 96284703
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=8dbabebfb29eaf06f869376a230db7e0
+Observation n7_ATT_plain-plain-plain Sometimes 3715297 96284703
+Time n7_ATT_plain-plain-plain 27.57
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

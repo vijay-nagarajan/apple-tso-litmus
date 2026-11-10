@@ -1,0 +1,19 @@
+Test n7_ATA_rcsc-plain-plain Allowed
+Histogram (8 states)
+5906233:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+35283761:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+1     *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+10336359:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+11004241:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+104   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+32057637:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+5411664:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 99999999
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=d5847c3f85d62527131b4d4b643fa488
+Observation n7_ATA_rcsc-plain-plain Sometimes 1 99999999
+Time n7_ATA_rcsc-plain-plain 23.25
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

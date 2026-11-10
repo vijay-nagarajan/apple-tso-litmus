@@ -1,0 +1,7 @@
+AArch64 "Arm"
+
+catdep                       (* dependencies are computed by aarch64deps.cat *)
+include "prelude.cat"
+include "arm-ppo.cat"
+let ppo = arm-ppo-all
+include "axioms.cat"

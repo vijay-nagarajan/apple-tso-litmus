@@ -1,0 +1,18 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=test cmd: ./Dr_AA_swpl-swpl.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 14:17:59 UTC 2026
+Test Dr_AA_swpl-swpl Allowed
+Histogram (3 states)
+99997 :>0:X0=1; 1:X0=0;
+99991 :>0:X0=0; 1:X0=1;
+12    :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=aa34d0f132f2a1fedd23923e4421f21c
+Observation Dr_AA_swpl-swpl Never 0 200000
+Time Dr_AA_swpl-swpl 0.02
+MEMMODEL mask=0 arm_sets=4 tso_sets=0
+# rc=0
+Tue Nov 10 14:17:59 UTC 2026

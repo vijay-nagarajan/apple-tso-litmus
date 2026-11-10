@@ -1,0 +1,15 @@
+Test Df_AA_casafail-casafail Allowed
+Histogram (4 states)
+18173 *>0:X1=0; 0:X16=0; 1:X1=0; 1:X16=0;
+49961684:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49964149:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+55994 :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+Ok
+
+Witnesses
+Positive: 18173, Negative: 99981827
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is validated
+Hash=b625d34a92cd596aca293d60983f1f9e
+Observation Df_AA_casafail-casafail Sometimes 18173 99981827
+Time Df_AA_casafail-casafail 8.66
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

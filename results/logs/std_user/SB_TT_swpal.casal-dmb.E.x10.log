@@ -1,0 +1,14 @@
+Test SB_TT_swpal.casal-dmb Allowed
+Histogram (3 states)
+49999619:>0:X0=1; 1:X0=0;
+49997806:>0:X0=0; 1:X0=1;
+2575  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=82731b8f7e9f0da0ccda635fd7a9f7d6
+Observation SB_TT_swpal.casal-dmb Never 0 100000000
+Time SB_TT_swpal.casal-dmb 7.47
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

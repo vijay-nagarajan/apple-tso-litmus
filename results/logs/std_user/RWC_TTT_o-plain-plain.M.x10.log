@@ -1,0 +1,19 @@
+Test RWC_TTT_o-plain-plain Allowed
+Histogram (8 states)
+19291547:>1:X0=0; 1:X1=0; 2:X0=0;
+25108 *>1:X0=1; 1:X1=0; 2:X0=0;
+21043897:>1:X0=0; 1:X1=1; 2:X0=0;
+12338994:>1:X0=1; 1:X1=1; 2:X0=0;
+14077499:>1:X0=0; 1:X1=0; 2:X0=1;
+10112951:>1:X0=1; 1:X1=0; 2:X0=1;
+3843  :>1:X0=0; 1:X1=1; 2:X0=1;
+23106161:>1:X0=1; 1:X1=1; 2:X0=1;
+Ok
+
+Witnesses
+Positive: 25108, Negative: 99974892
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is validated
+Hash=bc1e4fff2e1a4a8b7e9e4955acbc2246
+Observation RWC_TTT_o-plain-plain Sometimes 25108 99974892
+Time RWC_TTT_o-plain-plain 28.60
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

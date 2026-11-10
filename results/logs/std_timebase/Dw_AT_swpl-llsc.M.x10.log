@@ -1,0 +1,15 @@
+Test Dw_AT_swpl-llsc Allowed
+Histogram (4 states)
+170854*>0:X1=0; 1:X1=0;
+49918126:>0:X1=1; 1:X1=0;
+49905358:>0:X1=0; 1:X1=1;
+43    :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 170854, Negative: 99823527
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=9b23f837584e39d39391c7793f071f99
+Observation Dw_AT_swpl-llsc Sometimes 170854 99823527
+Time Dw_AT_swpl-llsc 17.47
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

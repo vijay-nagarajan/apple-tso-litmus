@@ -1,0 +1,18 @@
+Test fwd7_str-ldr-addr Allowed
+Histogram (7 states)
+18919136:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+14892707:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+681   *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+16185118:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+19146420:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+13019347:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+17836591:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 681, Negative: 99999319
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=3dbcf3da3d36fb071f3345758ae158a4
+Observation fwd7_str-ldr-addr Sometimes 681 99999319
+Time fwd7_str-ldr-addr 25.09
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

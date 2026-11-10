@@ -1,0 +1,13 @@
+Test Dr_AA_llsca-llsca Allowed
+Histogram (2 states)
+49973071:>0:X0=1; 1:X0=0;
+49987374:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99960445
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=2c5946ff6f03bd2036320246a7798e42
+Observation Dr_AA_llsca-llsca Never 0 99960445
+Time Dr_AA_llsca-llsca 6.85
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

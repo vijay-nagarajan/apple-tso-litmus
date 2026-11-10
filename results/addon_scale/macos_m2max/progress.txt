@@ -1,0 +1,56 @@
+2026-11-09 09:25:34 START ctrl_Dw_AA_swpl-swpl_for_Dw_AA_swpal-swpal.log: gen_screen/Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 09:25:35 END ctrl_Dw_AA_swpl-swpl_for_Dw_AA_swpal-swpal.log: Observation Dw_AA_swpl-swpl Sometimes 236142 24763858
+2026-11-09 09:25:35 START Dw_AA_swpal-swpal_st7.log: gen_screen/Dw_AA_swpal-swpal.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 09:54:04 END Dw_AA_swpal-swpal_st7.log: Observation Dw_AA_swpal-swpal Never 0 25000000000
+2026-11-09 09:54:04 START ctrl_Dw_AA_swpl-swpl_for_Dr_AA_swpl-swpl.log: gen_screen/Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 09:54:05 END ctrl_Dw_AA_swpl-swpl_for_Dr_AA_swpl-swpl.log: Observation Dw_AA_swpl-swpl Sometimes 163141 24836859
+2026-11-09 09:54:05 START Dr_AA_swpl-swpl_st7.log: gen_screen/Dr_AA_swpl-swpl.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 10:26:44 END Dr_AA_swpl-swpl_st7.log: Observation Dr_AA_swpl-swpl Never 0 25000000000
+2026-11-09 10:26:44 START ctrl_SB_AA_plain-dmb_for_SB_AA_dmb-dmb.log: gen_screen/SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 10:26:46 END ctrl_SB_AA_plain-dmb_for_SB_AA_dmb-dmb.log: Observation SB_AA_plain-dmb Sometimes 8395 24991605
+2026-11-09 10:26:46 START SB_AA_dmb-dmb_st7.log: gen_screen/SB_AA_dmb-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 10:53:50 END SB_AA_dmb-dmb_st7.log: Observation SB_AA_dmb-dmb Never 0 25000000000
+2026-11-09 10:53:50 START ctrl_SB_AA_plain-dmb_for_SB_AA_dmbld-dmb.log: gen_screen/SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 10:53:52 END ctrl_SB_AA_plain-dmb_for_SB_AA_dmbld-dmb.log: Observation SB_AA_plain-dmb Sometimes 11111 24988889
+2026-11-09 10:53:52 START SB_AA_dmbld-dmb_st7.log: gen_screen/SB_AA_dmbld-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 11:20:51 END SB_AA_dmbld-dmb_st7.log: Observation SB_AA_dmbld-dmb Never 0 25000000000
+2026-11-09 11:20:51 START ctrl_SB_AA_plain-dmb_for_SB_AA_dsbld-dmb.log: gen_screen/SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 11:20:52 END ctrl_SB_AA_plain-dmb_for_SB_AA_dsbld-dmb.log: Observation SB_AA_plain-dmb Sometimes 3513 24996487
+2026-11-09 11:20:52 START SB_AA_dsbld-dmb_st7.log: gen_screen/SB_AA_dsbld-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 11:47:52 END SB_AA_dsbld-dmb_st7.log: Observation SB_AA_dsbld-dmb Never 0 25000000000
+2026-11-09 11:47:52 START ctrl_SB_AA_plain-dmb_for_LB_AA_plain-dmb.log: gen_screen/SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 11:47:54 END ctrl_SB_AA_plain-dmb_for_LB_AA_plain-dmb.log: Observation SB_AA_plain-dmb Sometimes 8600 24991400
+2026-11-09 11:47:54 START LB_AA_plain-dmb_st7.log: gen_screen/LB_AA_plain-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 12:11:53 END LB_AA_plain-dmb_st7.log: Observation LB_AA_plain-dmb Never 0 25000000000
+2026-11-09 12:11:53 START ctrl_Df_AA_casfail-casfail_for_Df_AA_casalfail-casalfail.log: gen_screen/Df_AA_casfail-casfail.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 12:11:55 END ctrl_Df_AA_casfail-casfail_for_Df_AA_casalfail-casalfail.log: Observation Df_AA_casfail-casfail Sometimes 2660 24997340
+2026-11-09 12:11:55 START Df_AA_casalfail-casalfail_st7.log: gen_screen/Df_AA_casalfail-casalfail.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 12:39:39 END Df_AA_casalfail-casalfail_st7.log: Observation Df_AA_casalfail-casalfail Never 0 25000000000
+2026-11-09 12:39:39 START ctrl_fwd7_str-ldr-addr_for_fwd3_str-ldapr.log: gen_screen/fwd7_str-ldr-addr.exe -a 3 -s 100000 -r 250 -st 7
+2026-11-09 12:39:42 END ctrl_fwd7_str-ldr-addr_for_fwd3_str-ldapr.log: Observation fwd7_str-ldr-addr Sometimes 142 24999858
+2026-11-09 12:39:42 START fwd3_str-ldapr_st7.log: gen_screen/fwd3_str-ldapr.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-09 12:49:16 END fwd3_str-ldapr_st7.log: Observation fwd3_str-ldapr Never 0 5000000000
+2026-11-09 12:49:16 START ctrl_fwd7_str-ldr-addr_for_fwd6_str-ldar.log: gen_screen/fwd7_str-ldr-addr.exe -a 3 -s 100000 -r 250 -st 7
+2026-11-09 12:49:18 END ctrl_fwd7_str-ldr-addr_for_fwd6_str-ldar.log: Observation fwd7_str-ldr-addr Sometimes 226 24999774
+2026-11-09 12:49:18 START fwd6_str-ldar_st7.log: gen_screen/fwd6_str-ldar.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-09 12:58:30 END fwd6_str-ldar_st7.log: Observation fwd6_str-ldar Never 0 5000000000
+2026-11-09 12:58:30 START ctrl_Dw_AA_swpl-swpl_for_Dw_AA_swpa-swpa.log: gen_screen/Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 12:58:31 END ctrl_Dw_AA_swpl-swpl_for_Dw_AA_swpa-swpa.log: Observation Dw_AA_swpl-swpl Sometimes 191187 24808813
+2026-11-09 12:58:31 START Dw_AA_swpa-swpa_st7.log: gen_screen/Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 13:25:42 END Dw_AA_swpa-swpa_st7.log: Observation Dw_AA_swpa-swpa Sometimes 12 24999999988
+2026-11-09 13:25:42 ALLDONE
+  Observation Df_AA_casalfail-casalfail Never 0 25000000000
+  Observation Dr_AA_swpl-swpl Never 0 25000000000
+  Observation Dw_AA_swpa-swpa Sometimes 12 24999999988
+  Observation Dw_AA_swpal-swpal Never 0 25000000000
+  Observation LB_AA_plain-dmb Never 0 25000000000
+  Observation SB_AA_dmb-dmb Never 0 25000000000
+  Observation SB_AA_dmbld-dmb Never 0 25000000000
+  Observation SB_AA_dsbld-dmb Never 0 25000000000
+  Observation fwd3_str-ldapr Never 0 5000000000
+  Observation fwd6_str-ldar Never 0 5000000000
+2026-11-09 13:26:45 START ctrl_n6_AA_plain-rcpc_for_n6_AA_rcpc-rcpc.log: gen_n6/n6_AA_plain-rcpc.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 13:26:46 END ctrl_n6_AA_plain-rcpc_for_n6_AA_rcpc-rcpc.log: Observation n6_AA_plain-rcpc Sometimes 58 24999942
+2026-11-09 13:26:46 START n6_AA_rcpc-rcpc_st7.log: gen_n6/n6_AA_rcpc-rcpc.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 13:50:06 END n6_AA_rcpc-rcpc_st7.log: Observation n6_AA_rcpc-rcpc Never 0 25000000000
+2026-11-09 13:50:06 ALLDONE n6

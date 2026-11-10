@@ -1,0 +1,17 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_screen/SB_AA_dsbld-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09 11:20:52
+Test SB_AA_dsbld-dmb Allowed
+Histogram (3 states)
+12498092637:>0:X0=1; 1:X0=0;
+12497216246:>0:X0=0; 1:X0=1;
+4691117:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=874e741656b1636b0cc59c7f9767bae4
+Observation SB_AA_dsbld-dmb Never 0 25000000000
+Time SB_AA_dsbld-dmb 1619.90
+# rc=0
+2026-11-09 11:47:52

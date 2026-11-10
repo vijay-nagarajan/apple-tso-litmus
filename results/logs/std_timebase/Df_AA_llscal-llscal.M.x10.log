@@ -1,0 +1,15 @@
+Test Df_AA_llscal-llscal Allowed
+Histogram (4 states)
+391   *>0:X1=0; 1:X1=0;
+49990449:>0:X1=1; 1:X1=0;
+49990035:>0:X1=0; 1:X1=1;
+394   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 391, Negative: 99980878
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=fdd14bc098c9bbd5ed48441cc30d3a6e
+Observation Df_AA_llscal-llscal Sometimes 391 99980878
+Time Df_AA_llscal-llscal 17.52
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

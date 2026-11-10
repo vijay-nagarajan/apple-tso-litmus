@@ -1,0 +1,22 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=test cmd: ./fwd6_str-ldar_TTT.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-10T01:26:42+00:00
+Test fwd6_str-ldar_TTT Allowed
+Histogram (7 states)
+585396854:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+1088951285:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+440183353:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+1393698632:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1967749:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+261301504:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+1228500623:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=164209db5cd5956b56c3b31b1f5d4401
+Observation fwd6_str-ldar_TTT Never 0 5000000000
+Time fwd6_str-ldar_TTT 1358.94
+MEMMODEL mask=7 arm_sets=0 tso_sets=150000
+# rc=0
+2026-11-10T01:49:21+00:00

@@ -1,0 +1,18 @@
+# host=m2-linux machine=m2 placement=U cpus=all role=test cmd: ./Df_AA_casalfail-casalfail.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09T11:24:44-07:00
+Test Df_AA_casalfail-casalfail Allowed
+Histogram (3 states)
+12497133444:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+12497550485:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+5316071:>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is NOT validated
+Hash=caa37f522d9bc6a51fe1b54ac7001885
+Observation Df_AA_casalfail-casalfail Never 0 25000000000
+Time Df_AA_casalfail-casalfail 2857.94
+MEMMODEL mask=0 arm_sets=500000 tso_sets=0
+# rc=0
+2026-11-09T12:12:22-07:00

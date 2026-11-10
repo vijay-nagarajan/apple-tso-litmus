@@ -1,0 +1,14 @@
+Test SB_TA_llscl.ldar-dmb Allowed
+Histogram (3 states)
+49997255:>0:X0=1; 1:X0=0;
+49999773:>0:X0=0; 1:X0=1;
+156   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99997184
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=de51cefb58b33b78f03b9d9663beb908
+Observation SB_TA_llscl.ldar-dmb Never 0 99997184
+Time SB_TA_llscl.ldar-dmb 17.07
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

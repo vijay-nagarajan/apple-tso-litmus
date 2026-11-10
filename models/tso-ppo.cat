@@ -1,0 +1,15 @@
+"TSO for Arm instructions: preserved program order (unrestricted)"
+
+(* Sequential composition: each Arm instruction keeps the x86-TSO order of its
+   x86 counterpart, together with Arm's own order (arm-ppo-all, included first).
+   Counterparts: every load (LDR, LDAPR, LDAR, LDXR, LDAXR) -> load; every store
+   (STR, STLR, STXR, STLXR) -> store; DMB SY/ISH -> MFENCE; SWP/LDADD/CAS in any form,
+   a failed CAS too -> locked RMW. An LL/SC pair is a load and a store, not locked.
+   DMB LD/ST, DSB, ISB have no x86 counterpart and keep Arm's order only. *)
+let CASR    = domain([Exp & R]; iico_data+; [PRED])    (* read of a CAS, failed or not *)
+let Locked  = M & (domain(amo) | range(amo) | CASR)
+let x86-ppo = [M]; (po \ (W * R)); [M]               (* all but W->R *)
+            | [M]; po; [DMB-FULL]; po; [M]            (* MFENCE *)
+            | [W]; po; [Locked & R]                   (* locked RMW *)
+            | [Locked & W]; po; [R]                   (*   acts as a fence *)
+let tso-ppo-all = x86-ppo | arm-ppo-all

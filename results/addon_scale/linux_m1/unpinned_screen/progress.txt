@@ -1,0 +1,49 @@
+2026-11-09T16:32:08+00:00 START m1 Dw_AA_swpl-swpl [control U st7] r=125
+2026-11-09T16:32:11+00:00 END m1 Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 493662 24506338 3s
+2026-11-09T16:32:11+00:00 START m1 Dw_AA_swpal-swpal [test U st7] r=125000
+2026-11-09T17:26:43+00:00 END m1 Dw_AA_swpal-swpal [test U st7] Observation Dw_AA_swpal-swpal Never 0 25000000000 3272s
+2026-11-09T17:26:43+00:00 START m1 SB_AA_plain-dmb [control U st7] r=125
+2026-11-09T17:26:46+00:00 END m1 SB_AA_plain-dmb [control U st7] Observation SB_AA_plain-dmb Sometimes 62 24999938 2s
+2026-11-09T17:26:46+00:00 START m1 SB_AA_dmbld-dmb [test U st7] r=125000
+2026-11-09T18:18:36+00:00 END m1 SB_AA_dmbld-dmb [test U st7] Observation SB_AA_dmbld-dmb Never 0 25000000000 3110s
+2026-11-09T18:18:36+00:00 START m1 SB_AA_dsbld-dmb [test U st7] r=125000
+2026-11-09T19:09:33+00:00 END m1 SB_AA_dsbld-dmb [test U st7] Observation SB_AA_dsbld-dmb Never 0 25000000000 3057s
+2026-11-09T19:09:33+00:00 START m1 SB_TT_plain-dmb [control U st7] r=125
+2026-11-09T19:09:36+00:00 END m1 SB_TT_plain-dmb [control U st7] Observation SB_TT_plain-dmb Sometimes 49 24999951 3s
+2026-11-09T19:09:36+00:00 START m1 SB_TT_dmbld-dmb [test U st7] r=125000
+2026-11-09T20:02:16+00:00 END m1 SB_TT_dmbld-dmb [test U st7] Observation SB_TT_dmbld-dmb Never 0 25000000000 3160s
+2026-11-09T20:02:16+00:00 START m1 SB_TT_dsbld-dmb [test U st7] r=125000
+2026-11-09T21:00:46+00:00 END m1 SB_TT_dsbld-dmb [test U st7] Observation SB_TT_dsbld-dmb Never 0 25000000000 3510s
+2026-11-09T21:00:46+00:00 START m1 LB_AA_plain-dmb [test U st7] r=125000
+2026-11-09T22:51:54+00:00 END m1 LB_AA_plain-dmb [test U st7] Observation LB_AA_plain-dmb Never 0 25000000000 6668s
+2026-11-09T22:51:54+00:00 START m1 Df_AA_casfail-casfail [control U st7] r=125
+2026-11-09T22:51:59+00:00 END m1 Df_AA_casfail-casfail [control U st7] Observation Df_AA_casfail-casfail Sometimes 82293 24917707 5s
+2026-11-09T22:51:59+00:00 START m1 Df_AA_casalfail-casalfail [test U st7] r=125000
+2026-11-10T00:31:17+00:00 END m1 Df_AA_casalfail-casalfail [test U st7] Observation Df_AA_casalfail-casalfail Never 0 25000000000 5958s
+2026-11-10T00:31:17+00:00 START m1 fwd7_str-ldr-addr [control U st7] r=250
+2026-11-10T00:31:22+00:00 END m1 fwd7_str-ldr-addr [control U st7] Observation fwd7_str-ldr-addr Sometimes 59095 24940905 5s
+2026-11-10T00:31:22+00:00 START m1 fwd3_str-ldapr [test U st7] r=50000
+2026-11-10T00:49:00+00:00 END m1 fwd3_str-ldapr [test U st7] Observation fwd3_str-ldapr Never 0 5000000000 1058s
+2026-11-10T00:49:00+00:00 START m1 fwd6_str-ldar [test U st7] r=50000
+2026-11-10T01:07:29+00:00 END m1 fwd6_str-ldar [test U st7] Observation fwd6_str-ldar Never 0 5000000000 1109s
+2026-11-10T01:07:29+00:00 START m1 fwd12_str-ldr_TTT [control U st7] r=250
+2026-11-10T01:07:36+00:00 END m1 fwd12_str-ldr_TTT [control U st7] Observation fwd12_str-ldr_TTT Sometimes 36 24999964 7s
+2026-11-10T01:07:36+00:00 START m1 fwd3_str-ldapr_TTT [test U st7] r=50000
+2026-11-10T01:26:42+00:00 END m1 fwd3_str-ldapr_TTT [test U st7] Observation fwd3_str-ldapr_TTT Never 0 5000000000 1146s
+2026-11-10T01:26:42+00:00 START m1 fwd6_str-ldar_TTT [test U st7] r=50000
+2026-11-10T01:49:21+00:00 END m1 fwd6_str-ldar_TTT [test U st7] Observation fwd6_str-ldar_TTT Never 0 5000000000 1359s
+2026-11-10T01:49:21+00:00 START m1 Dw_AA_swpa-swpa [test U st7] r=125000
+2026-11-10T02:42:37+00:00 END m1 Dw_AA_swpa-swpa [test U st7] Observation Dw_AA_swpa-swpa Sometimes 2 24999999998 3196s
+2026-11-10T02:42:37+00:00 ALLDONE unpinned_screen
+Dw_AA_swpal-swpal hits 0 / 2.5e+10
+SB_AA_dmbld-dmb hits 0 / 2.5e+10
+SB_AA_dsbld-dmb hits 0 / 2.5e+10
+SB_TT_dmbld-dmb hits 0 / 2.5e+10
+SB_TT_dsbld-dmb hits 0 / 2.5e+10
+LB_AA_plain-dmb hits 0 / 2.5e+10
+Df_AA_casalfail-casalfail hits 0 / 2.5e+10
+fwd3_str-ldapr hits 0 / 5e+09
+fwd6_str-ldar hits 0 / 5e+09
+fwd3_str-ldapr_TTT hits 0 / 5e+09
+fwd6_str-ldar_TTT hits 0 / 5e+09
+Dw_AA_swpa-swpa hits 2 / 2.5e+10

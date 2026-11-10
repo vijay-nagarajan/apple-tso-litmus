@@ -1,0 +1,17 @@
+row	group	test_label	control_label	test	control	nthreads	overlap
+R01	Arm forbids	Dekker, \ins{SWPAL} replaces the store	\ins{SWPL}	Dw_AA_swpal-swpal	Dw_AA_swpl-swpl	2	0:X1=1 1:X1=1
+R02		Dekker, \ins{SWPL} replaces the load	\ins{SWPL} as store	Dr_AA_swpl-swpl	Dw_AA_swpl-swpl	2	0:X0=1 1:X0=1
+R03		SB, \ins{DMB}	SB, one \ins{DMB}	SB_AA_dmb-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
+R04	Dropped	Dekker, \ins{SWPA} replaces the store	\ins{SWPL}	Dw_AA_swpa-swpa	Dw_AA_swpl-swpl	2	0:X1=1 1:X1=1
+R05	A2, Arm	SB, \ins{DMB LD}	SB, one \ins{DMB}	SB_AA_dmbld-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
+R06		SB, \ins{DSB LD}	SB, one \ins{DMB}	SB_AA_dsbld-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
+R07	A2, TSO	SB, \ins{DMB LD}	SB, one \ins{DMB}	SB_TT_dmbld-dmb	SB_TT_plain-dmb	2	0:X0=1 1:X0=1
+R08		SB, \ins{DSB LD}	SB, one \ins{DMB}	SB_TT_dsbld-dmb	SB_TT_plain-dmb	2	0:X0=1 1:X0=1
+R09	A3	LB, \ins{DMB} on one thread	none	LB_AA_plain-dmb	SB_AA_plain-dmb	2	0:X0=0 1:X0=0
+R10	CAS	Dekker, failing \ins{CASAL} between	failing \ins{CAS}	Df_AA_casalfail-casalfail	Df_AA_casfail-casfail	2	0:X1=1 1:X1=1
+R11	A1, Arm	n7, \ins{LDAPR}	address dep.	fwd3_str-ldapr	fwd7_str-ldr-addr	3	-
+R12		n7, \ins{LDAR}	address dep.	fwd6_str-ldar	fwd7_str-ldr-addr	3	-
+R13		n6, \ins{LDAPR}, Arm partner	plain load	n6_AA_rcpc-rcpc	n6_AA_plain-rcpc	2	-
+R14		n6, \ins{LDAPR}, TSO partner	plain load	n6_AT_rcpc-plain	n6_AT_plain-plain	2	-
+R15	A1, TSO	n7, \ins{LDAPR}	plain load	fwd3_str-ldapr_TTT	fwd12_str-ldr_TTT	3	-
+R16		n7, \ins{LDAR}	plain load	fwd6_str-ldar_TTT	fwd12_str-ldr_TTT	3	-

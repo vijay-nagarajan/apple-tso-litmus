@@ -1,0 +1,15 @@
+Test Dw_AA_swpa-swpa Allowed
+Histogram (4 states)
+2     *>0:X1=0; 1:X1=0;
+499510096:>0:X1=1; 1:X1=0;
+500117933:>0:X1=0; 1:X1=1;
+371969:>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 2, Negative: 999999998
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=542bde607a64c733672a52b8a3c16e61
+Observation Dw_AA_swpa-swpa Sometimes 2 999999998
+Time Dw_AA_swpa-swpa 114.57
+MEMMODEL mask=0 arm_sets=20000 tso_sets=0

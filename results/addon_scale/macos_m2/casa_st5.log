@@ -1,0 +1,17 @@
+# host=m2-macos model=Mac14,2 cpu=Apple M2 cmd: gen/Dw_AA_casa-casa.exe -a 4 -s 100000 -r 25000 -st 5
+2026-11-08 13:42:31
+Test Dw_AA_casa-casa Allowed
+Histogram (3 states)
+2499955257:>0:X1=1; 1:X1=0;
+2499952186:>0:X1=0; 1:X1=1;
+92557 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=b31bf67d76afb5a79357054eae16bebe
+Observation Dw_AA_casa-casa Never 0 5000000000
+Time Dw_AA_casa-casa 245.47
+# rc=0
+2026-11-08 13:46:36

@@ -1,0 +1,14 @@
+Test Dw_AT_swpa-swp Allowed
+Histogram (3 states)
+49978656:>0:X1=1; 1:X1=0;
+50012981:>0:X1=0; 1:X1=1;
+8363  :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=cd5cadba170c48ca0a2f68a810b2b1ca
+Observation Dw_AT_swpa-swp Never 0 100000000
+Time Dw_AT_swpa-swp 14.19
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,49 @@
+Tue Nov 10 14:17:56 UTC 2026 START linux_m1 Dw_AA_swpl-swpl [control U st7] r=125
+Tue Nov 10 14:17:59 UTC 2026 END linux_m1 Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 517340 24482660 3s
+Tue Nov 10 14:17:59 UTC 2026 START linux_m1 Dw_AA_swpal-swpal [test U st7] r=1
+Tue Nov 10 14:17:59 UTC 2026 END linux_m1 Dw_AA_swpal-swpal [test U st7] Observation Dw_AA_swpal-swpal Never 0 200000 0s
+Tue Nov 10 14:17:59 UTC 2026 START linux_m1 Dr_AA_swpl-swpl [test U st7] r=1
+Tue Nov 10 14:17:59 UTC 2026 END linux_m1 Dr_AA_swpl-swpl [test U st7] Observation Dr_AA_swpl-swpl Never 0 200000 0s
+Tue Nov 10 14:17:59 UTC 2026 START linux_m1 SB_AA_plain-dmb [control U st7] r=125
+Tue Nov 10 14:18:02 UTC 2026 END linux_m1 SB_AA_plain-dmb [control U st7] Observation SB_AA_plain-dmb Sometimes 121 24999879 3s
+Tue Nov 10 14:18:02 UTC 2026 START linux_m1 SB_AA_dmb-dmb [test U st7] r=1
+Tue Nov 10 14:18:02 UTC 2026 END linux_m1 SB_AA_dmb-dmb [test U st7] Observation SB_AA_dmb-dmb Never 0 200000 0s
+Tue Nov 10 14:18:02 UTC 2026 START linux_m1 Dw_AA_swpa-swpa [test U st7] r=1
+Tue Nov 10 14:18:02 UTC 2026 END linux_m1 Dw_AA_swpa-swpa [test U st7] Observation Dw_AA_swpa-swpa Never 0 200000 0s
+Tue Nov 10 14:18:02 UTC 2026 START linux_m1 SB_AA_dmbld-dmb [test U st7] r=1
+Tue Nov 10 14:18:02 UTC 2026 END linux_m1 SB_AA_dmbld-dmb [test U st7] Observation SB_AA_dmbld-dmb Never 0 200000 0s
+Tue Nov 10 14:18:02 UTC 2026 START linux_m1 SB_AA_dsbld-dmb [test U st7] r=1
+Tue Nov 10 14:18:02 UTC 2026 END linux_m1 SB_AA_dsbld-dmb [test U st7] Observation SB_AA_dsbld-dmb Never 0 200000 0s
+Tue Nov 10 14:18:02 UTC 2026 START linux_m1 SB_TT_plain-dmb [control U st7] r=125
+Tue Nov 10 14:18:05 UTC 2026 END linux_m1 SB_TT_plain-dmb [control U st7] Observation SB_TT_plain-dmb Sometimes 54 24999946 3s
+Tue Nov 10 14:18:05 UTC 2026 START linux_m1 SB_TT_dmbld-dmb [test U st7] r=1
+Tue Nov 10 14:18:05 UTC 2026 END linux_m1 SB_TT_dmbld-dmb [test U st7] Observation SB_TT_dmbld-dmb Never 0 200000 0s
+Tue Nov 10 14:18:05 UTC 2026 START linux_m1 SB_TT_dsbld-dmb [test U st7] r=1
+Tue Nov 10 14:18:05 UTC 2026 END linux_m1 SB_TT_dsbld-dmb [test U st7] Observation SB_TT_dsbld-dmb Never 0 200000 0s
+Tue Nov 10 14:18:05 UTC 2026 START linux_m1 LB_AA_plain-dmb [test U st7] r=1
+Tue Nov 10 14:18:05 UTC 2026 END linux_m1 LB_AA_plain-dmb [test U st7] Observation LB_AA_plain-dmb Never 0 200000 0s
+Tue Nov 10 14:18:05 UTC 2026 START linux_m1 Df_AA_casfail-casfail [control U st7] r=125
+Tue Nov 10 14:18:08 UTC 2026 END linux_m1 Df_AA_casfail-casfail [control U st7] Observation Df_AA_casfail-casfail Sometimes 123490 24876510 3s
+Tue Nov 10 14:18:08 UTC 2026 START linux_m1 Df_AA_casalfail-casalfail [test U st7] r=1
+Tue Nov 10 14:18:08 UTC 2026 END linux_m1 Df_AA_casalfail-casalfail [test U st7] Observation Df_AA_casalfail-casalfail Never 0 200000 0s
+Tue Nov 10 14:18:08 UTC 2026 START linux_m1 fwd7_str-ldr-addr [control U st7] r=250
+Tue Nov 10 14:18:14 UTC 2026 END linux_m1 fwd7_str-ldr-addr [control U st7] Observation fwd7_str-ldr-addr Sometimes 103320 24896680 6s
+Tue Nov 10 14:18:14 UTC 2026 START linux_m1 fwd3_str-ldapr [test U st7] r=1
+Tue Nov 10 14:18:14 UTC 2026 END linux_m1 fwd3_str-ldapr [test U st7] Observation fwd3_str-ldapr Never 0 100000 0s
+Tue Nov 10 14:18:14 UTC 2026 START linux_m1 fwd6_str-ldar [test U st7] r=1
+Tue Nov 10 14:18:14 UTC 2026 END linux_m1 fwd6_str-ldar [test U st7] Observation fwd6_str-ldar Never 0 100000 0s
+Tue Nov 10 14:18:14 UTC 2026 START linux_m1 n6_AA_plain-rcpc [control U st7] r=125
+Tue Nov 10 14:18:18 UTC 2026 END linux_m1 n6_AA_plain-rcpc [control U st7] Observation n6_AA_plain-rcpc Sometimes 15 24999985 4s
+Tue Nov 10 14:18:18 UTC 2026 START linux_m1 n6_AA_rcpc-rcpc [test U st7] r=1
+Tue Nov 10 14:18:18 UTC 2026 END linux_m1 n6_AA_rcpc-rcpc [test U st7] Observation n6_AA_rcpc-rcpc Never 0 200000 0s
+Tue Nov 10 14:18:18 UTC 2026 START linux_m1 n6_AT_plain-plain [control U st7] r=125
+Tue Nov 10 14:18:20 UTC 2026 END linux_m1 n6_AT_plain-plain [control U st7] Observation n6_AT_plain-plain Sometimes 81 24999919 2s
+Tue Nov 10 14:18:20 UTC 2026 START linux_m1 n6_AT_rcpc-plain [test U st7] r=1
+Tue Nov 10 14:18:20 UTC 2026 END linux_m1 n6_AT_rcpc-plain [test U st7] Observation n6_AT_rcpc-plain Never 0 200000 0s
+Tue Nov 10 14:18:20 UTC 2026 START linux_m1 fwd12_str-ldr_TTT [control U st7] r=250
+Tue Nov 10 14:18:27 UTC 2026 END linux_m1 fwd12_str-ldr_TTT [control U st7] Observation fwd12_str-ldr_TTT Sometimes 73 24999927 7s
+Tue Nov 10 14:18:27 UTC 2026 START linux_m1 fwd3_str-ldapr_TTT [test U st7] r=1
+Tue Nov 10 14:18:27 UTC 2026 END linux_m1 fwd3_str-ldapr_TTT [test U st7] Observation fwd3_str-ldapr_TTT Never 0 100000 0s
+Tue Nov 10 14:18:27 UTC 2026 START linux_m1 fwd6_str-ldar_TTT [test U st7] r=1
+Tue Nov 10 14:18:27 UTC 2026 END linux_m1 fwd6_str-ldar_TTT [test U st7] Observation fwd6_str-ldar_TTT Never 0 100000 0s
+Tue Nov 10 14:18:27 UTC 2026 ALLDONE linux_m1

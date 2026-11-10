@@ -1,0 +1,18 @@
+Test n7_TAT_plain-plain-plain Allowed
+Histogram (7 states)
+23021900:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+10455314:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+14173357:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+26771579:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+66    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+6432277:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+19145507:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=8dbabebfb29eaf06f869376a230db7e0
+Observation n7_TAT_plain-plain-plain Never 0 100000000
+Time n7_TAT_plain-plain-plain 17.79
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

@@ -1,0 +1,14 @@
+Test LB_TT_dmb-plain Allowed
+Histogram (3 states)
+25    :>0:X0=0; 1:X0=0;
+49999966:>0:X0=1; 1:X0=0;
+50000009:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=3e3c9335b14ec67fc7f3d2080cbfbd6d
+Observation LB_TT_dmb-plain Never 0 100000000
+Time LB_TT_dmb-plain 14.70
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

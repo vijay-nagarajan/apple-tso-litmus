@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{@{}lrrrll@{}}
+\toprule
+& \multicolumn{2}{c}{Forbidden} & \multicolumn{3}{c}{Allowed controls}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Shape & tests & seen & tests & M1 & M2\\
+\midrule
+RWC & 2 & \rfz & 2 & \rsn{$10^{4}$--$10^{5}$} & \rsn{$10^{4}$--$10^{5}$}\\
+IRIW & 4 & \rfz & 2 & \rsn{$10^{2}$--$10^{3}$} & \rsn{$10^{3}$--$10^{4}$}\\
+WRC & 5 & \rfz & 1 & \rsn{$10^{0}$} & \rux\\
+ISA2 & 9 & \rfz & 2 & \rux & \rsn{0--$10^{0}$}\\
+\bottomrule
+\end{tabular}
+\caption{WRC, ISA2, RWC and IRIW with every thread in Arm mode, under every combination of the doubtful mechanisms (\cref{sec:method-tests}), $6\times10^8$ iterations of each test on each machine. Forbidden by the Arm model with A1--A3. A control is a forbidden test with one edge left unordered; controls that A3 forbids are omitted, and the range spans the shape's controls. Entries as in \cref{tab:arm-results}.}
+\label{tab:arm-multi}
+\end{table}

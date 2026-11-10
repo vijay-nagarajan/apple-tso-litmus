@@ -1,0 +1,15 @@
+Test SB_TA_llscl.ldr-dmb Allowed
+Histogram (4 states)
+356   *>0:X0=0; 1:X0=0;
+49997283:>0:X0=1; 1:X0=0;
+49999537:>0:X0=0; 1:X0=1;
+11    :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 356, Negative: 99996831
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=26a64477a345479f1cb2de677903ca64
+Observation SB_TA_llscl.ldr-dmb Sometimes 356 99996831
+Time SB_TA_llscl.ldr-dmb 14.63
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

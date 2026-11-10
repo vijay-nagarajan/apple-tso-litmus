@@ -1,0 +1,14 @@
+Test SB_TA_stlr.cas-dmb Allowed
+Histogram (3 states)
+49999391:>0:X0=1; 1:X0=0;
+50000299:>0:X0=0; 1:X0=1;
+310   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=c47ea480b3feae9137a20cf9ff7855a1
+Observation SB_TA_stlr.cas-dmb Never 0 100000000
+Time SB_TA_stlr.cas-dmb 14.55
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,19 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=control cmd: ./n6_AA_plain-rcpc.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09T19:51:10+00:00
+Test n6_AA_plain-rcpc Allowed
+Histogram (4 states)
+7     *>0:X0=1; 0:X1=0; [x]=1;
+12498295:>0:X0=1; 0:X1=2; [x]=1;
+12500094:>0:X0=1; 0:X1=0; [x]=2;
+1604  :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 7, Negative: 24999993
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=75406288b5b62b9a2e49c21c9fa59bec
+Observation n6_AA_plain-rcpc Sometimes 7 24999993
+Time n6_AA_plain-rcpc 3.81
+MEMMODEL mask=0 arm_sets=500 tso_sets=0
+# rc=0
+2026-11-09T20:02:20+00:00

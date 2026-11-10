@@ -1,0 +1,18 @@
+Test WRC_ATA_o-ldapr.str-addr Allowed
+Histogram (7 states)
+13743485:>1:X0=0; 2:X0=0; 2:X1=0;
+29810029:>1:X0=1; 2:X0=0; 2:X1=0;
+6801506:>1:X0=0; 2:X0=1; 2:X1=0;
+33605 :>1:X0=0; 2:X0=0; 2:X1=1;
+12157246:>1:X0=1; 2:X0=0; 2:X1=1;
+35569217:>1:X0=0; 2:X0=1; 2:X1=1;
+1884912:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=cec2152dd3c541ea08a1d1b56a7b83bf
+Observation WRC_ATA_o-ldapr.str-addr Never 0 100000000
+Time WRC_ATA_o-ldapr.str-addr 28.68
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

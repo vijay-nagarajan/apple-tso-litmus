@@ -1,0 +1,21 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_screen/fwd3_str-ldapr.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-09 12:39:42
+Test fwd3_str-ldapr Allowed
+Histogram (7 states)
+187265817:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+1478698228:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+702240487:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+892024018:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+154187:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+776976095:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+962641168:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=e7f2ae412d27f1834ad51de76f349d20
+Observation fwd3_str-ldapr Never 0 5000000000
+Time fwd3_str-ldapr 573.91
+# rc=0
+2026-11-09 12:49:16

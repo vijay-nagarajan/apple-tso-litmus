@@ -1,0 +1,15 @@
+Test n6_TT_plain-plain Allowed
+Histogram (4 states)
+13338 *>0:X0=1; 0:X1=0; [x]=1;
+49984805:>0:X0=1; 0:X1=2; [x]=1;
+49999100:>0:X0=1; 0:X1=0; [x]=2;
+2757  :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 13338, Negative: 99986662
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=d5f067d36550f6b68ac7059a5d0db6f2
+Observation n6_TT_plain-plain Sometimes 13338 99986662
+Time n6_TT_plain-plain 8.32
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

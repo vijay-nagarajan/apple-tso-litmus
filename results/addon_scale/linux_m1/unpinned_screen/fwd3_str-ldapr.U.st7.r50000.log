@@ -1,0 +1,22 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=test cmd: ./fwd3_str-ldapr.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-10T00:31:22+00:00
+Test fwd3_str-ldapr Allowed
+Histogram (7 states)
+429671295:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+1336764819:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+485338062:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+1422944760:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1230997:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+189945814:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+1134104253:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=e7f2ae412d27f1834ad51de76f349d20
+Observation fwd3_str-ldapr Never 0 5000000000
+Time fwd3_str-ldapr 1058.69
+MEMMODEL mask=0 arm_sets=150000 tso_sets=0
+# rc=0
+2026-11-10T00:49:00+00:00

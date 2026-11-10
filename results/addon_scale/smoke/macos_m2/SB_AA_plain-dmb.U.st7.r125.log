@@ -1,0 +1,18 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=control cmd: ./SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+Tue Nov 10 07:16:16 MST 2026
+Test SB_AA_plain-dmb Allowed
+Histogram (4 states)
+529   *>0:X0=0; 1:X0=0;
+12499118:>0:X0=1; 1:X0=0;
+12499822:>0:X0=0; 1:X0=1;
+531   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 529, Negative: 24999471
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation SB_AA_plain-dmb Sometimes 529 24999471
+Time SB_AA_plain-dmb 1.11
+# rc=0
+Tue Nov 10 07:16:17 MST 2026

@@ -1,0 +1,33 @@
+name	family	nthreads	mask	modes	entry_or_reason	compound	compound-apple	arm	tso	aarch64
+Dw_AA_swpal-swpal	Dw	2	0	AA	SWPAL as a fence (RMW table)	Never	Never	Never	-	Never
+fwd10_stxr-ldr-addr_TTT	fwd10	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd11_stxr-ldr_TTT	fwd11	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_stlr-ldaxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Never
+fwd12_stlr-ldxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_stlxr-ldapr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd12_stlxr-ldar_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Never
+fwd12_stlxr-ldaxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Never
+fwd12_stlxr-ldr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_stlxr-ldxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_str-ldaxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd12_str-ldr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_str-ldxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd12_swp-ldapr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Sometimes
+fwd12_swp-ldar_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Sometimes
+fwd12_swp-ldaxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Sometimes
+fwd12_swp-ldr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Sometimes
+fwd12_swp-ldxr_TTT	fwd12	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Sometimes
+fwd1_str-ldr-dmbld_TTT	fwd1	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd2_stlr-ldr-dmbld_TTT	fwd2	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd3_str-ldapr_TTT	fwd3	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd4_stlr-ldapr_TTT	fwd4	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd5_stlr-ldar_TTT	fwd5	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Never	Never	-	Never	Never
+fwd6_str-ldar_TTT	fwd6	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+fwd7_str-ldr-addr_TTT	fwd7	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd8_stlr-ldr-addr_TTT	fwd8	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Sometimes	-	Sometimes	Sometimes
+fwd9_stxr-ldar_TTT	fwd9	3	7	TTT	same address, all-TSO (Sec 6 Table 6)	Sometimes	Never	-	Sometimes	Sometimes
+Df_AA_casfail-casfail	Df	2	0	AA	failing CAS between store and load (Sec 5.3)	Sometimes	Sometimes	Sometimes	-	Sometimes
+Df_AA_casafail-casafail	Df	2	0	AA	failing CAS between store and load (Sec 5.3)	Sometimes	Sometimes	Sometimes	-	Sometimes
+Df_AA_caslfail-caslfail	Df	2	0	AA	failing CAS between store and load (Sec 5.3)	Sometimes	Sometimes	Sometimes	-	Sometimes
+Df_AA_casalfail-casalfail	Df	2	0	AA	failing CAS between store and load (Sec 5.3)	Sometimes	Never	Sometimes	-	Sometimes
+Df_AA_casal-casal	Df	2	0	AA	succeeding CASAL, reference for the failing forms (Sec 5.3)	Never	Never	Never	-	Never

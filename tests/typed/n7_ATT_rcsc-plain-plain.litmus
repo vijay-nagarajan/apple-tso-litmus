@@ -1,0 +1,7 @@
+AArch64 n7_ATT_rcsc-plain-plain
+{ int64_t x; int64_t y; int64_t z; int64_t w; 0:X10=x; 0:X11=y; int64_t 0:X12=1; int64_t 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; int64_t 1:X12=1; int64_t 1:X13=2; 1:X14=z; 1:X15=w; 2:X10=x; 2:X11=y; int64_t 2:X12=1; int64_t 2:X13=2; 2:X14=z; 2:X15=w; int64_t 0:X0; int64_t 0:X1; int64_t 2:X0; int64_t 2:X1; }
+ P0              | P1              | P2              ;
+ STLR X12,[X10]  | STR X12,[X11]   | LDR X0,[X11]    ;
+ LDAR X0,[X10]   |                 | LDR X1,[X10]    ;
+ LDR X1,[X11]    |                 |                 ;
+exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0)

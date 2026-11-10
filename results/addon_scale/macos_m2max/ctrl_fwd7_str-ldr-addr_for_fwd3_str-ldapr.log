@@ -1,0 +1,22 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_screen/fwd7_str-ldr-addr.exe -a 3 -s 100000 -r 250 -st 7
+2026-11-09 12:39:39
+Test fwd7_str-ldr-addr Allowed
+Histogram (8 states)
+4169285:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+4160617:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+142   *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+3867459:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+4431350:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+149   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+3909333:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+4461665:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 142, Negative: 24999858
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=3dbcf3da3d36fb071f3345758ae158a4
+Observation fwd7_str-ldr-addr Sometimes 142 24999858
+Time fwd7_str-ldr-addr 2.44
+# rc=0
+2026-11-09 12:39:42

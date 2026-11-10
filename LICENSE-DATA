@@ -1,0 +1,5 @@
+The litmus tests (tests/), the herd models (models/), the raw results and logs (results/) and the expected tables
+(expected/) are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+The scripts (scripts/, hw/, generator/, reproduce.sh) are licensed under the MIT License (LICENSE).

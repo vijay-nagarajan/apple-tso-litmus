@@ -1,0 +1,14 @@
+Test MP_AT_dmb-ldapr.ldr Allowed
+Histogram (3 states)
+50006153:>1:X0=0; 1:X1=0;
+269888:>1:X0=0; 1:X1=1;
+49723959:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=790aecad5bd4d0c03792ff2311c8affe
+Observation MP_AT_dmb-ldapr.ldr Never 0 100000000
+Time MP_AT_dmb-ldapr.ldr 16.54
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

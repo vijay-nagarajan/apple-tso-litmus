@@ -1,0 +1,18 @@
+# host=m2-macos model=Mac14,2 cpu=Apple M2 cmd: gen_june/wr_SWPA.exe -a 4 -s 100000 -r 200000
+2026-11-08 13:04:07
+Test wr_SWPA Allowed
+Histogram (4 states)
+3     *>0:X5=0; 1:X5=0;
+19999295993:>0:X5=1; 1:X5=0;
+19999254420:>0:X5=0; 1:X5=1;
+1449584:>0:X5=1; 1:X5=1;
+Ok
+
+Witnesses
+Positive: 3, Negative: 39999999997
+Condition exists (0:X5=0 /\ 1:X5=0) is validated
+Hash=80c2a7cb72f0a86c0b22fd57f76d314e
+Observation wr_SWPA Sometimes 3 39999999997
+Time wr_SWPA 1811.36
+# rc=0
+2026-11-08 13:34:18

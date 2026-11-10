@@ -1,0 +1,15 @@
+Test SB_AA_dmb-plain Allowed
+Histogram (4 states)
+11    *>0:X0=0; 1:X0=0;
+50000002:>0:X0=1; 1:X0=0;
+49999898:>0:X0=0; 1:X0=1;
+89    :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 11, Negative: 99999989
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=c839ccb4edf469e5638a646c8e9f64eb
+Observation SB_AA_dmb-plain Sometimes 11 99999989
+Time SB_AA_dmb-plain 14.29
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

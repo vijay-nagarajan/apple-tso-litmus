@@ -1,0 +1,15 @@
+Test n6_TT_mfence-plain Allowed
+Histogram (4 states)
+49999918:>0:X0=1; 0:X1=2; [x]=1;
+49999688:>0:X0=1; 0:X1=0; [x]=2;
+380   :>0:X0=1; 0:X1=2; [x]=2;
+14    :>0:X0=2; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=94ab86e4e551154011b52ad41c74077b
+Observation n6_TT_mfence-plain Never 0 100000000
+Time n6_TT_mfence-plain 6.37
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

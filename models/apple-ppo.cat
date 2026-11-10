@@ -1,0 +1,13 @@
+"Apple (M1 and M2): orders observed beyond the Arm and TSO models (unrestricted)"
+(* One set of orders, added to every thread, Arm or TSO; an order is kept only if both the M1 and the M2 enforce it.
+   A1: an acquire load does not read its own store early. A2: load barriers order a store before every later access.
+   A3: a load is ordered before a later store. *)
+
+let apple-all = [W]; po-loc; [R & (A | Q)]            (* A1 *)
+              | [W]; po; [DMB-LD | DSB-LD]; po; [M]   (* A2 *)
+              | [R]; po; [W]                          (* A3 *)
+
+(* A CAS is an AMO that always writes:
+   one whose comparison fails writes back the value it read. *)
+let CAS-read = domain([Exp & R]; iico_data+; [PRED])
+empty CAS-read \ domain(amo) as cas-writes

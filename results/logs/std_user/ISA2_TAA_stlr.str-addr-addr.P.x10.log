@@ -1,0 +1,18 @@
+Test ISA2_TAA_stlr.str-addr-addr Allowed
+Histogram (7 states)
+31891972:>1:X0=0; 2:X0=0; 2:X1=0;
+3631475:>1:X0=1; 2:X0=0; 2:X1=0;
+6852132:>1:X0=0; 2:X0=1; 2:X1=0;
+85987 :>1:X0=0; 2:X0=0; 2:X1=1;
+32150383:>1:X0=1; 2:X0=0; 2:X1=1;
+24962597:>1:X0=0; 2:X0=1; 2:X1=1;
+425454:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=061963c0afee7daf58c04e3d3f7b49da
+Observation ISA2_TAA_stlr.str-addr-addr Never 0 100000000
+Time ISA2_TAA_stlr.str-addr-addr 13.01
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

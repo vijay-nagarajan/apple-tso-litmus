@@ -1,0 +1,14 @@
+Test MP_AA_dmb-addr Allowed
+Histogram (3 states)
+49999996:>1:X0=0; 1:X1=0;
+311763:>1:X0=0; 1:X1=1;
+49688241:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=1429c8d19a4e07cbd4e84dc9abb6b16d
+Observation MP_AA_dmb-addr Never 0 100000000
+Time MP_AA_dmb-addr 18.99
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

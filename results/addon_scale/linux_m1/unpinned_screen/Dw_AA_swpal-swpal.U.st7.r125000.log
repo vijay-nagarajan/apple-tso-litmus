@@ -1,0 +1,18 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=test cmd: ./Dw_AA_swpal-swpal.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09T16:32:11+00:00
+Test Dw_AA_swpal-swpal Allowed
+Histogram (3 states)
+12496480155:>0:X1=1; 1:X1=0;
+12498577365:>0:X1=0; 1:X1=1;
+4942480:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=9814780d5cc020216ae317eeb21cff39
+Observation Dw_AA_swpal-swpal Never 0 25000000000
+Time Dw_AA_swpal-swpal 3271.63
+MEMMODEL mask=0 arm_sets=500000 tso_sets=0
+# rc=0
+2026-11-09T17:26:43+00:00

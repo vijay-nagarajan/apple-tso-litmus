@@ -1,0 +1,18 @@
+Test RWC_TAT_o-plain-dmb Allowed
+Histogram (7 states)
+17852757:>1:X0=0; 1:X1=0; 2:X0=0;
+16073584:>1:X0=0; 1:X1=1; 2:X0=0;
+15981653:>1:X0=1; 1:X1=1; 2:X0=0;
+16626659:>1:X0=0; 1:X1=0; 2:X0=1;
+15648562:>1:X0=1; 1:X1=0; 2:X0=1;
+120   :>1:X0=0; 1:X1=1; 2:X0=1;
+17816665:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=34c95f55a09d02991c9ded798ee610ce
+Observation RWC_TAT_o-plain-dmb Never 0 100000000
+Time RWC_TAT_o-plain-dmb 24.63
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

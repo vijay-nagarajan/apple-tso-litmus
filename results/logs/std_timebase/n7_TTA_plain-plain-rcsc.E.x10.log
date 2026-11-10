@@ -1,0 +1,19 @@
+Test n7_TTA_plain-plain-rcsc Allowed
+Histogram (8 states)
+9758184:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+34305095:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+4494  *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+6594711:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+9609287:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+6     :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+36652157:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+3076066:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 4494, Negative: 99995506
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=f562369d6f3f317f8edd7ee4dd0a23d9
+Observation n7_TTA_plain-plain-rcsc Sometimes 4494 99995506
+Time n7_TTA_plain-plain-rcsc 31.71
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

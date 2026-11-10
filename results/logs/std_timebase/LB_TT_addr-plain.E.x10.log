@@ -1,0 +1,14 @@
+Test LB_TT_addr-plain Allowed
+Histogram (3 states)
+2475024:>0:X0=0; 1:X0=0;
+47798954:>0:X0=1; 1:X0=0;
+49726022:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=2b45fcdf94dde212547a5348ee8ae88a
+Observation LB_TT_addr-plain Never 0 100000000
+Time LB_TT_addr-plain 9.11
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

@@ -1,0 +1,14 @@
+Test MP_AA_dmb-ldapr.ldar Allowed
+Histogram (3 states)
+49997856:>1:X0=0; 1:X1=0;
+5800  :>1:X0=0; 1:X1=1;
+49996344:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=c2b98ff010a462bfa14bfc5d9e6241bc
+Observation MP_AA_dmb-ldapr.ldar Never 0 100000000
+Time MP_AA_dmb-ldapr.ldar 8.29
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

@@ -1,0 +1,15 @@
+Test MP_AA_dmb-ldr.ldar Allowed
+Histogram (4 states)
+50002630:>1:X0=0; 1:X1=0;
+15    *>1:X0=1; 1:X1=0;
+28587 :>1:X0=0; 1:X1=1;
+49968768:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 15, Negative: 99999985
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=fc9bdb37686457ed1f1a1f07e210d288
+Observation MP_AA_dmb-ldr.ldar Sometimes 15 99999985
+Time MP_AA_dmb-ldr.ldar 9.50
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

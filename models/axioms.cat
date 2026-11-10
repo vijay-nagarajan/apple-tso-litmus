@@ -1,0 +1,6 @@
+"Axioms shared by every model; the including model defines ppo"
+
+let obs = rfe | coe | fre                        (* communication *)
+acyclic po-loc | rf | co | fr  as sc-per-location
+empty rmw & (fre; coe)         as atomicity
+acyclic ppo | obs              as order

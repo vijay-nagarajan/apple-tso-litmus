@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./LB_AA_plain-dmb.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:18 MST 2026
+Test LB_AA_plain-dmb Allowed
+Histogram (3 states)
+71    :>0:X0=0; 1:X0=0;
+99930 :>0:X0=1; 1:X0=0;
+99999 :>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=e3004a3f7b5d0fa8c3604153c63139e6
+Observation LB_AA_plain-dmb Never 0 200000
+Time LB_AA_plain-dmb 0.02
+# rc=0
+Tue Nov 10 07:16:18 MST 2026

@@ -1,0 +1,18 @@
+# host=m2-macos model=Mac14,2 cpu=Apple M2 cmd: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 3
+2026-11-08 11:17:23
+Test Dw_AA_swp-swp Allowed
+Histogram (4 states)
+42588 *>0:X1=0; 1:X1=0;
+49979414:>0:X1=1; 1:X1=0;
+49977963:>0:X1=0; 1:X1=1;
+35    :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 42588, Negative: 99957412
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=2adff1c964b55a8140eb7fb2868e488b
+Observation Dw_AA_swp-swp Sometimes 42588 99957412
+Time Dw_AA_swp-swp 4.10
+# rc=0
+2026-11-08 11:17:27

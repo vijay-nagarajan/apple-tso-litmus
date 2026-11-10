@@ -1,0 +1,18 @@
+Test fwd7_str-ldr-addr_TTT Allowed
+Histogram (7 states)
+18434775:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+15051687:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+14306078:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+23875040:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+38    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+9376083:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+18956299:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=3dbcf3da3d36fb071f3345758ae158a4
+Observation fwd7_str-ldr-addr_TTT Never 0 100000000
+Time fwd7_str-ldr-addr_TTT 18.16
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

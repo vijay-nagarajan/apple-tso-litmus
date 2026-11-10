@@ -1,0 +1,23 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=control cmd: ./fwd12_str-ldr_TTT.exe -a 3 -s 100000 -r 250 -st 7
+Tue Nov 10 14:18:20 UTC 2026
+Test fwd12_str-ldr_TTT Allowed
+Histogram (8 states)
+6413134:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+2037088:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+73    *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+2411428:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+6351491:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+381   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+1915593:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+5870812:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 73, Negative: 24999927
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=ca675ea9d911eb815ce61e0ebd4cacac
+Observation fwd12_str-ldr_TTT Sometimes 73 24999927
+Time fwd12_str-ldr_TTT 6.73
+MEMMODEL mask=7 arm_sets=0 tso_sets=750
+# rc=0
+Tue Nov 10 14:18:27 UTC 2026

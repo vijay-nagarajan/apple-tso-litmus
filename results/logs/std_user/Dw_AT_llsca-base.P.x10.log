@@ -1,0 +1,15 @@
+Test Dw_AT_llsca-base Allowed
+Histogram (4 states)
+478   *>0:X1=0; 1:X0=0;
+49999260:>0:X1=1; 1:X0=0;
+49999502:>0:X1=0; 1:X0=1;
+12    :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 478, Negative: 99998774
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=af6afe07655f4f21665f2a8b2f3b4ba6
+Observation Dw_AT_llsca-base Sometimes 478 99998774
+Time Dw_AT_llsca-base 5.32
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

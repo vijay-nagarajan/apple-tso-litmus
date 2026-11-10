@@ -1,0 +1,11 @@
+2026-11-10T03:59:00+00:00 START m1 Dw_AA_swpl-swpl [control U st7] r=125
+2026-11-10T03:59:03+00:00 END m1 Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 116973 24883027 3s
+2026-11-10T03:59:03+00:00 START m1 Dr_AA_swpl-swpl [test U st7] r=125000
+2026-11-10T04:55:24+00:00 END m1 Dr_AA_swpl-swpl [test U st7] Observation Dr_AA_swpl-swpl Never 0 25000000000 3381s
+2026-11-10T04:55:24+00:00 START m1 SB_AA_plain-dmb [control U st7] r=125
+2026-11-10T04:55:28+00:00 END m1 SB_AA_plain-dmb [control U st7] Observation SB_AA_plain-dmb Sometimes 383 24999617 4s
+2026-11-10T04:55:28+00:00 START m1 SB_AA_dmb-dmb [test U st7] r=125000
+2026-11-10T05:57:13+00:00 END m1 SB_AA_dmb-dmb [test U st7] Observation SB_AA_dmb-dmb Never 0 25000000000 3705s
+2026-11-10T05:57:13+00:00 ALLDONE fill m1
+Dr_AA_swpl-swpl hits 0 / 2.5e+10
+SB_AA_dmb-dmb hits 0 / 2.5e+10

@@ -1,0 +1,19 @@
+Test fwd12_str-ldr_TTT Allowed
+Histogram (8 states)
+21759027:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+11610072:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11    *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+15550255:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+21391794:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+41    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+11945907:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+17742893:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 11, Negative: 99999989
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=ca675ea9d911eb815ce61e0ebd4cacac
+Observation fwd12_str-ldr_TTT Sometimes 11 99999989
+Time fwd12_str-ldr_TTT 13.99
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

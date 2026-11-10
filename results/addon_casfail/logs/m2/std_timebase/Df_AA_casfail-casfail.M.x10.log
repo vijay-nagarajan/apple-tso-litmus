@@ -1,0 +1,15 @@
+Test Df_AA_casfail-casfail Allowed
+Histogram (4 states)
+3984  *>0:X1=0; 0:X16=0; 1:X1=0; 1:X16=0;
+49997982:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49997762:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+272   :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+Ok
+
+Witnesses
+Positive: 3984, Negative: 99996016
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is validated
+Hash=d4e59cf3d0a29e2ab7190a1eb692ae70
+Observation Df_AA_casfail-casfail Sometimes 3984 99996016
+Time Df_AA_casfail-casfail 17.24
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

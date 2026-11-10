@@ -1,0 +1,6 @@
+name	aarch64	arm	compound	compound-apple
+Df_AA_casafail-casafail	Sometimes	Sometimes	Sometimes	Sometimes
+Df_AA_casal-casal	Never	Never	Never	Never
+Df_AA_casalfail-casalfail	Sometimes	Sometimes	Sometimes	Never
+Df_AA_casfail-casfail	Sometimes	Sometimes	Sometimes	Sometimes
+Df_AA_caslfail-caslfail	Sometimes	Sometimes	Sometimes	Sometimes

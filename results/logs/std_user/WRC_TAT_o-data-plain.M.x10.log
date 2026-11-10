@@ -1,0 +1,18 @@
+Test WRC_TAT_o-data-plain Allowed
+Histogram (7 states)
+21756049:>1:X0=0; 2:X0=0; 2:X1=0;
+11646291:>1:X0=1; 2:X0=0; 2:X1=0;
+17654273:>1:X0=0; 2:X0=1; 2:X1=0;
+7734  :>1:X0=0; 2:X0=0; 2:X1=1;
+24887362:>1:X0=1; 2:X0=0; 2:X1=1;
+15645704:>1:X0=0; 2:X0=1; 2:X1=1;
+8402587:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=80b73c570aa5a34553d9941ba23bf47f
+Observation WRC_TAT_o-data-plain Never 0 100000000
+Time WRC_TAT_o-data-plain 27.46
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

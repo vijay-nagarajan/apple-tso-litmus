@@ -1,0 +1,15 @@
+Test SB_TT_strldxr-lone Allowed
+Histogram (4 states)
+113228*>0:X0=0; 1:X0=0;
+49942371:>0:X0=1; 1:X0=0;
+49944398:>0:X0=0; 1:X0=1;
+3     :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 113228, Negative: 99886772
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=5a72b62b73711fa6bce20e531f493c4a
+Observation SB_TT_strldxr-lone Sometimes 113228 99886772
+Time SB_TT_strldxr-lone 7.00
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

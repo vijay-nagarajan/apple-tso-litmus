@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./Dw_AA_swpal-swpal.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:15 MST 2026
+Test Dw_AA_swpal-swpal Allowed
+Histogram (3 states)
+99673 :>0:X1=1; 1:X1=0;
+99929 :>0:X1=0; 1:X1=1;
+398   :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=9814780d5cc020216ae317eeb21cff39
+Observation Dw_AA_swpal-swpal Never 0 200000
+Time Dw_AA_swpal-swpal 0.02
+# rc=0
+Tue Nov 10 07:16:16 MST 2026

@@ -1,0 +1,23 @@
+Test SB_TT_strldaxr-nofilter Allowed
+Histogram (12 states)
+49978244:>0:X0=1; 0:X21=0; 1:X0=0; 1:X21=0;
+9     *>0:X0=0; 0:X21=1; 1:X0=0; 1:X21=0;
+1563  :>0:X0=1; 0:X21=1; 1:X0=0; 1:X21=0;
+49994471:>0:X0=0; 0:X21=0; 1:X0=1; 1:X21=0;
+2     :>0:X0=1; 0:X21=0; 1:X0=1; 1:X21=0;
+4838  :>0:X0=0; 0:X21=1; 1:X0=1; 1:X21=0;
+2     *>0:X0=0; 0:X21=0; 1:X0=0; 1:X21=1;
+20030 :>0:X0=1; 0:X21=0; 1:X0=0; 1:X21=1;
+167   *>0:X0=0; 0:X21=1; 1:X0=0; 1:X21=1;
+13    :>0:X0=1; 0:X21=1; 1:X0=0; 1:X21=1;
+659   :>0:X0=0; 0:X21=0; 1:X0=1; 1:X21=1;
+2     :>0:X0=0; 0:X21=1; 1:X0=1; 1:X21=1;
+Ok
+
+Witnesses
+Positive: 178, Negative: 99999822
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=d481397ecce12c963f66105f7111f56c
+Observation SB_TT_strldaxr-nofilter Sometimes 178 99999822
+Time SB_TT_strldaxr-nofilter 5.82
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

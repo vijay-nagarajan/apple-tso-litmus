@@ -1,0 +1,14 @@
+Test Df_AA_casalfail-casalfail Allowed
+Histogram (3 states)
+49977096:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49975400:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+47504 :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is NOT validated
+Hash=caa37f522d9bc6a51fe1b54ac7001885
+Observation Df_AA_casalfail-casalfail Never 0 100000000
+Time Df_AA_casalfail-casalfail 8.69
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

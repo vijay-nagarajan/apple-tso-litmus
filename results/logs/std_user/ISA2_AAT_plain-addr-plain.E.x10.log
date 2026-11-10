@@ -1,0 +1,18 @@
+Test ISA2_AAT_plain-addr-plain Allowed
+Histogram (7 states)
+30139175:>1:X0=0; 2:X0=0; 2:X1=0;
+3213177:>1:X0=1; 2:X0=0; 2:X1=0;
+19408002:>1:X0=0; 2:X0=1; 2:X1=0;
+2051  :>1:X0=0; 2:X0=0; 2:X1=1;
+32851722:>1:X0=1; 2:X0=0; 2:X1=1;
+13988446:>1:X0=0; 2:X0=1; 2:X1=1;
+397427:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=197c4161f82ca55880b700412adc5c1d
+Observation ISA2_AAT_plain-addr-plain Never 0 100000000
+Time ISA2_AAT_plain-addr-plain 14.32
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

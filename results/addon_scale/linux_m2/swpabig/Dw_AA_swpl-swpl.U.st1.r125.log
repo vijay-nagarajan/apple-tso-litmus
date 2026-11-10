@@ -1,0 +1,19 @@
+# host=m2-linux machine=m2 mode=unpinned placement=U cpus=all role=control cmd:  ./Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 125 -st 1 
+2026-11-08T19:14:54-07:00
+Test Dw_AA_swpl-swpl Allowed
+Histogram (4 states)
+1453933*>0:X1=0; 1:X1=0;
+11692221:>0:X1=1; 1:X1=0;
+11853845:>0:X1=0; 1:X1=1;
+1     :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 1453933, Negative: 23546067
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=20e887e081cac4c5a2a97298b07d41ea
+Observation Dw_AA_swpl-swpl Sometimes 1453933 23546067
+Time Dw_AA_swpl-swpl 2.96
+MEMMODEL mask=0 arm_sets=500 tso_sets=0
+# rc=0
+2026-11-08T19:14:57-07:00

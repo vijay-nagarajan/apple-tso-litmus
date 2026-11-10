@@ -1,0 +1,14 @@
+Test SB_TA_swpal.swpl-dmb Allowed
+Histogram (3 states)
+49999012:>0:X0=1; 1:X0=0;
+45696022:>0:X0=0; 1:X0=1;
+4304966:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=1f510ef0a66a768d4d45626db66f1919
+Observation SB_TA_swpal.swpl-dmb Never 0 100000000
+Time SB_TA_swpal.swpl-dmb 6.79
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

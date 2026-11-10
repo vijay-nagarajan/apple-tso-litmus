@@ -1,0 +1,15 @@
+Test Df_AT_llsca-swp Allowed
+Histogram (4 states)
+18    *>0:X1=0; 1:X1=0;
+49998926:>0:X1=1; 1:X1=0;
+49999903:>0:X1=0; 1:X1=1;
+772   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 18, Negative: 99999601
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=a8edfe334c649a707b71dffec9b5da32
+Observation Df_AT_llsca-swp Sometimes 18 99999601
+Time Df_AT_llsca-swp 6.37
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

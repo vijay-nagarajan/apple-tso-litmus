@@ -1,0 +1,19 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=control cmd: ./Df_AA_casfail-casfail.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09T22:51:54+00:00
+Test Df_AA_casfail-casfail Allowed
+Histogram (4 states)
+82293 *>0:X1=0; 0:X16=0; 1:X1=0; 1:X16=0;
+12456752:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+12459493:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+1462  :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+Ok
+
+Witnesses
+Positive: 82293, Negative: 24917707
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is validated
+Hash=d4e59cf3d0a29e2ab7190a1eb692ae70
+Observation Df_AA_casfail-casfail Sometimes 82293 24917707
+Time Df_AA_casfail-casfail 2.66
+MEMMODEL mask=0 arm_sets=500 tso_sets=0
+# rc=0
+2026-11-09T22:51:59+00:00

@@ -1,0 +1,19 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=control cmd: ./SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09T17:26:43+00:00
+Test SB_AA_plain-dmb Allowed
+Histogram (4 states)
+62    *>0:X0=0; 1:X0=0;
+12499443:>0:X0=1; 1:X0=0;
+12500294:>0:X0=0; 1:X0=1;
+201   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 62, Negative: 24999938
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation SB_AA_plain-dmb Sometimes 62 24999938
+Time SB_AA_plain-dmb 2.64
+MEMMODEL mask=0 arm_sets=500 tso_sets=0
+# rc=0
+2026-11-09T17:26:45+00:00

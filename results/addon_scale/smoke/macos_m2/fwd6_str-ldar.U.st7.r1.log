@@ -1,0 +1,20 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./fwd6_str-ldar.exe -a 3 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:23 MST 2026
+Test fwd6_str-ldar Allowed
+Histogram (6 states)
+4719  :>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+28618 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11371 :>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+30320 :>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+3016  :>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+21956 :>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=164209db5cd5956b56c3b31b1f5d4401
+Observation fwd6_str-ldar Never 0 100000
+Time fwd6_str-ldar 0.02
+# rc=0
+Tue Nov 10 07:16:23 MST 2026

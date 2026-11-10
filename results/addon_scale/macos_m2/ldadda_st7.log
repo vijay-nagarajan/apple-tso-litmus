@@ -1,0 +1,17 @@
+# host=m2-macos model=Mac14,2 cpu=Apple M2 cmd: gen/Dw_AA_ldadda-ldadda.exe -a 4 -s 100000 -r 25000 -st 7
+2026-11-08 13:38:25
+Test Dw_AA_ldadda-ldadda Allowed
+Histogram (3 states)
+2499843102:>0:X1=1; 1:X1=0;
+2499927398:>0:X1=0; 1:X1=1;
+229500:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=173a34dd630071037512c607360af6c6
+Observation Dw_AA_ldadda-ldadda Never 0 5000000000
+Time Dw_AA_ldadda-ldadda 245.70
+# rc=0
+2026-11-08 13:42:31

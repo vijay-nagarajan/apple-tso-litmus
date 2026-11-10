@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{@{}lrrrll@{}}
+\toprule
+& \multicolumn{2}{c}{Forbidden} & \multicolumn{3}{c}{Allowed controls}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Shape & tests & seen & tests & M1 & M2\\
+\midrule
+RWC & 18 & \rfz & 10 & \rsn{$10^{1}$--$10^{5}$} & \rsn{$10^{1}$--$10^{6}$}\\
+IRIW & 56 & \rfz & 16 & \rsn{0--$10^{3}$} & \rsn{0--$10^{4}$}\\
+WRC & 27 & \rfz & 4 & \rsn{$10^{0}$--$10^{5}$} & \rsn{0--$10^{1}$}\\
+ISA2 & 51 & \rfz & 8 & \rsn{0--$10^{2}$} & \rsn{0--$10^{0}$}\\
+\bottomrule
+\end{tabular}
+\caption{WRC, ISA2, RWC and IRIW under every assignment of modes that mixes Arm and TSO, $6\times10^8$ iterations of each test on each machine. Format as in \cref{tab:arm-multi}.}
+\label{tab:mixcov-results}
+\end{table}

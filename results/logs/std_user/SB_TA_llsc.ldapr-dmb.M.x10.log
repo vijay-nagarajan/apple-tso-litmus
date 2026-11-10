@@ -1,0 +1,15 @@
+Test SB_TA_llsc.ldapr-dmb Allowed
+Histogram (4 states)
+10821 *>0:X0=0; 1:X0=0;
+49983136:>0:X0=1; 1:X0=0;
+49998067:>0:X0=0; 1:X0=1;
+957   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 10821, Negative: 99982160
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=6bc57c24350a6d4f7e13fa20b2032007
+Observation SB_TA_llsc.ldapr-dmb Sometimes 10821 99982160
+Time SB_TA_llsc.ldapr-dmb 16.35
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

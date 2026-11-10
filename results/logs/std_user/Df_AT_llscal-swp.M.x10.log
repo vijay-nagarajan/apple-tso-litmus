@@ -1,0 +1,15 @@
+Test Df_AT_llscal-swp Allowed
+Histogram (4 states)
+6     *>0:X1=0; 1:X1=0;
+49953433:>0:X1=1; 1:X1=0;
+49999582:>0:X1=0; 1:X1=1;
+39546 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 6, Negative: 99992561
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=778d58a25e763dfd5260e1f752afa339
+Observation Df_AT_llscal-swp Sometimes 6 99992561
+Time Df_AT_llscal-swp 14.00
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

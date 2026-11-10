@@ -1,0 +1,21 @@
+"Arm: preserved program order (unrestricted; the including model picks the threads)"
+
+let dob = addr | data                            (* dependencies *)
+        | ctrl; [W]
+        | addr; po; [W]
+        | (ctrl | data); coi
+        | (addr | data); rfi
+        | (ctrl | addr; po); [ISB]; po; [R]
+let aob = rmw                                    (* atomics *)
+        | [Exp & M]; rmw; lrs; [A | Q]
+let bob = [M]; po; [DMB-FULL]; po; [M]          (* barriers, acquire/release *)
+        | [R]; po; [DMB-LD]; po; [M]
+        | [W]; po; [DMB-ST]; po; [W]
+        | [M]; po; [DSB-FULL]; po; [M]
+        | [R]; po; [DSB-LD]; po; [M]
+        | [W]; po; [DSB-ST]; po; [M]
+        | [A | Q]; po
+        | po; [L]
+        | [L]; po; [A]
+        | [range([A]; amo; [L])]; po        (* SWPAL, LDADDAL, ... *)
+let arm-ppo-all = dob | aob | bob

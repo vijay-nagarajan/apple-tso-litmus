@@ -1,0 +1,18 @@
+Test ISA2_AAT_str.stlr-addr-plain Allowed
+Histogram (7 states)
+30697802:>1:X0=0; 2:X0=0; 2:X1=0;
+2667003:>1:X0=1; 2:X0=0; 2:X1=0;
+12246219:>1:X0=0; 2:X0=1; 2:X1=0;
+2634  :>1:X0=0; 2:X0=0; 2:X1=1;
+32343437:>1:X0=1; 2:X0=0; 2:X1=1;
+21120638:>1:X0=0; 2:X0=1; 2:X1=1;
+922267:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=00b87bff81bf801d003ad042ff931a59
+Observation ISA2_AAT_str.stlr-addr-plain Never 0 100000000
+Time ISA2_AAT_str.stlr-addr-plain 14.58
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

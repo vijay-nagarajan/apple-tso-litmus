@@ -1,0 +1,18 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_screen/SB_AA_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 10:53:50
+Test SB_AA_plain-dmb Allowed
+Histogram (4 states)
+11111 *>0:X0=0; 1:X0=0;
+12492375:>0:X0=1; 1:X0=0;
+12492983:>0:X0=0; 1:X0=1;
+3531  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 11111, Negative: 24988889
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation SB_AA_plain-dmb Sometimes 11111 24988889
+Time SB_AA_plain-dmb 1.58
+# rc=0
+2026-11-09 10:53:52

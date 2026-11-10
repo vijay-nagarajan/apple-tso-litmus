@@ -1,0 +1,18 @@
+# host=m1-linux machine=m1 placement=U cpus=all role=test cmd: ./SB_TT_dsbld-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09T20:02:16+00:00
+Test SB_TT_dsbld-dmb Allowed
+Histogram (3 states)
+12496041925:>0:X0=1; 1:X0=0;
+12423196345:>0:X0=0; 1:X0=1;
+80761730:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=874e741656b1636b0cc59c7f9767bae4
+Observation SB_TT_dsbld-dmb Never 0 25000000000
+Time SB_TT_dsbld-dmb 3505.46
+MEMMODEL mask=3 arm_sets=0 tso_sets=500000
+# rc=0
+2026-11-09T21:00:46+00:00

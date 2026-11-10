@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{@{}lrrrll@{}}
+\toprule
+& \multicolumn{2}{c}{Forbidden} & \multicolumn{3}{c}{Allowed controls}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Shape & tests & seen & tests & M1 & M2\\
+\midrule
+RWC & 4 & \rfz & 2 & \rsn{$10^{1}$--$10^{4}$} & \rsn{$10^{1}$--$10^{4}$}\\
+IRIW & 4 & \rfz & 2 & \rsn{$10^{3}$} & \rsn{$10^{3}$}\\
+WRC & 4 & \rfz & 1 & \rsn{$10^{4}$} & \rsn{$10^{1}$}\\
+ISA2 & 8 & \rfz & 2 & \rsn{$10^{0}$--$10^{1}$} & \rsn{$10^{0}$}\\
+\bottomrule
+\end{tabular}
+\caption{WRC, ISA2, RWC and IRIW with every thread in TSO mode, under every combination of TSO's own order and the annotations \ins{LDAPR} and \ins{STLR}, $6\times10^8$ iterations of each test on each machine. Where TSO orders every edge, a control is the same test with one thread in Arm mode. Format as in \cref{tab:arm-multi}.}
+\label{tab:tso-multi}
+\end{table}

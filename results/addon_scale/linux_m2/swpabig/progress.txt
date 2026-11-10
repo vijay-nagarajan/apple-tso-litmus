@@ -1,0 +1,17 @@
+2026-11-08T19:14:54-07:00 START m2 unpinned Dw_AA_swpl-swpl [control U st1 cpus=all] r=125
+2026-11-08T19:14:57-07:00 END m2 unpinned Dw_AA_swpl-swpl [control U st1] Observation Dw_AA_swpl-swpl Sometimes 1453933 23546067 3s
+2026-11-08T19:14:57-07:00 START m2 unpinned Dw_AA_swpa-swpa [test U st1 cpus=all] r=125000
+2026-11-08T20:03:06-07:00 END m2 unpinned Dw_AA_swpa-swpa [test U st1] Observation Dw_AA_swpa-swpa Never 0 25000000000 2889s
+2026-11-08T20:03:06-07:00 START m2 unpinned Dw_AA_swpl-swpl [control U st3 cpus=all] r=125
+2026-11-08T20:03:08-07:00 END m2 unpinned Dw_AA_swpl-swpl [control U st3] Observation Dw_AA_swpl-swpl Sometimes 55826 24944174 2s
+2026-11-08T20:03:08-07:00 START m2 unpinned Dw_AA_swpa-swpa [test U st3 cpus=all] r=125000
+2026-11-08T20:50:37-07:00 END m2 unpinned Dw_AA_swpa-swpa [test U st3] Observation Dw_AA_swpa-swpa Never 0 25000000000 2849s
+2026-11-08T20:50:37-07:00 START m2 unpinned Dw_AA_swpl-swpl [control U st5 cpus=all] r=125
+2026-11-08T20:50:40-07:00 END m2 unpinned Dw_AA_swpl-swpl [control U st5] Observation Dw_AA_swpl-swpl Sometimes 79157 24920843 3s
+2026-11-08T20:50:40-07:00 START m2 unpinned Dw_AA_swpa-swpa [test U st5 cpus=all] r=125000
+2026-11-08T21:37:46-07:00 END m2 unpinned Dw_AA_swpa-swpa [test U st5] Observation Dw_AA_swpa-swpa Never 0 25000000000 2826s
+2026-11-08T21:37:46-07:00 START m2 unpinned Dw_AA_swpl-swpl [control U st7 cpus=all] r=125
+2026-11-08T21:37:48-07:00 END m2 unpinned Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 253661 24746339 2s
+2026-11-08T21:37:48-07:00 START m2 unpinned Dw_AA_swpa-swpa [test U st7 cpus=all] r=125000
+2026-11-08T22:25:05-07:00 END m2 unpinned Dw_AA_swpa-swpa [test U st7] Observation Dw_AA_swpa-swpa Sometimes 4 24999999996 2837s
+2026-11-08T22:25:05-07:00 ALLDONE m2 unpinned

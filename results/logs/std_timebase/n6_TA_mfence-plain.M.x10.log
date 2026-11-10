@@ -1,0 +1,16 @@
+Test n6_TA_mfence-plain Allowed
+Histogram (5 states)
+68    *>0:X0=1; 0:X1=0; [x]=1;
+49999050:>0:X0=1; 0:X1=2; [x]=1;
+49997499:>0:X0=1; 0:X1=0; [x]=2;
+3374  :>0:X0=1; 0:X1=2; [x]=2;
+9     :>0:X0=2; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 68, Negative: 99999932
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=94ab86e4e551154011b52ad41c74077b
+Observation n6_TA_mfence-plain Sometimes 68 99999932
+Time n6_TA_mfence-plain 20.22
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

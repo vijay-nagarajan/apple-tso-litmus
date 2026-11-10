@@ -1,0 +1,21 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=test cmd: ./fwd6_str-ldar.exe -a 3 -s 100000 -r 1 -st 7
+Tue Nov 10 14:18:14 UTC 2026
+Test fwd6_str-ldar Allowed
+Histogram (6 states)
+33326 :>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+62    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+118   :>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+31067 :>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1911  :>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+33516 :>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=164209db5cd5956b56c3b31b1f5d4401
+Observation fwd6_str-ldar Never 0 100000
+Time fwd6_str-ldar 0.03
+MEMMODEL mask=0 arm_sets=3 tso_sets=0
+# rc=0
+Tue Nov 10 14:18:14 UTC 2026

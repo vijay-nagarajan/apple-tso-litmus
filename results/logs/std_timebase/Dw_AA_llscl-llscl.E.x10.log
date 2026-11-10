@@ -1,0 +1,15 @@
+Test Dw_AA_llscl-llscl Allowed
+Histogram (4 states)
+10878642*>0:X1=0; 1:X1=0;
+45155683:>0:X1=1; 1:X1=0;
+43964950:>0:X1=0; 1:X1=1;
+592   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 10878642, Negative: 89121225
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=39296a5a2fdd741753d1fc15049327d4
+Observation Dw_AA_llscl-llscl Sometimes 10878642 89121225
+Time Dw_AA_llscl-llscl 9.29
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

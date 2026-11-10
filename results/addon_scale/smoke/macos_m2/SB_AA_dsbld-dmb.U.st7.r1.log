@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./SB_AA_dsbld-dmb.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:18 MST 2026
+Test SB_AA_dsbld-dmb Allowed
+Histogram (3 states)
+99999 :>0:X0=1; 1:X0=0;
+99995 :>0:X0=0; 1:X0=1;
+6     :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=874e741656b1636b0cc59c7f9767bae4
+Observation SB_AA_dsbld-dmb Never 0 200000
+Time SB_AA_dsbld-dmb 0.02
+# rc=0
+Tue Nov 10 07:16:18 MST 2026

@@ -1,0 +1,15 @@
+Test Dw_AT_swpl-swp Allowed
+Histogram (4 states)
+168   *>0:X1=0; 1:X1=0;
+49999637:>0:X1=1; 1:X1=0;
+50000138:>0:X1=0; 1:X1=1;
+57    :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 168, Negative: 99999832
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=5f1a272135bdadfb574fa865af12b3ea
+Observation Dw_AT_swpl-swp Sometimes 168 99999832
+Time Dw_AT_swpl-swp 17.56
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

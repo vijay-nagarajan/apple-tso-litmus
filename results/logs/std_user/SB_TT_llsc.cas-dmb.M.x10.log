@@ -1,0 +1,14 @@
+Test SB_TT_llsc.cas-dmb Allowed
+Histogram (3 states)
+49997926:>0:X0=1; 1:X0=0;
+49999298:>0:X0=0; 1:X0=1;
+706   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99997930
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=8cba4639c94447cf3819ce29a87e5164
+Observation SB_TT_llsc.cas-dmb Never 0 99997930
+Time SB_TT_llsc.cas-dmb 14.78
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

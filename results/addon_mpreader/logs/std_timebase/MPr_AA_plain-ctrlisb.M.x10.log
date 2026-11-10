@@ -1,0 +1,15 @@
+Test MPr_AA_plain-ctrlisb Allowed
+Histogram (4 states)
+49991754:>1:X0=0; 1:X1=0;
+22    *>1:X0=1; 1:X1=0;
+656431:>1:X0=0; 1:X1=1;
+49351793:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 22, Negative: 99999978
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=9ce88aa385fc112d86aeed7fc365d5da
+Observation MPr_AA_plain-ctrlisb Sometimes 22 99999978
+Time MPr_AA_plain-ctrlisb 14.74
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

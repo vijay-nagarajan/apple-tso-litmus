@@ -1,0 +1,19 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=control cmd: ./n6_AT_plain-plain.exe -a 4 -s 100000 -r 125 -st 7
+Tue Nov 10 14:18:18 UTC 2026
+Test n6_AT_plain-plain Allowed
+Histogram (4 states)
+81    *>0:X0=1; 0:X1=0; [x]=1;
+12499529:>0:X0=1; 0:X1=2; [x]=1;
+12500194:>0:X0=1; 0:X1=0; [x]=2;
+196   :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 81, Negative: 24999919
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=d5f067d36550f6b68ac7059a5d0db6f2
+Observation n6_AT_plain-plain Sometimes 81 24999919
+Time n6_AT_plain-plain 2.46
+MEMMODEL mask=2 arm_sets=250 tso_sets=250
+# rc=0
+Tue Nov 10 14:18:20 UTC 2026

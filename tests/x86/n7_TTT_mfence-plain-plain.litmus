@@ -1,0 +1,8 @@
+X86 n7_TTT_mfence-plain-plain
+{ w=0; x=0; y=0; z=0; }
+P0            | P1            | P2            ;
+MOV [x],$1    | MOV [y],$1    | MOV EAX,[y]   ;
+MFENCE        |               | MOV EBX,[x]   ;
+MOV EAX,[x]   |               |               ;
+MOV EBX,[y]   |               |               ;
+exists (0:EAX=1 /\ 0:EBX=0 /\ 2:EAX=1 /\ 2:EBX=0)

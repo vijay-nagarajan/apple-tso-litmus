@@ -1,0 +1,15 @@
+Test Df_AT_swp-swp Allowed
+Histogram (4 states)
+62977 *>0:X1=0; 1:X1=0;
+49935916:>0:X1=1; 1:X1=0;
+49999599:>0:X1=0; 1:X1=1;
+1508  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 62977, Negative: 99937023
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=c54340ef146d96a41d64527e39a7e939
+Observation Df_AT_swp-swp Sometimes 62977 99937023
+Time Df_AT_swp-swp 7.65
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

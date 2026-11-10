@@ -1,0 +1,8 @@
+AArch64 Dw_AA_llsca-llsca
+{ 0:X10=x; 0:X11=y; 0:X12=1; 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; 1:X12=1; 1:X13=2; 1:X14=z; 1:X15=w; }
+ P0                  | P1 ;
+ LDAXR X0,[X10]      | LDAXR X0,[X11] ;
+ STXR W20,X12,[X10]  | STXR W20,X12,[X11] ;
+ LDR X1,[X11]        | LDR X1,[X10] ;
+filter (0:X20=0 /\ 1:X20=0)
+exists (0:X1=0 /\ 1:X1=0)

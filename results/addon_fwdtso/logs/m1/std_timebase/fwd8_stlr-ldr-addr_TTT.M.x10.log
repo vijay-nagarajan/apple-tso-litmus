@@ -1,0 +1,19 @@
+Test fwd8_stlr-ldr-addr_TTT Allowed
+Histogram (8 states)
+15301206:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+22607056:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+1     *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+6863523:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+14983712:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+57926 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+20077295:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+20109281:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 99999999
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=07943d513d7928e679e23c83ed80b97e
+Observation fwd8_stlr-ldr-addr_TTT Sometimes 1 99999999
+Time fwd8_stlr-ldr-addr_TTT 73.06
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

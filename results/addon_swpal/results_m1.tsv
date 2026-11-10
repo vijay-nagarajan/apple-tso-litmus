@@ -1,0 +1,6 @@
+batch5/std_user	Dw_AA_swpal-swpal	E	10	0	100000000	arm_sets=2000/tso_sets=0	9	9
+batch5/std_user	Dw_AA_swpal-swpal	M	10	0	100000000	arm_sets=2000/tso_sets=0	14	14
+batch5/std_user	Dw_AA_swpal-swpal	P	10	0	100000000	arm_sets=2000/tso_sets=0	8	8
+batch5/std_timebase	Dw_AA_swpal-swpal	E	10	0	100000000	arm_sets=2000/tso_sets=0	12	12
+batch5/std_timebase	Dw_AA_swpal-swpal	M	10	0	100000000	arm_sets=2000/tso_sets=0	15	15
+batch5/std_timebase	Dw_AA_swpal-swpal	P	10	0	100000000	arm_sets=2000/tso_sets=0	9	9

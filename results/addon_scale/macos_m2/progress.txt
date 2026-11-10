@@ -1,0 +1,31 @@
+2026-11-08 11:17:19 START ctrl_swp_st1.log: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 1
+2026-11-08 11:17:23 END ctrl_swp_st1.log: Observation Dw_AA_swp-swp Sometimes 17934 99982066
+2026-11-08 11:17:23 START ctrl_swp_st3.log: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 3
+2026-11-08 11:17:27 END ctrl_swp_st3.log: Observation Dw_AA_swp-swp Sometimes 42588 99957412
+2026-11-08 11:17:27 START ctrl_swp_st5.log: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 5
+2026-11-08 11:17:32 END ctrl_swp_st5.log: Observation Dw_AA_swp-swp Sometimes 112519 99887481
+2026-11-08 11:17:32 START ctrl_swp_st7.log: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 7
+2026-11-08 11:17:37 END ctrl_swp_st7.log: Observation Dw_AA_swp-swp Sometimes 191293 99808707
+2026-11-08 11:17:37 START ctrl_swpl_st1.log: gen/Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 500 -st 1
+2026-11-08 11:17:42 END ctrl_swpl_st1.log: Observation Dw_AA_swpl-swpl Sometimes 15662585 84337415
+2026-11-08 11:17:42 START swpa_st1.log: gen/Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 1
+2026-11-08 11:39:04 END swpa_st1.log: Observation Dw_AA_swpa-swpa Sometimes 1 24999999999
+2026-11-08 11:39:04 START swpa_st3.log: gen/Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 3
+2026-11-08 12:03:05 END swpa_st3.log: Observation Dw_AA_swpa-swpa Sometimes 13 24999999987
+2026-11-08 12:03:05 START swpa_st5.log: gen/Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 5
+2026-11-08 12:37:19 END swpa_st5.log: Observation Dw_AA_swpa-swpa Never 0 25000000000
+2026-11-08 12:37:19 START swpa_st7.log: gen/Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-08 13:04:07 END swpa_st7.log: Observation Dw_AA_swpa-swpa Sometimes 20 24999999980
+2026-11-08 13:04:07 START wr_SWPA_june_default.log: gen_june/wr_SWPA.exe -a 4 -s 100000 -r 200000
+2026-11-08 13:34:18 END wr_SWPA_june_default.log: Observation wr_SWPA Sometimes 3 39999999997
+2026-11-08 13:34:18 START ldadda_st5.log: gen/Dw_AA_ldadda-ldadda.exe -a 4 -s 100000 -r 25000 -st 5
+2026-11-08 13:38:25 END ldadda_st5.log: Observation Dw_AA_ldadda-ldadda Sometimes 2 4999999998
+2026-11-08 13:38:25 START ldadda_st7.log: gen/Dw_AA_ldadda-ldadda.exe -a 4 -s 100000 -r 25000 -st 7
+2026-11-08 13:42:31 END ldadda_st7.log: Observation Dw_AA_ldadda-ldadda Never 0 5000000000
+2026-11-08 13:42:31 START casa_st5.log: gen/Dw_AA_casa-casa.exe -a 4 -s 100000 -r 25000 -st 5
+2026-11-08 13:46:36 END casa_st5.log: Observation Dw_AA_casa-casa Never 0 5000000000
+2026-11-08 13:46:36 START casa_st7.log: gen/Dw_AA_casa-casa.exe -a 4 -s 100000 -r 25000 -st 7
+2026-11-08 13:50:44 END casa_st7.log: Observation Dw_AA_casa-casa Sometimes 4 4999999996
+2026-11-08 13:50:44 START ctrl_swp_st5_post.log: gen/Dw_AA_swp-swp.exe -a 4 -s 100000 -r 500 -st 5
+2026-11-08 13:50:48 END ctrl_swp_st5_post.log: Observation Dw_AA_swp-swp Sometimes 20033 99979967
+2026-11-08 13:50:48 ALLDONE

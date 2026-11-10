@@ -1,0 +1,33 @@
+Tue Nov 10 07:16:14 MST 2026 START macos_m2max Dw_AA_swpl-swpl [control U st7] r=125
+Tue Nov 10 07:16:15 MST 2026 END macos_m2max Dw_AA_swpl-swpl [control U st7] Observation Dw_AA_swpl-swpl Sometimes 30141 24969859 1s
+Tue Nov 10 07:16:15 MST 2026 START macos_m2max Dw_AA_swpal-swpal [test U st7] r=1
+Tue Nov 10 07:16:16 MST 2026 END macos_m2max Dw_AA_swpal-swpal [test U st7] Observation Dw_AA_swpal-swpal Never 0 200000 1s
+Tue Nov 10 07:16:16 MST 2026 START macos_m2max Dr_AA_swpl-swpl [test U st7] r=1
+Tue Nov 10 07:16:16 MST 2026 END macos_m2max Dr_AA_swpl-swpl [test U st7] Observation Dr_AA_swpl-swpl Never 0 200000 0s
+Tue Nov 10 07:16:16 MST 2026 START macos_m2max SB_AA_plain-dmb [control U st7] r=125
+Tue Nov 10 07:16:17 MST 2026 END macos_m2max SB_AA_plain-dmb [control U st7] Observation SB_AA_plain-dmb Sometimes 529 24999471 1s
+Tue Nov 10 07:16:17 MST 2026 START macos_m2max SB_AA_dmb-dmb [test U st7] r=1
+Tue Nov 10 07:16:17 MST 2026 END macos_m2max SB_AA_dmb-dmb [test U st7] Observation SB_AA_dmb-dmb Never 0 200000 0s
+Tue Nov 10 07:16:17 MST 2026 START macos_m2max Dw_AA_swpa-swpa [test U st7] r=1
+Tue Nov 10 07:16:18 MST 2026 END macos_m2max Dw_AA_swpa-swpa [test U st7] Observation Dw_AA_swpa-swpa Never 0 200000 1s
+Tue Nov 10 07:16:18 MST 2026 START macos_m2max SB_AA_dmbld-dmb [test U st7] r=1
+Tue Nov 10 07:16:18 MST 2026 END macos_m2max SB_AA_dmbld-dmb [test U st7] Observation SB_AA_dmbld-dmb Never 0 200000 0s
+Tue Nov 10 07:16:18 MST 2026 START macos_m2max SB_AA_dsbld-dmb [test U st7] r=1
+Tue Nov 10 07:16:18 MST 2026 END macos_m2max SB_AA_dsbld-dmb [test U st7] Observation SB_AA_dsbld-dmb Never 0 200000 0s
+Tue Nov 10 07:16:18 MST 2026 START macos_m2max LB_AA_plain-dmb [test U st7] r=1
+Tue Nov 10 07:16:18 MST 2026 END macos_m2max LB_AA_plain-dmb [test U st7] Observation LB_AA_plain-dmb Never 0 200000 0s
+Tue Nov 10 07:16:18 MST 2026 START macos_m2max Df_AA_casfail-casfail [control U st7] r=125
+Tue Nov 10 07:16:19 MST 2026 END macos_m2max Df_AA_casfail-casfail [control U st7] Observation Df_AA_casfail-casfail Sometimes 204 24999796 1s
+Tue Nov 10 07:16:19 MST 2026 START macos_m2max Df_AA_casalfail-casalfail [test U st7] r=1
+Tue Nov 10 07:16:20 MST 2026 END macos_m2max Df_AA_casalfail-casalfail [test U st7] Observation Df_AA_casalfail-casalfail Never 0 200000 1s
+Tue Nov 10 07:16:20 MST 2026 START macos_m2max fwd7_str-ldr-addr [control U st7] r=250
+Tue Nov 10 07:16:22 MST 2026 END macos_m2max fwd7_str-ldr-addr [control U st7] Observation fwd7_str-ldr-addr Sometimes 11 24999989 2s
+Tue Nov 10 07:16:22 MST 2026 START macos_m2max fwd3_str-ldapr [test U st7] r=1
+Tue Nov 10 07:16:23 MST 2026 END macos_m2max fwd3_str-ldapr [test U st7] Observation fwd3_str-ldapr Never 0 100000 1s
+Tue Nov 10 07:16:23 MST 2026 START macos_m2max fwd6_str-ldar [test U st7] r=1
+Tue Nov 10 07:16:23 MST 2026 END macos_m2max fwd6_str-ldar [test U st7] Observation fwd6_str-ldar Never 0 100000 0s
+Tue Nov 10 07:16:23 MST 2026 START macos_m2max n6_AA_plain-rcpc [control U st7] r=125
+Tue Nov 10 07:16:24 MST 2026 END macos_m2max n6_AA_plain-rcpc [control U st7] Observation n6_AA_plain-rcpc Sometimes 84 24999916 1s
+Tue Nov 10 07:16:24 MST 2026 START macos_m2max n6_AA_rcpc-rcpc [test U st7] r=1
+Tue Nov 10 07:16:24 MST 2026 END macos_m2max n6_AA_rcpc-rcpc [test U st7] Observation n6_AA_rcpc-rcpc Never 0 200000 0s
+Tue Nov 10 07:16:24 MST 2026 ALLDONE macos_m2max

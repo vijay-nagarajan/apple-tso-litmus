@@ -1,0 +1,15 @@
+Test Dw_AT_llscl-swp Allowed
+Histogram (4 states)
+14639 *>0:X1=0; 1:X1=0;
+49983734:>0:X1=1; 1:X1=0;
+49999665:>0:X1=0; 1:X1=1;
+34    :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 14639, Negative: 99983433
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=f280b78bcca59437eed6b366f0a57245
+Observation Dw_AT_llscl-swp Sometimes 14639 99983433
+Time Dw_AT_llscl-swp 12.56
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

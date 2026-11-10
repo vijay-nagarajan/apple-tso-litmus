@@ -1,0 +1,15 @@
+Test Dr_AT_swpl-base Allowed
+Histogram (4 states)
+3399  *>0:X0=0; 1:X0=0;
+50000437:>0:X0=1; 1:X0=0;
+49993230:>0:X0=0; 1:X0=1;
+2934  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 3399, Negative: 99996601
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=169acb26fffd2d737fa2021884469d2e
+Observation Dr_AT_swpl-base Sometimes 3399 99996601
+Time Dr_AT_swpl-base 9.77
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

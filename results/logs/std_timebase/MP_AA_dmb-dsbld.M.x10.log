@@ -1,0 +1,14 @@
+Test MP_AA_dmb-dsbld Allowed
+Histogram (3 states)
+49998310:>1:X0=0; 1:X1=0;
+51648 :>1:X0=0; 1:X1=1;
+49950042:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=e5009d7f18c19b66a013410a9fbacb44
+Observation MP_AA_dmb-dsbld Never 0 100000000
+Time MP_AA_dmb-dsbld 19.40
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

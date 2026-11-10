@@ -1,0 +1,19 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=control cmd: ./SB_TT_plain-dmb.exe -a 4 -s 100000 -r 125 -st 7
+Tue Nov 10 14:18:02 UTC 2026
+Test SB_TT_plain-dmb Allowed
+Histogram (4 states)
+54    *>0:X0=0; 1:X0=0;
+12499524:>0:X0=1; 1:X0=0;
+12500210:>0:X0=0; 1:X0=1;
+212   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 54, Negative: 24999946
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation SB_TT_plain-dmb Sometimes 54 24999946
+Time SB_TT_plain-dmb 2.55
+MEMMODEL mask=3 arm_sets=0 tso_sets=500
+# rc=0
+Tue Nov 10 14:18:05 UTC 2026

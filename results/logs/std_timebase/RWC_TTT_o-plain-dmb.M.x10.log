@@ -1,0 +1,18 @@
+Test RWC_TTT_o-plain-dmb Allowed
+Histogram (7 states)
+23174841:>1:X0=0; 1:X1=0; 2:X0=0;
+11158720:>1:X0=0; 1:X1=1; 2:X0=0;
+15971333:>1:X0=1; 1:X1=1; 2:X0=0;
+16599009:>1:X0=0; 1:X1=0; 2:X0=1;
+8565622:>1:X0=1; 1:X1=0; 2:X0=1;
+12664 :>1:X0=0; 1:X1=1; 2:X0=1;
+24517811:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=34c95f55a09d02991c9ded798ee610ce
+Observation RWC_TTT_o-plain-dmb Never 0 100000000
+Time RWC_TTT_o-plain-dmb 55.68
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

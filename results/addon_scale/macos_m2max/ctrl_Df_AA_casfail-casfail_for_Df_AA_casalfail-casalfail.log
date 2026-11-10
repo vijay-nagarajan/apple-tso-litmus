@@ -1,0 +1,18 @@
+# host=m2max-macos model=Mac14,13 os=13.5 cmd: gen_screen/Df_AA_casfail-casfail.exe -a 4 -s 100000 -r 125 -st 7
+2026-11-09 12:11:53
+Test Df_AA_casfail-casfail Allowed
+Histogram (4 states)
+2660  *>0:X1=0; 0:X16=0; 1:X1=0; 1:X16=0;
+12498642:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+12498140:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+558   :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+Ok
+
+Witnesses
+Positive: 2660, Negative: 24997340
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is validated
+Hash=d4e59cf3d0a29e2ab7190a1eb692ae70
+Observation Df_AA_casfail-casfail Sometimes 2660 24997340
+Time Df_AA_casfail-casfail 1.26
+# rc=0
+2026-11-09 12:11:55

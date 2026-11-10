@@ -1,0 +1,22 @@
+# host=m2-linux machine=m2 placement=U cpus=all role=test cmd: ./fwd3_str-ldapr_TTT.exe -a 3 -s 100000 -r 50000 -st 7
+2026-11-09T15:50:19-07:00
+Test fwd3_str-ldapr_TTT Allowed
+Histogram (7 states)
+878881904:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+839224089:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+326790079:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+988995944:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1249077:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+666316699:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+1298542208:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 5000000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=e7f2ae412d27f1834ad51de76f349d20
+Observation fwd3_str-ldapr_TTT Never 0 5000000000
+Time fwd3_str-ldapr_TTT 5099.71
+MEMMODEL mask=7 arm_sets=0 tso_sets=150000
+# rc=0
+2026-11-09T17:15:19-07:00

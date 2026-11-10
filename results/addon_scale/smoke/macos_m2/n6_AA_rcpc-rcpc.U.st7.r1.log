@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./n6_AA_rcpc-rcpc.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:24 MST 2026
+Test n6_AA_rcpc-rcpc Allowed
+Histogram (3 states)
+99991 :>0:X0=1; 0:X1=2; [x]=1;
+99990 :>0:X0=1; 0:X1=0; [x]=2;
+19    :>0:X0=1; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=aacdfeda0ac424412a9c1a4d76307704
+Observation n6_AA_rcpc-rcpc Never 0 200000
+Time n6_AA_rcpc-rcpc 0.02
+# rc=0
+Tue Nov 10 07:16:24 MST 2026

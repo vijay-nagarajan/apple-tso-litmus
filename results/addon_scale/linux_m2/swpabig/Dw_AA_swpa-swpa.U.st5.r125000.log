@@ -1,0 +1,18 @@
+# host=m2-linux machine=m2 mode=unpinned placement=U cpus=all role=test cmd:  ./Dw_AA_swpa-swpa.exe -a 4 -s 100000 -r 125000 -st 5 
+2026-11-08T20:50:40-07:00
+Test Dw_AA_swpa-swpa Allowed
+Histogram (3 states)
+12497651010:>0:X1=1; 1:X1=0;
+12497462950:>0:X1=0; 1:X1=1;
+4886040:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=542bde607a64c733672a52b8a3c16e61
+Observation Dw_AA_swpa-swpa Never 0 25000000000
+Time Dw_AA_swpa-swpa 2825.35
+MEMMODEL mask=0 arm_sets=500000 tso_sets=0
+# rc=0
+2026-11-08T21:37:46-07:00

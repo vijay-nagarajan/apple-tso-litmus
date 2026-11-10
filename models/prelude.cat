@@ -1,0 +1,12 @@
+"Shared definitions for the Arm, TSO and compound models"
+
+include "cos.cat"            (* co, fr *)
+include "aarch64fences.cat"  (* A, L, Q, DMB.* *)
+include "aarch64deps.cat"    (* addr, data, ctrl between instructions *)
+
+let DMB-FULL = DMB.SY | DMB.ISH
+let DMB-LD   = DMB.LD | DMB.ISHLD
+let DMB-ST   = DMB.ST | DMB.ISHST
+let DSB-FULL = DSB.SY | DSB.ISH
+let DSB-LD   = DSB.LD | DSB.ISHLD
+let DSB-ST   = DSB.ST | DSB.ISHST

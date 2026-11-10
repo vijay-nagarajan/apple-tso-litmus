@@ -1,0 +1,15 @@
+Test Df_AA_llsca-llsca Allowed
+Histogram (4 states)
+395   *>0:X1=0; 1:X1=0;
+49993206:>0:X1=1; 1:X1=0;
+49990173:>0:X1=0; 1:X1=1;
+439   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 395, Negative: 99983818
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=089b3864967e8f601a0dec43430ad0d9
+Observation Df_AA_llsca-llsca Sometimes 395 99983818
+Time Df_AA_llsca-llsca 17.47
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

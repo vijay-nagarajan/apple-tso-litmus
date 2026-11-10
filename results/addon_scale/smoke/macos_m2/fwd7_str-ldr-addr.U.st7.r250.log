@@ -1,0 +1,22 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=control cmd: ./fwd7_str-ldr-addr.exe -a 3 -s 100000 -r 250 -st 7
+Tue Nov 10 07:16:20 MST 2026
+Test fwd7_str-ldr-addr Allowed
+Histogram (8 states)
+4249113:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+4088604:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11    *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+3949577:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+4475041:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+62    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+3856713:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+4380879:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 11, Negative: 24999989
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=3dbcf3da3d36fb071f3345758ae158a4
+Observation fwd7_str-ldr-addr Sometimes 11 24999989
+Time fwd7_str-ldr-addr 2.43
+# rc=0
+Tue Nov 10 07:16:22 MST 2026

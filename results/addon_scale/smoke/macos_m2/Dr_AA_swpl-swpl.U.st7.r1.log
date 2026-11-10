@@ -1,0 +1,17 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=test cmd: ./Dr_AA_swpl-swpl.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 07:16:16 MST 2026
+Test Dr_AA_swpl-swpl Allowed
+Histogram (3 states)
+99984 :>0:X0=1; 1:X0=0;
+99992 :>0:X0=0; 1:X0=1;
+24    :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=aa34d0f132f2a1fedd23923e4421f21c
+Observation Dr_AA_swpl-swpl Never 0 200000
+Time Dr_AA_swpl-swpl 0.03
+# rc=0
+Tue Nov 10 07:16:16 MST 2026

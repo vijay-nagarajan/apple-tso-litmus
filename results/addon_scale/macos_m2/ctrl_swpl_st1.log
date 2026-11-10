@@ -1,0 +1,18 @@
+# host=m2-macos model=Mac14,2 cpu=Apple M2 cmd: gen/Dw_AA_swpl-swpl.exe -a 4 -s 100000 -r 500 -st 1
+2026-11-08 11:17:37
+Test Dw_AA_swpl-swpl Allowed
+Histogram (4 states)
+15662585*>0:X1=0; 1:X1=0;
+43229861:>0:X1=1; 1:X1=0;
+41107497:>0:X1=0; 1:X1=1;
+57    :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 15662585, Negative: 84337415
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=20e887e081cac4c5a2a97298b07d41ea
+Observation Dw_AA_swpl-swpl Sometimes 15662585 84337415
+Time Dw_AA_swpl-swpl 5.40
+# rc=0
+2026-11-08 11:17:42

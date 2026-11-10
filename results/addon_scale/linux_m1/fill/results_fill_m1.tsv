@@ -1,0 +1,4 @@
+fill/std_user	Dw_AA_swpl-swpl	U	125	116973	25000000	arm_sets=500/tso_sets=0	3	3	7	control	all
+fill/std_user	Dr_AA_swpl-swpl	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	3381	3381	7	test	all
+fill/std_user	SB_AA_plain-dmb	U	125	383	25000000	arm_sets=500/tso_sets=0	4	4	7	control	all
+fill/std_user	SB_AA_dmb-dmb	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	3705	3705	7	test	all

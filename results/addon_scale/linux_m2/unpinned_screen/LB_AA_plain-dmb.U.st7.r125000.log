@@ -1,0 +1,18 @@
+# host=m2-linux machine=m2 placement=U cpus=all role=test cmd: ./LB_AA_plain-dmb.exe -a 4 -s 100000 -r 125000 -st 7
+2026-11-09T10:39:00-07:00
+Test LB_AA_plain-dmb Allowed
+Histogram (3 states)
+4177264:>0:X0=0; 1:X0=0;
+12497085754:>0:X0=1; 1:X0=0;
+12498736982:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 25000000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=e3004a3f7b5d0fa8c3604153c63139e6
+Observation LB_AA_plain-dmb Never 0 25000000000
+Time LB_AA_plain-dmb 2741.13
+MEMMODEL mask=0 arm_sets=500000 tso_sets=0
+# rc=0
+2026-11-09T11:24:41-07:00

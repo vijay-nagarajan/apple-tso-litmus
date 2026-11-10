@@ -1,0 +1,13 @@
+AArch64 "Compound Arm + TSO, Apple (M1 and M2)"
+
+catdep                       (* dependencies are computed by aarch64deps.cat *)
+include "prelude.cat"
+include "arm-ppo.cat"
+include "tso-ppo.cat"
+include "apple-ppo.cat"
+let MARK = ISB & ~range(po)                   (* a thread starting with ISB runs TSO *)
+let TSO  = MARK | range([MARK]; po)
+let ARM  = ~TSO
+let ppo = [ARM]; (arm-ppo-all | apple-all); [ARM]
+        | [TSO]; (tso-ppo-all | apple-all); [TSO]
+include "axioms.cat"

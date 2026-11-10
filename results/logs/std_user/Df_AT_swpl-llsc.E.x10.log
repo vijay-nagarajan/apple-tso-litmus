@@ -1,0 +1,15 @@
+Test Df_AT_swpl-llsc Allowed
+Histogram (4 states)
+47    *>0:X1=0; 1:X1=0;
+49999828:>0:X1=1; 1:X1=0;
+49998059:>0:X1=0; 1:X1=1;
+450   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 47, Negative: 99998337
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=61922db2a363131292dfbe2e14f73d53
+Observation Df_AT_swpl-llsc Sometimes 47 99998337
+Time Df_AT_swpl-llsc 5.72
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

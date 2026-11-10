@@ -1,0 +1,14 @@
+Test LB_AT_dsbld-plain Allowed
+Histogram (3 states)
+1010  :>0:X0=0; 1:X0=0;
+49999891:>0:X0=1; 1:X0=0;
+49999099:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=861cdf2b2479d664432e2831fccf886b
+Observation LB_AT_dsbld-plain Never 0 100000000
+Time LB_AT_dsbld-plain 5.99
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

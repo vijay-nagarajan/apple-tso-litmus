@@ -1,0 +1,15 @@
+Test SB_AT_stlr.ldapr-dmb Allowed
+Histogram (4 states)
+1666  *>0:X0=0; 1:X0=0;
+49999896:>0:X0=1; 1:X0=0;
+49998325:>0:X0=0; 1:X0=1;
+113   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 1666, Negative: 99998334
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=55b02f8e2d274b59b4745b22bc91bd21
+Observation SB_AT_stlr.ldapr-dmb Sometimes 1666 99998334
+Time SB_AT_stlr.ldapr-dmb 16.72
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

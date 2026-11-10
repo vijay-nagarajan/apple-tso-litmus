@@ -1,0 +1,10 @@
+AArch64 fwd9_stxr-ldar_T
+{ 0:X10=x; 0:X11=y; 0:X12=1; 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; 1:X12=1; 1:X13=2; 1:X14=z; 1:X15=w; 2:X10=x; 2:X11=y; 2:X12=1; 2:X13=2; 2:X14=z; 2:X15=w; }
+ P0                 | P1             | P2 ;
+ ISB                | STR X12,[X11]  | LDAPR X0,[X11] ;
+ LDXR X3,[X10]      |                | LDR X1,[X10] ;
+ STXR W4,X12,[X10]  |                | ;
+ LDAR X0,[X10]      |                | ;
+ LDR X1,[X11]       |                | ;
+filter (0:X4=0)
+exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0)

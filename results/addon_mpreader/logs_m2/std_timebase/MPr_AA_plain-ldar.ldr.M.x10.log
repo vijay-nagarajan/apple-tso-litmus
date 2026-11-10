@@ -1,0 +1,15 @@
+Test MPr_AA_plain-ldar.ldr Allowed
+Histogram (4 states)
+49998882:>1:X0=0; 1:X1=0;
+7     *>1:X0=1; 1:X1=0;
+15793 :>1:X0=0; 1:X1=1;
+49985318:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 7, Negative: 99999993
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=24a1f0f8399d7acefd64380c44328998
+Observation MPr_AA_plain-ldar.ldr Sometimes 7 99999993
+Time MPr_AA_plain-ldar.ldr 16.79
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

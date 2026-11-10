@@ -1,0 +1,14 @@
+Test LB_AA_ldr.stlr-dmb Allowed
+Histogram (3 states)
+426926:>0:X0=0; 1:X0=0;
+49926871:>0:X0=1; 1:X0=0;
+49646203:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=cb75da8018fdbedaa8513d182481ba12
+Observation LB_AA_ldr.stlr-dmb Never 0 100000000
+Time LB_AA_ldr.stlr-dmb 10.03
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

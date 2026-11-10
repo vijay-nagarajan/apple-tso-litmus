@@ -1,0 +1,19 @@
+# host=m2-macos setup=macos_m2max placement=U cpus=all role=control cmd: ./n6_AA_plain-rcpc.exe -a 4 -s 100000 -r 125 -st 7
+Tue Nov 10 07:16:23 MST 2026
+Test n6_AA_plain-rcpc Allowed
+Histogram (5 states)
+84    *>0:X0=1; 0:X1=0; [x]=1;
+12497852:>0:X0=1; 0:X1=2; [x]=1;
+12500719:>0:X0=1; 0:X1=0; [x]=2;
+1342  :>0:X0=1; 0:X1=2; [x]=2;
+3     :>0:X0=2; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 84, Negative: 24999916
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=75406288b5b62b9a2e49c21c9fa59bec
+Observation n6_AA_plain-rcpc Sometimes 84 24999916
+Time n6_AA_plain-rcpc 1.07
+# rc=0
+Tue Nov 10 07:16:24 MST 2026

@@ -1,0 +1,14 @@
+Test LB_AA_dmbst-dmb Allowed
+Histogram (3 states)
+1505  :>0:X0=0; 1:X0=0;
+49999228:>0:X0=1; 1:X0=0;
+49999267:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=01addf73d7a383c9af8543f6fab2a1d3
+Observation LB_AA_dmbst-dmb Never 0 100000000
+Time LB_AA_dmbst-dmb 6.39
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

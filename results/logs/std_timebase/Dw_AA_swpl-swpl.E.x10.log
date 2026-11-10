@@ -1,0 +1,15 @@
+Test Dw_AA_swpl-swpl Allowed
+Histogram (4 states)
+1527859*>0:X1=0; 1:X1=0;
+49414949:>0:X1=1; 1:X1=0;
+49055258:>0:X1=0; 1:X1=1;
+1934  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 1527859, Negative: 98472141
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=20e887e081cac4c5a2a97298b07d41ea
+Observation Dw_AA_swpl-swpl Sometimes 1527859 98472141
+Time Dw_AA_swpl-swpl 10.23
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

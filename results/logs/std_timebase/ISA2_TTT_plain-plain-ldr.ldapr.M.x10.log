@@ -1,0 +1,18 @@
+Test ISA2_TTT_plain-plain-ldr.ldapr Allowed
+Histogram (7 states)
+17717241:>1:X0=0; 2:X0=0; 2:X1=0;
+13522100:>1:X0=1; 2:X0=0; 2:X1=0;
+15948539:>1:X0=0; 2:X0=1; 2:X1=0;
+189212:>1:X0=0; 2:X0=0; 2:X1=1;
+20418443:>1:X0=1; 2:X0=0; 2:X1=1;
+17654155:>1:X0=0; 2:X0=1; 2:X1=1;
+14550310:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=33e2d5f98c960f7216ce9fcb60887845
+Observation ISA2_TTT_plain-plain-ldr.ldapr Never 0 100000000
+Time ISA2_TTT_plain-plain-ldr.ldapr 53.33
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

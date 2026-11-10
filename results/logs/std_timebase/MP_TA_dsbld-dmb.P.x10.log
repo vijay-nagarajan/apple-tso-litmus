@@ -1,0 +1,14 @@
+Test MP_TA_dsbld-dmb Allowed
+Histogram (3 states)
+49996970:>1:X0=0; 1:X1=0;
+8148  :>1:X0=0; 1:X1=1;
+49994882:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=6dcd45a189c7ac23ddb5da7efc8a8161
+Observation MP_TA_dsbld-dmb Never 0 100000000
+Time MP_TA_dsbld-dmb 8.30
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

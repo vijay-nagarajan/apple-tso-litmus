@@ -1,0 +1,11 @@
+2026-11-09T19:51:10+00:00 START m1 n6_AA_plain-rcpc [control U st7] r=125
+2026-11-09T20:02:20+00:00 END m1 n6_AA_plain-rcpc [control U st7] Observation n6_AA_plain-rcpc Sometimes 7 24999993 670s
+2026-11-09T20:02:20+00:00 START m1 n6_AA_rcpc-rcpc [test U st7] r=125000
+2026-11-09T21:59:10+00:00 END m1 n6_AA_rcpc-rcpc [test U st7] Observation n6_AA_rcpc-rcpc Never 0 25000000000 7010s
+2026-11-09T21:59:10+00:00 START m1 n6_AT_plain-plain [control U st7] r=125
+2026-11-09T22:51:57+00:00 END m1 n6_AT_plain-plain [control U st7] Observation n6_AT_plain-plain Sometimes 62 24999938 3167s
+2026-11-09T22:51:57+00:00 START m1 n6_AT_rcpc-plain [test U st7] r=125000
+2026-11-09T23:42:42+00:00 END m1 n6_AT_rcpc-plain [test U st7] Observation n6_AT_rcpc-plain Never 0 25000000000 3045s
+2026-11-09T23:42:42+00:00 ALLDONE n6
+n6_AA_rcpc-rcpc hits 0 / 2.5e+10
+n6_AT_rcpc-plain hits 0 / 2.5e+10

@@ -1,0 +1,18 @@
+Test RWC_TAT_o-addr-stlr.ldar Allowed
+Histogram (7 states)
+16948773:>1:X0=0; 1:X1=0; 2:X0=0;
+15978503:>1:X0=0; 1:X1=1; 2:X0=0;
+18234168:>1:X0=1; 1:X1=1; 2:X0=0;
+18359956:>1:X0=0; 1:X1=0; 2:X0=1;
+13491351:>1:X0=1; 1:X1=0; 2:X0=1;
+31    :>1:X0=0; 1:X1=1; 2:X0=1;
+16987218:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=3ac61306623e891adea6a4acc8bbfb32
+Observation RWC_TAT_o-addr-stlr.ldar Never 0 100000000
+Time RWC_TAT_o-addr-stlr.ldar 23.93
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

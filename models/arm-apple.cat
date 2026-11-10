@@ -1,0 +1,8 @@
+AArch64 "Arm, Apple (M1 and M2)"
+
+catdep                       (* dependencies are computed by aarch64deps.cat *)
+include "prelude.cat"
+include "arm-ppo.cat"
+include "apple-ppo.cat"
+let ppo = arm-ppo-all | apple-all
+include "axioms.cat"

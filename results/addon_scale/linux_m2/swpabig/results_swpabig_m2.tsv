@@ -1,0 +1,8 @@
+scale/std_user	Dw_AA_swpl-swpl	U	125	1453933	25000000	arm_sets=500/tso_sets=0	3	3	1	control	all
+scale/std_user	Dw_AA_swpa-swpa	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2889	2889	1	test	all
+scale/std_user	Dw_AA_swpl-swpl	U	125	55826	25000000	arm_sets=500/tso_sets=0	2	2	3	control	all
+scale/std_user	Dw_AA_swpa-swpa	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2849	2849	3	test	all
+scale/std_user	Dw_AA_swpl-swpl	U	125	79157	25000000	arm_sets=500/tso_sets=0	3	3	5	control	all
+scale/std_user	Dw_AA_swpa-swpa	U	125000	0	25000000000	arm_sets=500000/tso_sets=0	2826	2826	5	test	all
+scale/std_user	Dw_AA_swpl-swpl	U	125	253661	25000000	arm_sets=500/tso_sets=0	2	2	7	control	all
+scale/std_user	Dw_AA_swpa-swpa	U	125000	4	25000000000	arm_sets=500000/tso_sets=0	2837	2837	7	test	all

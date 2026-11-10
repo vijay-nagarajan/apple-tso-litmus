@@ -1,0 +1,19 @@
+Test n7_TTA_plain-plain-plain Allowed
+Histogram (8 states)
+28547896:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+20220171:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+4197  *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+11419384:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+13142928:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+483   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+10790718:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+15874223:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 4197, Negative: 99995803
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=8dbabebfb29eaf06f869376a230db7e0
+Observation n7_TTA_plain-plain-plain Sometimes 4197 99995803
+Time n7_TTA_plain-plain-plain 25.72
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

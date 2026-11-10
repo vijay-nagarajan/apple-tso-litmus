@@ -1,0 +1,14 @@
+Test MP_TT_dsbst-plain Allowed
+Histogram (3 states)
+49997375:>1:X0=0; 1:X1=0;
+5395  :>1:X0=0; 1:X1=1;
+49997230:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=182ca062241fbfe92dbdd0241feb839f
+Observation MP_TT_dsbst-plain Never 0 100000000
+Time MP_TT_dsbst-plain 8.46
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

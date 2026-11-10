@@ -1,0 +1,16 @@
+scale/std_user	Dw_AA_swpl-swpl	U	125	30141	25000000	-	1	1	7	control	all
+scale/std_user	Dw_AA_swpal-swpal	U	1	0	200000	-	1	1	7	test	all
+scale/std_user	Dr_AA_swpl-swpl	U	1	0	200000	-	0	0	7	test	all
+scale/std_user	SB_AA_plain-dmb	U	125	529	25000000	-	1	1	7	control	all
+scale/std_user	SB_AA_dmb-dmb	U	1	0	200000	-	0	0	7	test	all
+scale/std_user	Dw_AA_swpa-swpa	U	1	0	200000	-	1	1	7	test	all
+scale/std_user	SB_AA_dmbld-dmb	U	1	0	200000	-	0	0	7	test	all
+scale/std_user	SB_AA_dsbld-dmb	U	1	0	200000	-	0	0	7	test	all
+scale/std_user	LB_AA_plain-dmb	U	1	0	200000	-	0	0	7	test	all
+scale/std_user	Df_AA_casfail-casfail	U	125	204	25000000	-	1	1	7	control	all
+scale/std_user	Df_AA_casalfail-casalfail	U	1	0	200000	-	1	1	7	test	all
+scale/std_user	fwd7_str-ldr-addr	U	250	11	25000000	-	2	2	7	control	all
+scale/std_user	fwd3_str-ldapr	U	1	0	100000	-	1	1	7	test	all
+scale/std_user	fwd6_str-ldar	U	1	0	100000	-	0	0	7	test	all
+scale/std_user	n6_AA_plain-rcpc	U	125	84	25000000	-	1	1	7	control	all
+scale/std_user	n6_AA_rcpc-rcpc	U	1	0	200000	-	0	0	7	test	all

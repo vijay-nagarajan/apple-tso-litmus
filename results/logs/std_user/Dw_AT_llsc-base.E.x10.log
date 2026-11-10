@@ -1,0 +1,14 @@
+Test Dw_AT_llsc-base Allowed
+Histogram (3 states)
+15609 *>0:X1=0; 1:X0=0;
+49999950:>0:X1=1; 1:X0=0;
+49984412:>0:X1=0; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 15609, Negative: 99984362
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=20d953c43a34829ed454e1432c9505c4
+Observation Dw_AT_llsc-base Sometimes 15609 99984362
+Time Dw_AT_llsc-base 5.41
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

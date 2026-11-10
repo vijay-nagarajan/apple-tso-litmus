@@ -1,0 +1,15 @@
+Test n6_TA_plain-rcpc Allowed
+Histogram (4 states)
+4     *>0:X0=1; 0:X1=0; [x]=1;
+49999949:>0:X0=1; 0:X1=2; [x]=1;
+49999997:>0:X0=1; 0:X1=0; [x]=2;
+50    :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 4, Negative: 99999996
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=75406288b5b62b9a2e49c21c9fa59bec
+Observation n6_TA_plain-rcpc Sometimes 4 99999996
+Time n6_TA_plain-rcpc 6.05
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

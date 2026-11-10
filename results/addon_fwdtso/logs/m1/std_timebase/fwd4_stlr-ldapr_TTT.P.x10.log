@@ -1,0 +1,18 @@
+Test fwd4_stlr-ldapr_TTT Allowed
+Histogram (7 states)
+389492:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+38626191:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+14368145:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+15182246:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+80    :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+31159278:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+274568:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=71088bcea07c8d1db0bd43fde7125d36
+Observation fwd4_stlr-ldapr_TTT Never 0 100000000
+Time fwd4_stlr-ldapr_TTT 26.10
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

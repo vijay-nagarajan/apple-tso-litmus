@@ -1,0 +1,7 @@
+AArch64 SB_TA_stlr.ldapr-dmb
+{ int64_t x; int64_t y; int64_t z; int64_t w; 0:X10=x; 0:X11=y; int64_t 0:X12=1; int64_t 0:X13=2; 0:X14=z; 0:X15=w; 1:X10=x; 1:X11=y; int64_t 1:X12=1; int64_t 1:X13=2; 1:X14=z; 1:X15=w; int64_t 0:X0; int64_t 1:X0; }
+ P0              | P1 ;
+ STLR X12,[X10]  | STR X12,[X11] ;
+ LDAPR X0,[X11]  | DMB ISH ;
+                 | LDR X0,[X10] ;
+exists (0:X0=0 /\ 1:X0=0)

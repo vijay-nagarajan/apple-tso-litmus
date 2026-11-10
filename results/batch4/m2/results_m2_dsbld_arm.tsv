@@ -1,0 +1,12 @@
+std_user	SB_AA_dsbld-dsbld	E	10	0	100000000	arm_sets=2000/tso_sets=0	7	7
+std_user	sbld_AA_plain-dmbish	E	10	19	100000000	arm_sets=2000/tso_sets=0	6	6
+std_user	SB_AA_dsbld-dsbld	M	10	0	100000000	arm_sets=2000/tso_sets=0	17	17
+std_user	sbld_AA_plain-dmbish	M	10	232	100000000	arm_sets=2000/tso_sets=0	14	14
+std_user	SB_AA_dsbld-dsbld	P	10	0	100000000	arm_sets=2000/tso_sets=0	7	7
+std_user	sbld_AA_plain-dmbish	P	10	0	100000000	arm_sets=2000/tso_sets=0	6	6
+std_timebase	SB_AA_dsbld-dsbld	E	10	0	100000000	arm_sets=2000/tso_sets=0	10	10
+std_timebase	sbld_AA_plain-dmbish	E	10	260608	100000000	arm_sets=2000/tso_sets=0	9	9
+std_timebase	SB_AA_dsbld-dsbld	M	10	0	100000000	arm_sets=2000/tso_sets=0	17	17
+std_timebase	sbld_AA_plain-dmbish	M	10	26787	100000000	arm_sets=2000/tso_sets=0	17	17
+std_timebase	SB_AA_dsbld-dsbld	P	10	0	100000000	arm_sets=2000/tso_sets=0	8	8
+std_timebase	sbld_AA_plain-dmbish	P	10	124755	100000000	arm_sets=2000/tso_sets=0	8	8

@@ -1,0 +1,8 @@
+AArch64 SB_TA_llsc.swp-dmb
+{ 0:X10=x; 0:X11=y; 0:X12=1; 0:X13=2; 0:X14=z; 0:X15=w; 0:X16=0; 1:X10=x; 1:X11=y; 1:X12=1; 1:X13=2; 1:X14=z; 1:X15=w; }
+ P0                 | P1 ;
+ LDXR X7,[X10]      | STR X12,[X11] ;
+ STXR W8,X12,[X10]  | DMB ISH ;
+ SWP X16,X0,[X11]   | LDR X0,[X10] ;
+filter (0:X8=0)
+exists (0:X0=0 /\ 1:X0=0)

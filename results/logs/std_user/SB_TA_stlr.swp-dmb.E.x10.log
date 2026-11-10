@@ -1,0 +1,14 @@
+Test SB_TA_stlr.swp-dmb Allowed
+Histogram (3 states)
+49999581:>0:X0=1; 1:X0=0;
+49999592:>0:X0=0; 1:X0=1;
+827   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=a940a1659c88acc8c864c7dffb507371
+Observation SB_TA_stlr.swp-dmb Never 0 100000000
+Time SB_TA_stlr.swp-dmb 7.22
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

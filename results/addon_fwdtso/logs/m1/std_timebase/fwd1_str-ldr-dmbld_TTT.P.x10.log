@@ -1,0 +1,18 @@
+Test fwd1_str-ldr-dmbld_TTT Allowed
+Histogram (7 states)
+3345417:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+29843698:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+16668813:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+19738606:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+2308  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+22922801:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+7478357:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=d021bc4f68dcf964e0be486c33a7d38b
+Observation fwd1_str-ldr-dmbld_TTT Never 0 100000000
+Time fwd1_str-ldr-dmbld_TTT 26.61
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

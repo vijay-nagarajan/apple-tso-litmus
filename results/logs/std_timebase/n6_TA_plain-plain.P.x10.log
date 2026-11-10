@@ -1,0 +1,15 @@
+Test n6_TA_plain-plain Allowed
+Histogram (4 states)
+124531*>0:X0=1; 0:X1=0; [x]=1;
+49875394:>0:X0=1; 0:X1=2; [x]=1;
+49999977:>0:X0=1; 0:X1=0; [x]=2;
+98    :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 124531, Negative: 99875469
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=d5f067d36550f6b68ac7059a5d0db6f2
+Observation n6_TA_plain-plain Sometimes 124531 99875469
+Time n6_TA_plain-plain 8.57
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

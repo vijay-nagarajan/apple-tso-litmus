@@ -1,0 +1,18 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=test cmd: ./n6_AT_rcpc-plain.exe -a 4 -s 100000 -r 1 -st 7
+Tue Nov 10 14:18:20 UTC 2026
+Test n6_AT_rcpc-plain Allowed
+Histogram (3 states)
+99999 :>0:X0=1; 0:X1=2; [x]=1;
+99995 :>0:X0=1; 0:X1=0; [x]=2;
+6     :>0:X0=1; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 200000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=6fa89b3ba1d5d2fa1644af8bcc0e18a2
+Observation n6_AT_rcpc-plain Never 0 200000
+Time n6_AT_rcpc-plain 0.04
+MEMMODEL mask=2 arm_sets=2 tso_sets=2
+# rc=0
+Tue Nov 10 14:18:20 UTC 2026

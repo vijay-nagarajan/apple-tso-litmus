@@ -1,0 +1,9 @@
+AArch64 "TSO for Arm instructions, Apple (M1 and M2)"
+
+catdep                       (* dependencies are computed by aarch64deps.cat *)
+include "prelude.cat"
+include "arm-ppo.cat"
+include "tso-ppo.cat"
+include "apple-ppo.cat"
+let ppo = tso-ppo-all | apple-all
+include "axioms.cat"

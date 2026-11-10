@@ -1,0 +1,7 @@
+X86 MP_TT_dmb-plain
+{ w=0; x=0; y=0; z=0; }
+P0            | P1            ;
+MOV [x],$1    | MOV EAX,[y]   ;
+MFENCE        | MOV EBX,[x]   ;
+MOV [y],$1    |               ;
+exists (1:EAX=1 /\ 1:EBX=0)

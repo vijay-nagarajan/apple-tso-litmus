@@ -1,0 +1,18 @@
+Test ISA2_AAT_str.stlr-addr-ldr.ldapr Allowed
+Histogram (7 states)
+3528624:>1:X0=0; 2:X0=0; 2:X1=0;
+3597  :>1:X0=1; 2:X0=0; 2:X1=0;
+46389621:>1:X0=0; 2:X0=1; 2:X1=0;
+203924:>1:X0=0; 2:X0=0; 2:X1=1;
+47896143:>1:X0=1; 2:X0=0; 2:X1=1;
+1891083:>1:X0=0; 2:X0=1; 2:X1=1;
+87008 :>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=d273cb0350caf33898c080c5f428b8a6
+Observation ISA2_AAT_str.stlr-addr-ldr.ldapr Never 0 100000000
+Time ISA2_AAT_str.stlr-addr-ldr.ldapr 31.24
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

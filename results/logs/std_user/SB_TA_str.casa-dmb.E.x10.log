@@ -1,0 +1,14 @@
+Test SB_TA_str.casa-dmb Allowed
+Histogram (3 states)
+49999358:>0:X0=1; 1:X0=0;
+49999779:>0:X0=0; 1:X0=1;
+863   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=39332a2f687385855ca88d1fa572d566
+Observation SB_TA_str.casa-dmb Never 0 100000000
+Time SB_TA_str.casa-dmb 7.25
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

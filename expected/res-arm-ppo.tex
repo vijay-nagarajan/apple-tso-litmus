@@ -1,0 +1,36 @@
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.11\linewidth}>{\raggedright\arraybackslash}Xllll>{\raggedright\arraybackslash}p{0.24\linewidth}@{}}
+\toprule
+Pair & Mechanism & Shape & \armw{Arm} & M1 & M2 & Control: M1 / M2\\
+\midrule
+store $\to$ store & \ins{STR};\ins{STLR}, \ins{STLR};\ins{STLR}, \ins{DMB}, \ins{DMB ST}, \ins{DSB}, \ins{DSB ST} (6) & MP & ordered & \rfz & \rfz & plain: \rsn{$10^{2}$} / \rux; \tsow{TSO} partner: \rsn{$10^{1}$} / \rsn{$10^{1}$}\\
+ & plain & MP & not ordered & \rsn{$10^{2}$} & \rux & \\
+ & \ins{STLR};\ins{STR} & MP & not ordered & \rux & \rux & \\
+ & \ins{DMB LD}, \ins{DSB LD} & MP & not ordered & \rst{A2} & \rst{A2} & \\
+\addlinespace
+load $\to$ load & acquire first, \ins{DMB}, \ins{DMB LD}, \ins{DSB}, \ins{DSB LD}, address, control and \ins{ISB} (12) & MP & ordered & \rfz & \rfz & plain: \rsn{$10^{2}$} / \rsn{$10^{0}$}\\
+ & plain; \ins{LDR};\ins{LDAPR}; \ins{LDR};\ins{LDAR}; \ins{DMB ST} & MP & not ordered & \rsn{$10^{2}$} & \rsn{$10^{0}$--$10^{1}$} & \\
+ & control & MP & not ordered & \rsn{$10^{1}$} & \rsn{$10^{1}$} & \\
+ & \ins{DSB ST} & MP & not ordered & \rux & \rux & \\
+\addlinespace
+load $\to$ store & release or acquire, \ins{DMB}, \ins{DMB LD}, \ins{DSB}, \ins{DSB LD}, dependencies (13) & LB & ordered & \rfz & \rfz & plain: \rst{A3} / \rst{A3}\\
+ & plain, \ins{DMB ST}, \ins{DSB ST} & LB & not ordered & \rst{A3} & \rst{A3} & \\
+\addlinespace
+store $\to$ load & \ins{STLR};\ins{LDAR}, \ins{DMB}, \ins{DSB}, \ins{DSB ST} (4) & SB & ordered & \rfz & \rfz & plain: \rsn{$10^{6}$} / \rsn{$10^{5}$}\\
+ & plain; \ins{STR};\ins{LDAPR}; \ins{STR};\ins{LDAR}; \ins{DMB ST} & SB & not ordered & \rsn{$10^{6}$} & \rsn{$10^{5}$--$10^{6}$} & \\
+ & \ins{STLR};\ins{LDR}; \ins{STLR};\ins{LDAPR} & SB & not ordered & \rsn{$10^{6}$--$10^{7}$} & \rsn{$10^{5}$--$10^{6}$} & \\
+ & \ins{DMB LD}, \ins{DSB LD} & SB & not ordered & \rst{A2} & \rst{A2} & \\
+\addlinespace
+same address & \ins{STLR};\ins{LDAR} & n7 & ordered & \rfz & \rfz & \ins{STLR};\ins{LDR}: \rsn{$10^{3}$} / \rsn{$10^{4}$}\\
+ & \ins{STR};\ins{LDR} & n7 & not ordered & \rsn{$10^{4}$} & \rsn{$10^{4}$} & \\
+ & \ins{STLR};\ins{LDR} & n7 & not ordered & \rsn{$10^{3}$} & \rsn{$10^{4}$} & \\
+ & \ins{STXR};\ins{LDR} & n7 & not ordered & \rsn{$10^{3}$--$10^{4}$} & \rsn{$10^{5}$} & \\
+ & \ins{STR}, \ins{STLR} or \ins{STXR}, then \ins{LDAPR} or \ins{LDAR} & n7 & not ordered & \rst{A1} & \rst{A1} & \\
+\bottomrule
+\end{tabularx}
+\caption{The Arm rows of preserved program order on the two machines, every thread in Arm mode, $6\times10^8$ iterations of each test on each machine. An entry is the order of magnitude of the number of times the outcome appeared ($10^k$: from $10^k$ to $10^{k+1}-1$; a range spans the row's tests). An ordered row's control is the same test with the pair left plain; on the M2, the store $\to$ store control is the same test with a TSO-mode partner, since in these runs it appeared only with that partner (\cref{sec:compound-partner}). Shading: \rfz\ and \rsn{$10^{4}$}, the machines agree with the model (forbidden and never seen, allowed and seen); \rst{A2}, allowed by the model but never seen, and forbidden by A2 (\cref{sec:models-apple}): the machines are stronger; \rux, allowed but never seen, and no order of the machines forbids it. No forbidden outcome was seen. The n7 tests~\cite{x86tso-tphols} order Thread~0's last two loads by an acquire or an address dependency, so that on Arm only a read-back of the store before it is visible can produce the outcome.}
+\label{tab:arm-results}
+\end{table}

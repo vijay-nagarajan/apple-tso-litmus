@@ -1,0 +1,8 @@
+AArch64 "TSO for Arm instructions"
+
+catdep                       (* dependencies are computed by aarch64deps.cat *)
+include "prelude.cat"
+include "arm-ppo.cat"
+include "tso-ppo.cat"
+let ppo = tso-ppo-all
+include "axioms.cat"

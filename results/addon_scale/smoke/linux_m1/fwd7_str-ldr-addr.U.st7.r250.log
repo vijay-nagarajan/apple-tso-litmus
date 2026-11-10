@@ -1,0 +1,23 @@
+# host=m1-linux setup=linux_m1 placement=U cpus=all role=control cmd: ./fwd7_str-ldr-addr.exe -a 3 -s 100000 -r 250 -st 7
+Tue Nov 10 14:18:08 UTC 2026
+Test fwd7_str-ldr-addr Allowed
+Histogram (8 states)
+6627399:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+3541741:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+103320*>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+2430779:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+5275433:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+280   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+2484330:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+4536718:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 103320, Negative: 24896680
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=3dbcf3da3d36fb071f3345758ae158a4
+Observation fwd7_str-ldr-addr Sometimes 103320 24896680
+Time fwd7_str-ldr-addr 6.49
+MEMMODEL mask=0 arm_sets=750 tso_sets=0
+# rc=0
+Tue Nov 10 14:18:14 UTC 2026
