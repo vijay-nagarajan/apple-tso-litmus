@@ -10,9 +10,9 @@ The 936 tests are 658 generated and 278 written by hand: the 246 hand-written te
 | 2 | Every herd verdict, and the model files against herd's own Arm and x86-TSO models | Python 3, herdtools7 7.58 | minutes |
 | 3 | The hardware results themselves | An Apple M1 or M2 running Asahi Linux (Sec 8 also: an M2 Max under macOS), litmus7 7.58, gcc | days |
 
-`sh reproduce.sh [L1|L2|all]` runs levels 1 and 2 and prints `PASS` or `FAIL` for every table, every Sec 8 run and every
-quoted number, with a diff for a table that differs from `expected/`; `NOTE` marks a sentence whose wording is approximate,
-with the computed values. It exits 1 on any `FAIL`.
+`sh reproduce.sh [L1|L2|all]` runs levels 1 and 2 and prints `PASS` or `FAIL` for every table, every Sec 8 run, every
+quoted number and every group of raw rows checked against their logs, with a diff for a table that differs from `expected/`;
+`NOTE` marks a sentence whose wording is approximate, with the computed values, or a reused cell that has no log. It exits 1 on any `FAIL`.
 
 ## Contents
 
@@ -35,11 +35,12 @@ tests/
 results/
   results_m1.tsv, results_m2.tsv   raw litmus7 rows of the runs of this suite
   reuse_m1.tsv, reuse_m2.tsv       tests whose six cells were already run, identically, in an earlier batch, and where
-  batch4/                          the raw rows of that earlier batch that reuse_*.tsv points to
-  addon_swpal/                     raw rows of the SWPAL add-on test
+  batch4/                          the raw rows of that earlier batch that reuse_*.tsv points to, and logs/{m1,m2}/ the
+                                   litmus7 output behind each reused cell (reuse_logs.tsv lists them)
+  addon_swpal/                     raw rows and logs (logs = M1, logs_m2 = M2) of the SWPAL add-on test
   addon_fwdtso/                    raw rows, herd.tsv verdicts and logs/{m1,m2} of the 26 fwd*_TTT tests
   addon_casfail/                   raw rows, herd.tsv verdicts and logs/{m1,m2} of the 5 failing-CAS tests
-  addon_mpreader/                  raw rows and logs of a rerun of MP_AA_plain-dmb (as MPr_AA_plain-dmb, the same program),
+  addon_mpreader/                  raw rows and logs (logs = M1, logs_m2 = M2) of a rerun of MP_AA_plain-dmb (as MPr_AA_plain-dmb, the same program),
                                    quoted in Sec 4.3 and 7.1: 49 on the M1 and 26 on the M2
   addon_scale/                     Sec 8 (tab:scale), the long unpinned runs at stride 7, one directory per setup and campaign:
     linux_m1/, linux_m2/             unpinned_screen/ (the claim tests and SWPAL; SWPA on the M1), fill/ (SWPL load, SB DMB;
@@ -47,10 +48,14 @@ results/
                                      the M2 Linux SWPA cell and footnote a) and swpa_st7_chunks/ (SWPA 25 x 1e9, Nov 9: 5 hits
                                      in 9.1e6 overlaps, a replication not used in the table); each with its rows (.tsv) and logs
     macos_m2max/                     M2 Max (Mac14,13) under macOS: the AA tests and their controls, logs only
-    macos_m2/                        M2 MacBook Air under macOS: SWPA at 4 strides, 34 in 1e11 (Sec 5.3), logs only
-  logs/                            litmus7 output of every run
+    macos_m2/                        M2 MacBook Air under macOS, logs only (progress.txt lists every run): SWPA at 4 strides,
+                                     34 in 1e11 (Sec 5.3); LDADDA and CASA at strides 5 and 7, 5e9 each (2 and 4 hits; Sec 5.3
+                                     "LDADDA and CASA show it too"); the SWP and SWPL controls (ctrl_*); and wr_SWPA_june_default,
+                                     the same SWPA Dekker from an earlier generator at the default stride, 4e10, 3 hits (not
+                                     used in the report)
+  logs/m1/, logs/m2/               litmus7 output of every run of this suite, one log per row of results_<m>.tsv
   cells.tsv                        per test, machine and cell: hits and iterations (written by scripts/cells.py)
-scripts/     cells.py, make_tables.py, scale_table.py, check_prose.py (level 1), check_verdicts.py and translate_x86.py (level 2)
+scripts/     cells.py, make_tables.py, scale_table.py, check_prose.py, check_logs.py (level 1), check_verdicts.py and translate_x86.py (level 2)
 hw/          generation and run scripts (level 3); hw/scale/ for the long runs of Sec 8
 generator/   the scripts that generated and selected the tests (for inspection)
 expected/    the tables as they appear in the report (res-*.tex); add the report's section sources as expected/sections/
@@ -106,9 +111,12 @@ mkdir -p ../tables
 python3 make_tables.py ../tables
 python3 scale_table.py ../tables
 python3 check_prose.py
+python3 check_logs.py
 ```
 
 and compare `tables/res-*.tex` with `expected/`.
+`check_logs.py` recomputes every counted row from its litmus7 log: the main suite on both machines, the reused batch4
+cells and the add-ons. A row matches when the log's `Observation` line gives its hits and iterations.
 
 `cells.py` collects every counted row into `results/cells.tsv`, taking a reused test's rows from `results/batch4/`. `make_tables.py` writes the tables of Sections 5 to 7. Each cell of a table names the tests behind it, and the script stops if a test's herd verdict disagrees with its row; it also prints the comparisons quoted in the text (each row with a partner of each mode, and the summaries of the three- and four-thread tables). The `diff` should print nothing. `make_tables.py` also prints, for the five failing-CAS tests of `results/addon_casfail/`, each test's total and magnitude on each machine (Sec 5.3: a failing CASAL 0 on both, a failing CAS, CASA or CASL 10^4 to 10^5 on the M1 and 10^4 on the M2), and the violations (a test forbidden by `compound-apple.cat` and seen) and missing machine data over the add-ons, both of which should be `[]`. Table cells are written as status macros (`\rfz` forbidden and never seen, `\rsn{..}` allowed and seen, `\rst{A1}` allowed, never seen and forbidden by A1-A3, `\rux` allowed and never seen, unexplained, `\rvi{..}` forbidden and seen); the report's `macros.tex` defines how they are drawn.
 
@@ -142,7 +150,10 @@ The M1 is an Apple Mac mini (M1, 2020) in the GCC Compile Farm, running Debian w
 
 `hw/runlist_all.txt`, `hw/modes_all.tsv` and `hw/hooklist.txt` list all 936 tests (the 904 of `list.tsv`, then the 32 add-ons), so the harnesses cover every test and `runall.sh` can run any of them (a shorter runlist runs a subset).
 
-1. Generate the harnesses (on any machine with litmus7; set `L7` if litmus7 is not at `~/.opam/default/bin/litmus7`): `sh hw/mkharness.sh`. It runs litmus7 on `tests/typed/` for each synchronization mode and then `hw/patch_mode.py`, which inserts one call per test thread that sets its mode according to `hw/modes_all.tsv` and reads it back; a mismatch aborts the run, and every run prints how many times each mode was set.
+1. Generate the harnesses (on any machine with litmus7; set `L7` if litmus7 is not at `~/.opam/default/bin/litmus7`): `sh hw/mkharness.sh`. It runs litmus7 on `tests/typed/` for each synchronization mode and then `hw/patch_mode.py`, which inserts one call per test thread that sets its mode according to `hw/modes_all.tsv` and reads it back; a mismatch aborts the run, and every run prints how many times each mode was set. The read-back returns the kernel's
+per-thread setting, not the hardware bit; that the bit takes effect is shown by the results, e.g. IRIW with one reader
+moved from Arm to TSO mode (`IRIW_AAAA_o-o-addr-plain` against `IRIW_AAAT_o-o-addr-plain`) goes from 787 to 0 on the M1
+and from 11798 to 0 on the M2.
 2. Copy `hw/`, with `harness/` and `typed/`, to the machine.
 3. Run `sh runall.sh <m1|m2> runlist_all.txt` in `hw/`. It builds the harnesses, runs every test in its six cells at 10^8 iterations each, appends one row per cell to `results_<machine>.tsv`, and checks every row's mode count against `hooklist.txt`. It is resumable, and `touch STOP` stops it cleanly. On a shared machine, run it under a lock (`flock`) and at low priority (`nice`), as we did on the M1.
 
@@ -153,8 +164,8 @@ The full suite takes several days of machine time on each machine.
 `sh hw/scale/mkharness_scale.sh linux` (or `macos`) builds the harness of the tests and controls of `tests/scale_rows.tsv`
 with the flags of the report's runs (`-a 4 -mode std -barrier user -st 1`; on Linux the mode hook, on macOS the Arm-mode
 tests only). `sh hw/scale/run_scale.sh m1|m2|macos` (from `hw/`) then runs every cell of that setup unpinned at stride 7,
-each test after its control: about 13 hours on each Linux machine. On the M2 the SWPA test runs at strides 1, 3, 5 and 7
-(`SWPA_STRIDES` overrides; `SWPA_STRIDES="1 3 5 7"` on macOS reruns Sec 5.3's 1e11 run). `DRYRUN=1` lists the jobs, and `SMOKE=1` runs every test at `-r 1` (2e5 iterations; controls unchanged) to check the build, the mode hook and the log format in minutes. The long-run results in `results/addon_scale/` were produced by the scripts in our tree that this one replaces. Level 1 checks that `run_scale.sh` issues exactly the commands logged in those results (`scripts/check_scale_cmds.py`: program and litmus7 flags, every Sec 8 log; 24 jobs on m1, 30 on m2, 16 on macos). `SMOKE=1` was run end to end on 2026-11-10 on the M1 (Linux) and on the M2 under macOS: every job finished, every mode count matched, every control appeared (`results/addon_scale/smoke/`). Not yet smoke-run: the M2 under Linux and the M2 Max.
+each test after its control: about 16 hours on the M1 and 13 on the M2 (the logged run times). On the M2 the SWPA test runs at strides 1, 3, 5 and 7
+(`SWPA_STRIDES` overrides; `SWPA_STRIDES="1 3 5 7"` on macOS reruns Sec 5.3's 1e11 run). `DRYRUN=1` lists the jobs, and `SMOKE=1` runs every test at `-r 1` (2e5 iterations; controls unchanged) to check the build, the mode hook and the log format in minutes. The long-run results in `results/addon_scale/` were produced by the scripts in our tree that this one replaces. Level 1 checks that `run_scale.sh` issues exactly the commands logged in those results (`scripts/check_scale_cmds.py`: program and litmus7 flags, every Sec 8 log; 24 jobs on m1, 30 on m2, 16 on macos). `SMOKE=1` was run end to end on 2026-11-10 on the M1 (Linux) and on the M2 under macOS: every job finished, every mode count matched, every control appeared (`results/addon_scale/smoke/`). The script labels every macOS run `setup=macos_m2max`; the macOS smoke runs were on the M2 MacBook Air, as the `host` in each log header shows. Not yet smoke-run: the M2 under Linux and the M2 Max.
 To compare a rerun with the report: `SCALE_linux_m2=$PWD/hw/scale/out_linux_m2 python3 scripts/scale_table.py <dir>`
 (likewise `SCALE_linux_m1`, `SCALE_macos_m2max`). Rates of rare outcomes vary between runs and machines, so a rerun is
 expected to reproduce the zeros and the controls, not the exact counts.
@@ -163,3 +174,4 @@ expected to reproduce the zeros and the controls, not the exact counts.
 ## License
 
 Scripts: MIT (`LICENSE`). Tests, models, results and expected tables: CC BY 4.0 (`LICENSE-DATA`).
+

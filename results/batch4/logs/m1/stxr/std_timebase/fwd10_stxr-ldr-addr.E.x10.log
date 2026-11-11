@@ -1,0 +1,18 @@
+Test fwd10_stxr-ldr-addr Allowed
+Histogram (7 states)
+111460:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+37554372:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11289451:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+24885918:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+155119:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+19484068:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+6519585:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99999973
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=d01096d4f110f1bf3be59a231ea4b2d9
+Observation fwd10_stxr-ldr-addr Never 0 99999973
+Time fwd10_stxr-ldr-addr 39.85
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

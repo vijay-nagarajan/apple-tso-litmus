@@ -1,0 +1,15 @@
+Test sbld_AA_plain-dmbish Allowed
+Histogram (4 states)
+210524*>0:X0=0; 1:X0=0;
+49787766:>0:X0=1; 1:X0=0;
+49994191:>0:X0=0; 1:X0=1;
+7519  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 210524, Negative: 99789476
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation sbld_AA_plain-dmbish Sometimes 210524 99789476
+Time sbld_AA_plain-dmbish 14.20
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

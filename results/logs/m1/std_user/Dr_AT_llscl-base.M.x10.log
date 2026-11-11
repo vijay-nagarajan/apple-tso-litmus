@@ -1,0 +1,15 @@
+Test Dr_AT_llscl-base Allowed
+Histogram (4 states)
+1     *>0:X0=0; 1:X0=0;
+49954972:>0:X0=1; 1:X0=0;
+49998945:>0:X0=0; 1:X0=1;
+36    :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 99953953
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=822a2750d69a388fcda6d5ce7509295b
+Observation Dr_AT_llscl-base Sometimes 1 99953953
+Time Dr_AT_llscl-base 15.07
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

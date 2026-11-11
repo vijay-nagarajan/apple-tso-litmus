@@ -1,0 +1,15 @@
+Test Dr_AT_swpal-base Allowed
+Histogram (4 states)
+7     *>0:X0=0; 1:X0=0;
+49999953:>0:X0=1; 1:X0=0;
+49996382:>0:X0=0; 1:X0=1;
+3658  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 7, Negative: 99999993
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=dce1d09883ce369248bba1a1a9d2cd1a
+Observation Dr_AT_swpal-base Sometimes 7 99999993
+Time Dr_AT_swpal-base 7.07
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

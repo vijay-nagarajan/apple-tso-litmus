@@ -1,0 +1,18 @@
+Test fwd5_stlr-ldar Allowed
+Histogram (7 states)
+23520510:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+13877241:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11927369:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+14613382:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+67524 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+11773792:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+24220182:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=c304b4b9b308b87dbd92ed91b548c553
+Observation fwd5_stlr-ldar Never 0 100000000
+Time fwd5_stlr-ldar 52.96
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

@@ -1,0 +1,18 @@
+Test ISA2_TTA_stlr.str-ldapr.str-addr Allowed
+Histogram (7 states)
+27069611:>1:X0=0; 2:X0=0; 2:X1=0;
+12405147:>1:X0=1; 2:X0=0; 2:X1=0;
+6325069:>1:X0=0; 2:X0=1; 2:X1=0;
+183265:>1:X0=0; 2:X0=0; 2:X1=1;
+19986929:>1:X0=1; 2:X0=0; 2:X1=1;
+21673388:>1:X0=0; 2:X0=1; 2:X1=1;
+12356591:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=69a84d884f78998c8a0fe78846e4b27d
+Observation ISA2_TTA_stlr.str-ldapr.str-addr Never 0 100000000
+Time ISA2_TTA_stlr.str-ldapr.str-addr 69.25
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

@@ -1,0 +1,18 @@
+Test ISA2_AAT_dmbst-data-plain Allowed
+Histogram (7 states)
+25911185:>1:X0=0; 2:X0=0; 2:X1=0;
+7446052:>1:X0=1; 2:X0=0; 2:X1=0;
+15446685:>1:X0=0; 2:X0=1; 2:X1=0;
+2332942:>1:X0=0; 2:X0=0; 2:X1=1;
+22050664:>1:X0=1; 2:X0=0; 2:X1=1;
+20905974:>1:X0=0; 2:X0=1; 2:X1=1;
+5906498:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=c3263249a3f605065eefff54219b660d
+Observation ISA2_AAT_dmbst-data-plain Never 0 100000000
+Time ISA2_AAT_dmbst-data-plain 32.68
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

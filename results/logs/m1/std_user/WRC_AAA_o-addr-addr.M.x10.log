@@ -1,0 +1,18 @@
+Test WRC_AAA_o-addr-addr Allowed
+Histogram (7 states)
+32370419:>1:X0=0; 2:X0=0; 2:X1=0;
+10940101:>1:X0=1; 2:X0=0; 2:X1=0;
+23520949:>1:X0=0; 2:X0=1; 2:X1=0;
+2407896:>1:X0=0; 2:X0=0; 2:X1=1;
+15541045:>1:X0=1; 2:X0=0; 2:X1=1;
+12472115:>1:X0=0; 2:X0=1; 2:X1=1;
+2747475:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=35293927465e349e94fdcbb2057ed059
+Observation WRC_AAA_o-addr-addr Never 0 100000000
+Time WRC_AAA_o-addr-addr 32.16
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

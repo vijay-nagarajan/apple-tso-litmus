@@ -1,0 +1,14 @@
+Test Df_TT_ldaddal-ldaddal Allowed
+Histogram (3 states)
+49841943:>0:X1=1; 1:X1=0;
+49910465:>0:X1=0; 1:X1=1;
+247592:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=ca216dd265f48cc9f57fed24a61106ab
+Observation Df_TT_ldaddal-ldaddal Never 0 100000000
+Time Df_TT_ldaddal-ldaddal 8.56
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

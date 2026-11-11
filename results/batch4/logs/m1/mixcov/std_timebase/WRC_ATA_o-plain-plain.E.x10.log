@@ -1,0 +1,19 @@
+Test WRC_ATA_o-plain-plain Allowed
+Histogram (8 states)
+24587249:>1:X0=0; 2:X0=0; 2:X1=0;
+7191058:>1:X0=1; 2:X0=0; 2:X1=0;
+29174768:>1:X0=0; 2:X0=1; 2:X1=0;
+1     *>1:X0=1; 2:X0=1; 2:X1=0;
+99977 :>1:X0=0; 2:X0=0; 2:X1=1;
+31351189:>1:X0=1; 2:X0=0; 2:X1=1;
+6774726:>1:X0=0; 2:X0=1; 2:X1=1;
+821032:>1:X0=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 99999999
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=a0af77493bb242cbb1653f013fbcb3ba
+Observation WRC_ATA_o-plain-plain Sometimes 1 99999999
+Time WRC_ATA_o-plain-plain 43.77
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

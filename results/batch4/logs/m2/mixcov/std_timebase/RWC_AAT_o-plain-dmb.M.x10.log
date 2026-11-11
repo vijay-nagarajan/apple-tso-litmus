@@ -1,0 +1,19 @@
+Test RWC_AAT_o-plain-dmb Allowed
+Histogram (8 states)
+21606140:>1:X0=0; 1:X1=0; 2:X0=0;
+36    *>1:X0=1; 1:X1=0; 2:X0=0;
+23383950:>1:X0=0; 1:X1=1; 2:X0=0;
+4923464:>1:X0=1; 1:X1=1; 2:X0=0;
+5801858:>1:X0=0; 1:X1=0; 2:X0=1;
+23072523:>1:X0=1; 1:X1=0; 2:X0=1;
+29965 :>1:X0=0; 1:X1=1; 2:X0=1;
+21182064:>1:X0=1; 1:X1=1; 2:X0=1;
+Ok
+
+Witnesses
+Positive: 36, Negative: 99999964
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is validated
+Hash=34c95f55a09d02991c9ded798ee610ce
+Observation RWC_AAT_o-plain-dmb Sometimes 36 99999964
+Time RWC_AAT_o-plain-dmb 51.54
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

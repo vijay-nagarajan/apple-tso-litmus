@@ -1,0 +1,14 @@
+Test SB_TA_swpa.ldaxr-dmb Allowed
+Histogram (3 states)
+45730699:>0:X0=1; 1:X0=0;
+48563181:>0:X0=0; 1:X0=1;
+4254190:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 98548070
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=40bad1c28da5af6a0f64a6e27925aaa9
+Observation SB_TA_swpa.ldaxr-dmb Never 0 98548070
+Time SB_TA_swpa.ldaxr-dmb 10.05
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

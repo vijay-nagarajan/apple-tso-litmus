@@ -1,0 +1,15 @@
+Test MP_AA_dmb-ldr.ldapr Allowed
+Histogram (4 states)
+49949287:>1:X0=0; 1:X1=0;
+18    *>1:X0=1; 1:X1=0;
+106503:>1:X0=0; 1:X1=1;
+49944192:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 18, Negative: 99999982
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=ee6a7802f82731d247110c999e710f2b
+Observation MP_AA_dmb-ldr.ldapr Sometimes 18 99999982
+Time MP_AA_dmb-ldr.ldapr 14.41
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

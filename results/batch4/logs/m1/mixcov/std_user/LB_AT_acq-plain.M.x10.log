@@ -1,0 +1,14 @@
+Test LB_AT_acq-plain Allowed
+Histogram (3 states)
+3571  :>0:X0=0; 1:X0=0;
+49999453:>0:X0=1; 1:X0=0;
+49996976:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=1b5777aa8f7d81d7b5dfb171c65b6de5
+Observation LB_AT_acq-plain Never 0 100000000
+Time LB_AT_acq-plain 15.51
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

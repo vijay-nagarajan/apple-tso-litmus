@@ -1,0 +1,14 @@
+Test LB_AA_addr-dmb Allowed
+Histogram (3 states)
+1310306:>0:X0=0; 1:X0=0;
+48733918:>0:X0=1; 1:X0=0;
+49955776:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=b4a44db612f0ea8004738913ab8158e0
+Observation LB_AA_addr-dmb Never 0 100000000
+Time LB_AA_addr-dmb 12.46
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

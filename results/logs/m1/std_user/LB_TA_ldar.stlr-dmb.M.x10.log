@@ -1,0 +1,14 @@
+Test LB_TA_ldar.stlr-dmb Allowed
+Histogram (3 states)
+71445 :>0:X0=0; 1:X0=0;
+49973987:>0:X0=1; 1:X0=0;
+49954568:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=ee60a6df57a406cd3f75cac30a3a14b8
+Observation LB_TA_ldar.stlr-dmb Never 0 100000000
+Time LB_TA_ldar.stlr-dmb 15.91
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

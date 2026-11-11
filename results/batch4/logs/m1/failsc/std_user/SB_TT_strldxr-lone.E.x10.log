@@ -1,0 +1,14 @@
+Test SB_TT_strldxr-lone Allowed
+Histogram (3 states)
+49999243:>0:X0=1; 1:X0=0;
+49999290:>0:X0=0; 1:X0=1;
+1467  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=5a72b62b73711fa6bce20e531f493c4a
+Observation SB_TT_strldxr-lone Never 0 100000000
+Time SB_TT_strldxr-lone 6.17
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

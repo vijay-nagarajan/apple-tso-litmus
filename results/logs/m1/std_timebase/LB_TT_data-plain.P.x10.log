@@ -1,0 +1,14 @@
+Test LB_TT_data-plain Allowed
+Histogram (3 states)
+298222:>0:X0=0; 1:X0=0;
+49873011:>0:X0=1; 1:X0=0;
+49828767:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=1dbdcfc4c4d5e456fa954717437cef13
+Observation LB_TT_data-plain Never 0 100000000
+Time LB_TT_data-plain 8.15
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

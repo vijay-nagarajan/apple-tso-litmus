@@ -1,0 +1,14 @@
+Test LB_TA_ldapr.stlr-dmb Allowed
+Histogram (3 states)
+50289 :>0:X0=0; 1:X0=0;
+49980020:>0:X0=1; 1:X0=0;
+49969691:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=420d847b250f5ef67a166fed9a854780
+Observation LB_TA_ldapr.stlr-dmb Never 0 100000000
+Time LB_TA_ldapr.stlr-dmb 12.22
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

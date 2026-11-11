@@ -1,0 +1,15 @@
+Test MP_AT_plain-plain Allowed
+Histogram (4 states)
+50007645:>1:X0=0; 1:X1=0;
+4     *>1:X0=1; 1:X1=0;
+524279:>1:X0=0; 1:X1=1;
+49468072:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 4, Negative: 99999996
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=dc644a819d9b79c71e90833b5104c7ce
+Observation MP_AT_plain-plain Sometimes 4 99999996
+Time MP_AT_plain-plain 8.02
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

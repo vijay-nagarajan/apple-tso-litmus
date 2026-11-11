@@ -1,0 +1,15 @@
+Test MP_TA_plain-dmbst Allowed
+Histogram (4 states)
+49994118:>1:X0=0; 1:X1=0;
+28    *>1:X0=1; 1:X1=0;
+125683:>1:X0=0; 1:X1=1;
+49880171:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 28, Negative: 99999972
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=587efbcde23cb69f2ca7215a5ff2a072
+Observation MP_TA_plain-dmbst Sometimes 28 99999972
+Time MP_TA_plain-dmbst 8.56
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

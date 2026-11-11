@@ -1,0 +1,14 @@
+Test LB_TT_ldr.stlr-plain Allowed
+Histogram (3 states)
+778038:>0:X0=0; 1:X0=0;
+49966214:>0:X0=1; 1:X0=0;
+49255748:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=8bd17e9ddcc5c9b2c1bdf67f22b1a807
+Observation LB_TT_ldr.stlr-plain Never 0 100000000
+Time LB_TT_ldr.stlr-plain 8.47
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

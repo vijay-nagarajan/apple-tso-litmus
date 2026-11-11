@@ -1,0 +1,14 @@
+Test Df_TT_swpal-swpal Allowed
+Histogram (3 states)
+49963051:>0:X1=1; 1:X1=0;
+49932928:>0:X1=0; 1:X1=1;
+104021:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=ff1fe70924b3fca040507c0da8f24570
+Observation Df_TT_swpal-swpal Never 0 100000000
+Time Df_TT_swpal-swpal 8.64
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

@@ -1,0 +1,14 @@
+Test SB_TT_stlr.casa-dmb Allowed
+Histogram (3 states)
+49957705:>0:X0=1; 1:X0=0;
+49948887:>0:X0=0; 1:X0=1;
+93408 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=9439aca2bd517b922fc1536709fa719f
+Observation SB_TT_stlr.casa-dmb Never 0 100000000
+Time SB_TT_stlr.casa-dmb 14.16
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

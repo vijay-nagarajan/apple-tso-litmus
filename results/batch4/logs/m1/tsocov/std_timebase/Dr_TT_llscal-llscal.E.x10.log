@@ -1,0 +1,14 @@
+Test Dr_TT_llscal-llscal Allowed
+Histogram (3 states)
+48075424:>0:X0=1; 1:X0=0;
+46369445:>0:X0=0; 1:X0=1;
+37    :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 94444906
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=c1be75e293ec991cfbaf642c68da5668
+Observation Dr_TT_llscal-llscal Never 0 94444906
+Time Dr_TT_llscal-llscal 14.35
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

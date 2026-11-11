@@ -1,0 +1,16 @@
+Test n6_AA_plain-plain Allowed
+Histogram (5 states)
+569802*>0:X0=1; 0:X1=0; [x]=1;
+49428623:>0:X0=1; 0:X1=2; [x]=1;
+49998449:>0:X0=1; 0:X1=0; [x]=2;
+3125  :>0:X0=1; 0:X1=2; [x]=2;
+1     :>0:X0=2; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 569802, Negative: 99430198
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=d5f067d36550f6b68ac7059a5d0db6f2
+Observation n6_AA_plain-plain Sometimes 569802 99430198
+Time n6_AA_plain-plain 14.51
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

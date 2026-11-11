@@ -1,0 +1,18 @@
+Test n7_TTT_mfence-plain-plain Allowed
+Histogram (7 states)
+3381467:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+29397743:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+18019166:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+19265179:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1545  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+26407931:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+3526969:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=ae85c49a652e33fca76e1f0177f85e09
+Observation n7_TTT_mfence-plain-plain Never 0 100000000
+Time n7_TTT_mfence-plain-plain 27.19
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

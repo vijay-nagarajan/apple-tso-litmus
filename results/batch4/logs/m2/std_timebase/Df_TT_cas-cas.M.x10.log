@@ -1,0 +1,14 @@
+Test Df_TT_cas-cas Allowed
+Histogram (3 states)
+49947081:>0:X1=1; 1:X1=0;
+49947102:>0:X1=0; 1:X1=1;
+105817:>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=9d7caffeb2c9d7c6f8c7ee84d3f46087
+Observation Df_TT_cas-cas Never 0 100000000
+Time Df_TT_cas-cas 17.62
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

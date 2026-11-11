@@ -1,0 +1,15 @@
+Test Df_AA_llscl-llscl Allowed
+Histogram (4 states)
+319839*>0:X1=0; 1:X1=0;
+49792999:>0:X1=1; 1:X1=0;
+49829611:>0:X1=0; 1:X1=1;
+4529  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 319839, Negative: 99627139
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=81e0a6355933cb2348c985da627fed9f
+Observation Df_AA_llscl-llscl Sometimes 319839 99627139
+Time Df_AA_llscl-llscl 15.37
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

@@ -1,0 +1,14 @@
+Test SB_TA_swplldar Allowed
+Histogram (3 states)
+49996759:>0:X0=1; 1:X0=0;
+49996215:>0:X0=0; 1:X0=1;
+7026  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=353959029b960f55cb6969b6dd1842e4
+Observation SB_TA_swplldar Never 0 100000000
+Time SB_TA_swplldar 8.71
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

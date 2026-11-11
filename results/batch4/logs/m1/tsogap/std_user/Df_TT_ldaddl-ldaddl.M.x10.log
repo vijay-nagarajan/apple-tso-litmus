@@ -1,0 +1,14 @@
+Test Df_TT_ldaddl-ldaddl Allowed
+Histogram (3 states)
+49976073:>0:X1=1; 1:X1=0;
+49996498:>0:X1=0; 1:X1=1;
+27429 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=dbcdc11f7c2036fca56c8c712e2a98dd
+Observation Df_TT_ldaddl-ldaddl Never 0 100000000
+Time Df_TT_ldaddl-ldaddl 13.75
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

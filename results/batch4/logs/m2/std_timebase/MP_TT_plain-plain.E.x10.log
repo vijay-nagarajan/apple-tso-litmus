@@ -1,0 +1,14 @@
+Test MP_TT_plain-plain Allowed
+Histogram (3 states)
+49997521:>1:X0=0; 1:X1=0;
+35607 :>1:X0=0; 1:X1=1;
+49966872:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=544012b8e1b86b8a546bc897e24733d5
+Observation MP_TT_plain-plain Never 0 100000000
+Time MP_TT_plain-plain 9.14
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

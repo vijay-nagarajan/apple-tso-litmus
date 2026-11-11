@@ -1,0 +1,14 @@
+Test Dw_AA_casa-casa Allowed
+Histogram (3 states)
+49989892:>0:X1=1; 1:X1=0;
+49985898:>0:X1=0; 1:X1=1;
+24210 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=b31bf67d76afb5a79357054eae16bebe
+Observation Dw_AA_casa-casa Never 0 100000000
+Time Dw_AA_casa-casa 15.89
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

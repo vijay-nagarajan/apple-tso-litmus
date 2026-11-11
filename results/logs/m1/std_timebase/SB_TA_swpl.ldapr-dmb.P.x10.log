@@ -1,0 +1,14 @@
+Test SB_TA_swpl.ldapr-dmb Allowed
+Histogram (3 states)
+49983843:>0:X0=1; 1:X0=0;
+49434040:>0:X0=0; 1:X0=1;
+582117:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=e688408dc81645fa84843cc6d642e9fd
+Observation SB_TA_swpl.ldapr-dmb Never 0 100000000
+Time SB_TA_swpl.ldapr-dmb 8.62
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

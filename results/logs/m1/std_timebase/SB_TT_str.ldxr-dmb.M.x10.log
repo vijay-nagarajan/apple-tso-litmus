@@ -1,0 +1,14 @@
+Test SB_TT_str.ldxr-dmb Allowed
+Histogram (3 states)
+49878772:>0:X0=1; 1:X0=0;
+49888942:>0:X0=0; 1:X0=1;
+11235 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99778949
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=c3fbeec0bbd525a74ea4a2df80f676a0
+Observation SB_TT_str.ldxr-dmb Never 0 99778949
+Time SB_TT_str.ldxr-dmb 18.06
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

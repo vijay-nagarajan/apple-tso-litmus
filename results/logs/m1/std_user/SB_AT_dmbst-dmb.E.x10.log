@@ -1,0 +1,15 @@
+Test SB_AT_dmbst-dmb Allowed
+Histogram (4 states)
+43    *>0:X0=0; 1:X0=0;
+49999305:>0:X0=1; 1:X0=0;
+49999989:>0:X0=0; 1:X0=1;
+663   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 43, Negative: 99999957
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=a496a4d68783e3a522507ff58a581522
+Observation SB_AT_dmbst-dmb Sometimes 43 99999957
+Time SB_AT_dmbst-dmb 10.02
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

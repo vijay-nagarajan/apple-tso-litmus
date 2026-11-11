@@ -1,0 +1,14 @@
+Test Dr_TT_ldadd-ldadd Allowed
+Histogram (3 states)
+49999843:>0:X0=1; 1:X0=0;
+49999881:>0:X0=0; 1:X0=1;
+276   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=08f51e98f71339b44b6be6281002b55f
+Observation Dr_TT_ldadd-ldadd Never 0 100000000
+Time Dr_TT_ldadd-ldadd 10.53
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

@@ -1,0 +1,14 @@
+Test SB_TA_llsc.swpal-dmb Allowed
+Histogram (3 states)
+49997309:>0:X0=1; 1:X0=0;
+46608726:>0:X0=0; 1:X0=1;
+3392639:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99998674
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=482a74de437cc60e2d31bd688cfea8c3
+Observation SB_TA_llsc.swpal-dmb Never 0 99998674
+Time SB_TA_llsc.swpal-dmb 10.33
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

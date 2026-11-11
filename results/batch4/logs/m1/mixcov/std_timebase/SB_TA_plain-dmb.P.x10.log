@@ -1,0 +1,15 @@
+Test SB_TA_plain-dmb Allowed
+Histogram (4 states)
+572197*>0:X0=0; 1:X0=0;
+49423702:>0:X0=1; 1:X0=0;
+50000167:>0:X0=0; 1:X0=1;
+3934  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 572197, Negative: 99427803
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=97ed9268878aaa9e8e7e5c6636556887
+Observation SB_TA_plain-dmb Sometimes 572197 99427803
+Time SB_TA_plain-dmb 8.10
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

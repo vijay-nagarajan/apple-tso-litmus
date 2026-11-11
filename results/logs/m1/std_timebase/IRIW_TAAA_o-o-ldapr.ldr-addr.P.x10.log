@@ -1,0 +1,25 @@
+Test IRIW_TAAA_o-o-ldapr.ldr-addr Allowed
+Histogram (14 states)
+37254839:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=0;
+799095:>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=0;
+1183316:>2:X0=0; 2:X1=1; 3:X0=0; 3:X1=0;
+12959488:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=0;
+359   :>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=0;
+3784525:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=0;
+456378:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=0;
+5642680:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=1;
+7309604:>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=1;
+5878834:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=1;
+12160399:>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=1;
+1574407:>2:X0=1; 2:X1=0; 3:X0=1; 3:X1=1;
+6439874:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=1;
+4556202:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (2:X0=1 /\ 2:X1=0 /\ 3:X0=1 /\ 3:X1=0) is NOT validated
+Hash=28476ba51c16ca3b628ed083f50834d1
+Observation IRIW_TAAA_o-o-ldapr.ldr-addr Never 0 100000000
+Time IRIW_TAAA_o-o-ldapr.ldr-addr 36.97
+MEMMODEL mask=1 arm_sets=3000 tso_sets=1000

@@ -1,0 +1,15 @@
+Test MP_TA_plain-ctrl Allowed
+Histogram (4 states)
+49999289:>1:X0=0; 1:X1=0;
+2731  *>1:X0=1; 1:X1=0;
+359929:>1:X0=0; 1:X1=1;
+49638051:>1:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 2731, Negative: 99997269
+Condition exists (1:X0=1 /\ 1:X1=0) is validated
+Hash=f1036f5d5318eba26c6851a5b89d9fee
+Observation MP_TA_plain-ctrl Sometimes 2731 99997269
+Time MP_TA_plain-ctrl 8.07
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

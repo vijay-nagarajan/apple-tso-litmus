@@ -1,0 +1,14 @@
+Test SB_TT_llscl.casa-dmb Allowed
+Histogram (3 states)
+49919981:>0:X0=1; 1:X0=0;
+49986076:>0:X0=0; 1:X0=1;
+84335 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99990392
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=373b86b594664d0d21d26758ea462f89
+Observation SB_TT_llscl.casa-dmb Never 0 99990392
+Time SB_TT_llscl.casa-dmb 8.12
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

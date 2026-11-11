@@ -1,0 +1,15 @@
+Test Df_AT_swpa-swp Allowed
+Histogram (4 states)
+1     *>0:X1=0; 1:X1=0;
+49981422:>0:X1=1; 1:X1=0;
+49995657:>0:X1=0; 1:X1=1;
+22920 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 99999999
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=d22cd4b2f3a50c1d3d6a84441104f7ee
+Observation Df_AT_swpa-swp Sometimes 1 99999999
+Time Df_AT_swpa-swp 6.44
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

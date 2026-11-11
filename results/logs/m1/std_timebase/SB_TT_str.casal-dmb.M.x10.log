@@ -1,0 +1,14 @@
+Test SB_TT_str.casal-dmb Allowed
+Histogram (3 states)
+49979557:>0:X0=1; 1:X0=0;
+49981832:>0:X0=0; 1:X0=1;
+38611 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=4405d82e962604a2925fa657690a1bc7
+Observation SB_TT_str.casal-dmb Never 0 100000000
+Time SB_TT_str.casal-dmb 13.56
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

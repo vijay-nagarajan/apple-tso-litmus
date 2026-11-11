@@ -1,0 +1,15 @@
+Test Dw_AT_llscal-swp Allowed
+Histogram (4 states)
+2603617*>0:X1=0; 1:X1=0;
+47380468:>0:X1=1; 1:X1=0;
+49992791:>0:X1=0; 1:X1=1;
+13387 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 2603617, Negative: 97386646
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=9c3b670e5f2b9227e8fb696c5445276f
+Observation Dw_AT_llscal-swp Sometimes 2603617 97386646
+Time Dw_AT_llscal-swp 12.66
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

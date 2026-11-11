@@ -1,0 +1,18 @@
+Test fwd12_swp-ldapr_T Allowed
+Histogram (7 states)
+8937981:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+24516432:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+22260156:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+24910787:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1513  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+8412102:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+10961029:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=ec74fcf8b6ddf4b4a460419f013d4aa8
+Observation fwd12_swp-ldapr_T Never 0 100000000
+Time fwd12_swp-ldapr_T 18.84
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

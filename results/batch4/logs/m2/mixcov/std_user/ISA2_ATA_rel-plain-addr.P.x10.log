@@ -1,0 +1,18 @@
+Test ISA2_ATA_rel-plain-addr Allowed
+Histogram (7 states)
+31467258:>1:X0=0; 2:X0=0; 2:X1=0;
+2171767:>1:X0=1; 2:X0=0; 2:X1=0;
+8538113:>1:X0=0; 2:X0=1; 2:X1=0;
+990136:>1:X0=0; 2:X0=0; 2:X1=1;
+30455956:>1:X0=1; 2:X0=0; 2:X1=1;
+24715046:>1:X0=0; 2:X0=1; 2:X1=1;
+1661724:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=c5362495ce42ff5ce124a783c2c0385c
+Observation ISA2_ATA_rel-plain-addr Never 0 100000000
+Time ISA2_ATA_rel-plain-addr 13.67
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

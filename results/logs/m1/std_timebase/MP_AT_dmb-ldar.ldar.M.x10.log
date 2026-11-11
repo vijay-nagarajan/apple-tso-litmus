@@ -1,0 +1,14 @@
+Test MP_AT_dmb-ldar.ldar Allowed
+Histogram (3 states)
+49786420:>1:X0=0; 1:X1=0;
+496628:>1:X0=0; 1:X1=1;
+49716952:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=510d5c4397eface66841b39e30158b54
+Observation MP_AT_dmb-ldar.ldar Never 0 100000000
+Time MP_AT_dmb-ldar.ldar 14.00
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

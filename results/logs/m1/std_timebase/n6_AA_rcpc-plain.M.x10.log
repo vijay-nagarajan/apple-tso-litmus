@@ -1,0 +1,15 @@
+Test n6_AA_rcpc-plain Allowed
+Histogram (4 states)
+155   *>0:X0=1; 0:X1=0; [x]=1;
+49992959:>0:X0=1; 0:X1=2; [x]=1;
+49998056:>0:X0=1; 0:X1=0; [x]=2;
+8830  :>0:X0=1; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 155, Negative: 99999845
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=6fa89b3ba1d5d2fa1644af8bcc0e18a2
+Observation n6_AA_rcpc-plain Sometimes 155 99999845
+Time n6_AA_rcpc-plain 17.31
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

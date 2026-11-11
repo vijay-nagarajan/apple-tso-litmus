@@ -1,0 +1,18 @@
+Test ISA2_TTA_plain-plain-addr Allowed
+Histogram (7 states)
+23348145:>1:X0=0; 2:X0=0; 2:X1=0;
+9994082:>1:X0=1; 2:X0=0; 2:X1=0;
+6945237:>1:X0=0; 2:X0=1; 2:X1=0;
+45053 :>1:X0=0; 2:X0=0; 2:X1=1;
+24299956:>1:X0=1; 2:X0=0; 2:X1=1;
+26391042:>1:X0=0; 2:X0=1; 2:X1=1;
+8976485:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=47d63ce068af491fd3373a5f76f6d4fb
+Observation ISA2_TTA_plain-plain-addr Never 0 100000000
+Time ISA2_TTA_plain-plain-addr 28.46
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

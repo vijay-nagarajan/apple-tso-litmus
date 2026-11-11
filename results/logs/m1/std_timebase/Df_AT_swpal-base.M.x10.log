@@ -1,0 +1,15 @@
+Test Df_AT_swpal-base Allowed
+Histogram (4 states)
+11584 *>0:X1=0; 1:X0=0;
+49999124:>0:X1=1; 1:X0=0;
+49987286:>0:X1=0; 1:X0=1;
+2006  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 11584, Negative: 99988416
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=0a24259b35397317f4f66152eebdb031
+Observation Df_AT_swpal-base Sometimes 11584 99988416
+Time Df_AT_swpal-base 18.90
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

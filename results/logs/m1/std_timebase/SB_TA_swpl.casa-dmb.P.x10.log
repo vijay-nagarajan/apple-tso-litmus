@@ -1,0 +1,14 @@
+Test SB_TA_swpl.casa-dmb Allowed
+Histogram (3 states)
+49937367:>0:X0=1; 1:X0=0;
+49953496:>0:X0=0; 1:X0=1;
+109137:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=b4f2e4631f4af167d418733468caa91d
+Observation SB_TA_swpl.casa-dmb Never 0 100000000
+Time SB_TA_swpl.casa-dmb 10.01
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

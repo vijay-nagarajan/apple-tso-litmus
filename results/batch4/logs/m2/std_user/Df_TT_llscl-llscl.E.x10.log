@@ -1,0 +1,15 @@
+Test Df_TT_llscl-llscl Allowed
+Histogram (4 states)
+43    *>0:X1=0; 1:X1=0;
+49999727:>0:X1=1; 1:X1=0;
+49997726:>0:X1=0; 1:X1=1;
+217   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 43, Negative: 99997670
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=774ae5cfb06692d029cc1c798e61ff14
+Observation Df_TT_llscl-llscl Sometimes 43 99997670
+Time Df_TT_llscl-llscl 5.51
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

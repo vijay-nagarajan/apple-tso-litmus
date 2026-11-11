@@ -1,0 +1,15 @@
+Test n6_AA_rcpc-rcpc Allowed
+Histogram (4 states)
+44399465:>0:X0=1; 0:X1=2; [x]=1;
+49995289:>0:X0=1; 0:X1=0; [x]=2;
+5251542:>0:X0=1; 0:X1=2; [x]=2;
+353704:>0:X0=2; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=aacdfeda0ac424412a9c1a4d76307704
+Observation n6_AA_rcpc-rcpc Never 0 100000000
+Time n6_AA_rcpc-rcpc 8.32
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

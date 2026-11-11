@@ -1,0 +1,19 @@
+Test fwd12_str-ldxr_T Allowed
+Histogram (8 states)
+23202346:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+13867717:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+4     *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+11237601:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+14366205:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+30655 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+13193120:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+24102352:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 4, Negative: 99999996
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=1b43ca8fa47d31566c5af9773ffcc5a0
+Observation fwd12_str-ldxr_T Sometimes 4 99999996
+Time fwd12_str-ldxr_T 56.98
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

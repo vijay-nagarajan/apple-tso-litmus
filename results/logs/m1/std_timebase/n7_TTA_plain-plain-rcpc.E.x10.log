@@ -1,0 +1,19 @@
+Test n7_TTA_plain-plain-rcpc Allowed
+Histogram (8 states)
+27723221:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+2724339:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+673   *>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+19945234:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+25183577:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+5     :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+2100810:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+22322141:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 673, Negative: 99999327
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=ca675ea9d911eb815ce61e0ebd4cacac
+Observation n7_TTA_plain-plain-rcpc Sometimes 673 99999327
+Time n7_TTA_plain-plain-rcpc 42.22
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

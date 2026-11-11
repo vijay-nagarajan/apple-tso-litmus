@@ -1,0 +1,14 @@
+Test SB_TT_stxrswpa Allowed
+Histogram (3 states)
+44104204:>0:X0=1; 1:X0=0;
+44191386:>0:X0=0; 1:X0=1;
+990607:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 89286197
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=6462fa205cbd5a682ec433abc92990bf
+Observation SB_TT_stxrswpa Never 0 89286197
+Time SB_TT_stxrswpa 10.12
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

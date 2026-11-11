@@ -1,0 +1,14 @@
+Test SB_TA_llscl.casl-dmb Allowed
+Histogram (3 states)
+49999625:>0:X0=1; 1:X0=0;
+49910163:>0:X0=0; 1:X0=1;
+89802 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99999590
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=f0c3fdfabfd15314f141a44eced489cd
+Observation SB_TA_llscl.casl-dmb Never 0 99999590
+Time SB_TA_llscl.casl-dmb 9.25
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

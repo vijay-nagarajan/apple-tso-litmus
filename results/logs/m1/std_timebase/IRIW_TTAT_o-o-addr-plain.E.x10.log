@@ -1,0 +1,25 @@
+Test IRIW_TTAT_o-o-addr-plain Allowed
+Histogram (14 states)
+32618536:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=0;
+685   :>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=0;
+4043386:>2:X0=0; 2:X1=1; 3:X0=0; 3:X1=0;
+8470337:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=0;
+72830 :>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=0;
+9243980:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=0;
+295022:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=0;
+3630669:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=1;
+5980309:>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=1;
+9531314:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=1;
+9052735:>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=1;
+352922:>2:X0=1; 2:X1=0; 3:X0=1; 3:X1=1;
+6202159:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=1;
+10505116:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (2:X0=1 /\ 2:X1=0 /\ 3:X0=1 /\ 3:X1=0) is NOT validated
+Hash=48193143fbff61fce04e9c6789daef3b
+Observation IRIW_TTAT_o-o-addr-plain Never 0 100000000
+Time IRIW_TTAT_o-o-addr-plain 55.92
+MEMMODEL mask=11 arm_sets=1000 tso_sets=3000

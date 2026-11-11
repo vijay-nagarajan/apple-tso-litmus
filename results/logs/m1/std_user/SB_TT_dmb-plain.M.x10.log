@@ -1,0 +1,15 @@
+Test SB_TT_dmb-plain Allowed
+Histogram (4 states)
+76    *>0:X0=0; 1:X0=0;
+50000065:>0:X0=1; 1:X0=0;
+49998485:>0:X0=0; 1:X0=1;
+1374  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 76, Negative: 99999924
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=c839ccb4edf469e5638a646c8e9f64eb
+Observation SB_TT_dmb-plain Sometimes 76 99999924
+Time SB_TT_dmb-plain 14.43
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

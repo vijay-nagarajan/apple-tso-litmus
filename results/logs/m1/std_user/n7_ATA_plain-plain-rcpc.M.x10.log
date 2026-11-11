@@ -1,0 +1,19 @@
+Test n7_ATA_plain-plain-rcpc Allowed
+Histogram (8 states)
+24626489:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+10301836:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+235869*>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+9991971:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+19047747:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+454   :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+14876695:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+20918939:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 235869, Negative: 99764131
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=ca675ea9d911eb815ce61e0ebd4cacac
+Observation n7_ATA_plain-plain-rcpc Sometimes 235869 99764131
+Time n7_ATA_plain-plain-rcpc 38.40
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

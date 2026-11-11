@@ -222,7 +222,7 @@ def run(D):
         'every edge, a control is the same test with one thread in Arm mode. Format as in \\cref{tab:arm-multi}.', 'tab:tso-multi')
     sm = multi_table(os.path.join(D, 'res-mixed-multi.tex'), lambda md: len(set(md)) > 1,
         'WRC, ISA2, RWC and IRIW under every assignment of modes that mixes Arm and TSO, $6\\times10^8$ iterations of each '
-        'test on each machine. Format as in \\cref{tab:arm-multi}.', 'tab:mixcov-results')
+        'test on each machine. Format as in \\cref{tab:arm-multi}. A control may run every thread in Arm mode.', 'tab:mixcov-results')
     # ---------------- Arm RMW table ----------------
     def amo_cell(ts, col='arm', note=''):
         v = verdict(ts, col).replace('not ordered', 'allowed').replace('ordered', 'forbidden')

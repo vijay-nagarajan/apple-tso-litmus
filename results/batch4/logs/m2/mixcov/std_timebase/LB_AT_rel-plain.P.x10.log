@@ -1,0 +1,14 @@
+Test LB_AT_rel-plain Allowed
+Histogram (3 states)
+57594 :>0:X0=0; 1:X0=0;
+49998647:>0:X0=1; 1:X0=0;
+49943759:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=8bd17e9ddcc5c9b2c1bdf67f22b1a807
+Observation LB_AT_rel-plain Never 0 100000000
+Time LB_AT_rel-plain 7.97
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

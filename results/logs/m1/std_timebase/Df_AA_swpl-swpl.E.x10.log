@@ -1,0 +1,15 @@
+Test Df_AA_swpl-swpl Allowed
+Histogram (4 states)
+522621*>0:X1=0; 1:X1=0;
+49739088:>0:X1=1; 1:X1=0;
+49734192:>0:X1=0; 1:X1=1;
+4099  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 522621, Negative: 99477379
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=a7b44a695e8f4fea015053a45bc2804f
+Observation Df_AA_swpl-swpl Sometimes 522621 99477379
+Time Df_AA_swpl-swpl 12.21
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

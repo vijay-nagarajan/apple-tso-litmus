@@ -1,0 +1,15 @@
+Test Dw_AT_swpa-base Allowed
+Histogram (4 states)
+76145 *>0:X1=0; 1:X0=0;
+50000448:>0:X1=1; 1:X0=0;
+49922240:>0:X1=0; 1:X0=1;
+1167  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 76145, Negative: 99923855
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=7c8ad7d13d2c881e169d83f44fbc0c8f
+Observation Dw_AT_swpa-base Sometimes 76145 99923855
+Time Dw_AT_swpa-base 11.96
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

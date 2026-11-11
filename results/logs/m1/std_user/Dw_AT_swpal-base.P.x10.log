@@ -1,0 +1,15 @@
+Test Dw_AT_swpal-base Allowed
+Histogram (4 states)
+182   *>0:X1=0; 1:X0=0;
+50142627:>0:X1=1; 1:X0=0;
+49850795:>0:X1=0; 1:X0=1;
+6396  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 182, Negative: 99999818
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=f50583eb8f726626db3dc53809103eeb
+Observation Dw_AT_swpal-base Sometimes 182 99999818
+Time Dw_AT_swpal-base 6.26
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

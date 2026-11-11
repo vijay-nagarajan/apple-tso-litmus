@@ -1,0 +1,15 @@
+Test SB_TT_llsc.ldar-dmb Allowed
+Histogram (4 states)
+263302*>0:X0=0; 1:X0=0;
+49727910:>0:X0=1; 1:X0=0;
+49995150:>0:X0=0; 1:X0=1;
+5867  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 263302, Negative: 99728927
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=8b3d462b4c47e100d5e565a3fbb50a37
+Observation SB_TT_llsc.ldar-dmb Sometimes 263302 99728927
+Time SB_TT_llsc.ldar-dmb 16.29
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

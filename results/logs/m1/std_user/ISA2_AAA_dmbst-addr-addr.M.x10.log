@@ -1,0 +1,18 @@
+Test ISA2_AAA_dmbst-addr-addr Allowed
+Histogram (7 states)
+27461404:>1:X0=0; 2:X0=0; 2:X1=0;
+8741852:>1:X0=1; 2:X0=0; 2:X1=0;
+10019908:>1:X0=0; 2:X0=1; 2:X1=0;
+3473586:>1:X0=0; 2:X0=0; 2:X1=1;
+21462587:>1:X0=1; 2:X0=0; 2:X1=1;
+23716873:>1:X0=0; 2:X0=1; 2:X1=1;
+5123790:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=b9b867c6fc11de443370a610cf98f2db
+Observation ISA2_AAA_dmbst-addr-addr Never 0 100000000
+Time ISA2_AAA_dmbst-addr-addr 34.16
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

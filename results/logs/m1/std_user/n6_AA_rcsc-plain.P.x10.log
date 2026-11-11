@@ -1,0 +1,16 @@
+Test n6_AA_rcsc-plain Allowed
+Histogram (5 states)
+4     *>0:X0=1; 0:X1=0; [x]=1;
+50000928:>0:X0=1; 0:X1=2; [x]=1;
+49990738:>0:X0=1; 0:X1=0; [x]=2;
+7899  :>0:X0=1; 0:X1=2; [x]=2;
+431   :>0:X0=2; 0:X1=2; [x]=2;
+Ok
+
+Witnesses
+Positive: 4, Negative: 99999996
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is validated
+Hash=5a70a7ee93c042a23e2ad46762bf66e2
+Observation n6_AA_rcsc-plain Sometimes 4 99999996
+Time n6_AA_rcsc-plain 7.06
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

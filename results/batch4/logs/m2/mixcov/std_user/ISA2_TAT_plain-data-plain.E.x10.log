@@ -1,0 +1,18 @@
+Test ISA2_TAT_plain-data-plain Allowed
+Histogram (7 states)
+30429346:>1:X0=0; 2:X0=0; 2:X1=0;
+3100857:>1:X0=1; 2:X0=0; 2:X1=0;
+18566550:>1:X0=0; 2:X0=1; 2:X1=0;
+487   :>1:X0=0; 2:X0=0; 2:X1=1;
+31641647:>1:X0=1; 2:X0=0; 2:X1=1;
+14809469:>1:X0=0; 2:X0=1; 2:X1=1;
+1451644:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=080d97fe4d1442fb615973060eacbbda
+Observation ISA2_TAT_plain-data-plain Never 0 100000000
+Time ISA2_TAT_plain-data-plain 16.65
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

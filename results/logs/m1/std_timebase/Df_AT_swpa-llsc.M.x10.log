@@ -1,0 +1,15 @@
+Test Df_AT_swpa-llsc Allowed
+Histogram (4 states)
+62911 *>0:X1=0; 1:X1=0;
+49936400:>0:X1=1; 1:X1=0;
+49965837:>0:X1=0; 1:X1=1;
+13712 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 62911, Negative: 99915949
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=1d682e1fd90fe154613df31bbb384187
+Observation Df_AT_swpa-llsc Sometimes 62911 99915949
+Time Df_AT_swpa-llsc 16.28
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

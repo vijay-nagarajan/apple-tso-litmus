@@ -1,0 +1,15 @@
+Test Df_AT_casfail-swpal Allowed
+Histogram (4 states)
+2807  *>0:X1=0; 0:X16=0; 1:X1=0;
+49972473:>0:X1=1; 0:X16=0; 1:X1=0;
+49994120:>0:X1=0; 0:X16=0; 1:X1=1;
+30600 :>0:X1=1; 0:X16=0; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 2807, Negative: 99997193
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0) is validated
+Hash=798fd3ee0f6c4c153479ea227247e620
+Observation Df_AT_casfail-swpal Sometimes 2807 99997193
+Time Df_AT_casfail-swpal 8.19
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

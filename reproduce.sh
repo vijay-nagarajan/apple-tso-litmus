@@ -1,7 +1,8 @@
 #!/bin/sh
 # One entry point for the checks that need no Apple hardware.
 #   sh reproduce.sh L1     every results table (Sections 5 to 8) recomputed from the raw results and compared with
-#                          expected/ (the report's tables), and the counts quoted in the text      (Python 3, seconds)
+#                          expected/ (the report's tables), the counts quoted in the text, and every counted row
+#                          against its litmus7 log                                                  (Python 3, seconds)
 #   sh reproduce.sh L2     every herd verdict (scripts/check_verdicts.py)                        (herdtools7 7.58, minutes)
 #   sh reproduce.sh all    both (the default)
 # Prints PASS or FAIL per table and per quoted number, a diff for a table that differs, and a summary; exit 1 on a FAIL.
@@ -10,8 +11,8 @@ cd "$(dirname "$0")" || exit 1
 LV=${1:-all}; FAIL=0; NP=0; NF=0
 pass() { echo "PASS $*"; NP=$((NP + 1)); }
 fail() { echo "FAIL $*"; NF=$((NF + 1)); FAIL=1; }
-# review markup of the report (\color{violet}% ... for review) is not part of a table's content
-norm() { sed -e 's/\\color{violet}//g' -e 's/% *new [a-z]*, for review//' -e 's/[[:space:]]*$//' "$1"; }
+# review markup of the report (\color{violet}% ... for review, \audit{...}) is not part of a table's content
+norm() { sed -e 's/\\color{violet}//g' -e 's/\\audit{\([^}]*\)}/\1/g' -e 's/% *new [a-z]*, for review//' -e 's/[[:space:]]*$//' "$1"; }
 l1() {
   echo "== Level 1: tables from raw results"
   W=tables; rm -rf $W; mkdir -p $W
@@ -38,6 +39,10 @@ l1() {
   (cd scripts && python3 check_scale_cmds.py) > $W/check_scale_cmds.out; rc=$?
   cat $W/check_scale_cmds.out
   NP=$((NP + $(grep -c '^PASS' $W/check_scale_cmds.out))); NF=$((NF + $(grep -c '^FAIL' $W/check_scale_cmds.out))); [ $rc -eq 0 ] || FAIL=1
+  echo "-- every counted row against its litmus7 log (scripts/check_logs.py)"
+  (cd scripts && python3 check_logs.py) > $W/check_logs.out; rl=$?
+  cat $W/check_logs.out
+  NP=$((NP + $(grep -c '^PASS' $W/check_logs.out))); NF=$((NF + $(grep -c '^FAIL' $W/check_logs.out))); [ $rl -eq 0 ] || FAIL=1
   echo "-- quoted counts, Sections 1 to 7 (scripts/check_prose.py)"
   (cd scripts && python3 check_prose.py) > $W/check_prose.out; rp=$?
   cat $W/check_prose.out
@@ -54,6 +59,6 @@ l2() {
 }
 mkdir -p tables
 case $LV in L1) l1;; L2) l2;; all) l1; l2;; *) echo "usage: sh reproduce.sh [L1|L2|all]"; exit 1;; esac
-NOTE=$(cat tables/scale_table.out 2>/dev/null | grep -c '^NOTE')
+NOTE=$(cat tables/scale_table.out tables/check_logs.out 2>/dev/null | grep -c '^NOTE')
 echo "== summary: $NP PASS, $NF FAIL, $NOTE NOTE (approximate wording; values printed above)"
 exit $FAIL

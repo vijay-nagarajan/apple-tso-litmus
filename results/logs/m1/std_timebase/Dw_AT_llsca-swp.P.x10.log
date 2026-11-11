@@ -1,0 +1,15 @@
+Test Dw_AT_llsca-swp Allowed
+Histogram (4 states)
+3337363*>0:X1=0; 1:X1=0;
+46647444:>0:X1=1; 1:X1=0;
+49996930:>0:X1=0; 1:X1=1;
+9487  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 3337363, Negative: 96653861
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=f236e8881e63c2a5eeb90d09dd48c788
+Observation Dw_AT_llsca-swp Sometimes 3337363 96653861
+Time Dw_AT_llsca-swp 8.48
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

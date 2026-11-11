@@ -1,0 +1,15 @@
+Test Dr_AT_llscal-base Allowed
+Histogram (4 states)
+249994*>0:X0=0; 1:X0=0;
+49643374:>0:X0=1; 1:X0=0;
+49732839:>0:X0=0; 1:X0=1;
+39    :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 249994, Negative: 99376252
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=5cfdaab0faf5f2c678f491c5b8a95e58
+Observation Dr_AT_llscal-base Sometimes 249994 99376252
+Time Dr_AT_llscal-base 8.91
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

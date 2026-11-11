@@ -1,0 +1,19 @@
+Test RWC_TAA_o-plain-stlr.ldar Allowed
+Histogram (8 states)
+15175711:>1:X0=0; 1:X1=0; 2:X0=0;
+184   *>1:X0=1; 1:X1=0; 2:X0=0;
+19401174:>1:X0=0; 1:X1=1; 2:X0=0;
+15510801:>1:X0=1; 1:X1=1; 2:X0=0;
+16839982:>1:X0=0; 1:X1=0; 2:X0=1;
+18582344:>1:X0=1; 1:X1=0; 2:X0=1;
+31829 :>1:X0=0; 1:X1=1; 2:X0=1;
+14457975:>1:X0=1; 1:X1=1; 2:X0=1;
+Ok
+
+Witnesses
+Positive: 184, Negative: 99999816
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is validated
+Hash=7dfdc0cb332c724d0fdde93c0df1f441
+Observation RWC_TAA_o-plain-stlr.ldar Sometimes 184 99999816
+Time RWC_TAA_o-plain-stlr.ldar 67.70
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

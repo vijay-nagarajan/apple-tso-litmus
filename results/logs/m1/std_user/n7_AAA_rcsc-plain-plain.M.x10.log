@@ -1,0 +1,19 @@
+Test n7_AAA_rcsc-plain-plain Allowed
+Histogram (8 states)
+32092354:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+10762363:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+172776*>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=0;
+8979574:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+25836659:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+232326:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+6633085:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+15290863:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+Ok
+
+Witnesses
+Positive: 172776, Negative: 99827224
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is validated
+Hash=d5847c3f85d62527131b4d4b643fa488
+Observation n7_AAA_rcsc-plain-plain Sometimes 172776 99827224
+Time n7_AAA_rcsc-plain-plain 37.29
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

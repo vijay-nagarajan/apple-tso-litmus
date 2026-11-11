@@ -1,0 +1,14 @@
+Test SB_TA_swpl.ldar-dmb Allowed
+Histogram (3 states)
+50122242:>0:X0=1; 1:X0=0;
+49861045:>0:X0=0; 1:X0=1;
+16713 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=275fbc4794f1c516c78f6345831b4722
+Observation SB_TA_swpl.ldar-dmb Never 0 100000000
+Time SB_TA_swpl.ldar-dmb 14.06
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

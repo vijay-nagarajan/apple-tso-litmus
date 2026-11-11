@@ -1,0 +1,15 @@
+Test SB_TA_stlr.ldapr-dmb Allowed
+Histogram (4 states)
+35    *>0:X0=0; 1:X0=0;
+49999549:>0:X0=1; 1:X0=0;
+49999967:>0:X0=0; 1:X0=1;
+449   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 35, Negative: 99999965
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=55b02f8e2d274b59b4745b22bc91bd21
+Observation SB_TA_stlr.ldapr-dmb Sometimes 35 99999965
+Time SB_TA_stlr.ldapr-dmb 9.12
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

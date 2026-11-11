@@ -1,0 +1,15 @@
+Test Df_AT_swpl-base Allowed
+Histogram (4 states)
+50617 *>0:X1=0; 1:X0=0;
+49967952:>0:X1=1; 1:X0=0;
+49980230:>0:X1=0; 1:X0=1;
+1201  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 50617, Negative: 99949383
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=7dd6c45aec6d86c1ca0737327e30a122
+Observation Df_AT_swpl-base Sometimes 50617 99949383
+Time Df_AT_swpl-base 18.96
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

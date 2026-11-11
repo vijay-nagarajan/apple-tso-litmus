@@ -1,0 +1,14 @@
+Test MP_TA_str.stlr-dmb Allowed
+Histogram (3 states)
+49923760:>1:X0=0; 1:X1=0;
+601952:>1:X0=0; 1:X1=1;
+49474288:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=c6519c494580e9f0db97eb2f8f6f1ba4
+Observation MP_TA_str.stlr-dmb Never 0 100000000
+Time MP_TA_str.stlr-dmb 12.33
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

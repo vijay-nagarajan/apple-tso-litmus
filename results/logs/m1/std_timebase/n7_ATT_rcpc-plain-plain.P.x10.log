@@ -1,0 +1,18 @@
+Test n7_ATT_rcpc-plain-plain Allowed
+Histogram (7 states)
+601912:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+33019450:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+15906130:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+18164629:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+1197  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+30983457:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+1323225:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=608646e80f2e34b25c50ffa51fbd205f
+Observation n7_ATT_rcpc-plain-plain Never 0 100000000
+Time n7_ATT_rcpc-plain-plain 27.62
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

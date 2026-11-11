@@ -1,0 +1,15 @@
+Test n6_TA_mfence-rcpc Allowed
+Histogram (4 states)
+49805432:>0:X0=1; 0:X1=2; [x]=1;
+49986416:>0:X0=1; 0:X1=0; [x]=2;
+207224:>0:X0=1; 0:X1=2; [x]=2;
+928   :>0:X0=2; 0:X1=2; [x]=2;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ [x]=1) is NOT validated
+Hash=423a2090970b8cb43800653b39f50489
+Observation n6_TA_mfence-rcpc Never 0 100000000
+Time n6_TA_mfence-rcpc 15.57
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

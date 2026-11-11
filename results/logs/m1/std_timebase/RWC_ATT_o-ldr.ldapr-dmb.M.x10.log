@@ -1,0 +1,18 @@
+Test RWC_ATT_o-ldr.ldapr-dmb Allowed
+Histogram (7 states)
+22601359:>1:X0=0; 1:X1=0; 2:X0=0;
+14821736:>1:X0=0; 1:X1=1; 2:X0=0;
+12136838:>1:X0=1; 1:X1=1; 2:X0=0;
+14086732:>1:X0=0; 1:X1=0; 2:X0=1;
+10384606:>1:X0=1; 1:X1=0; 2:X0=1;
+34298 :>1:X0=0; 1:X1=1; 2:X0=1;
+25934431:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=8315fa17cd778eb0c9e72d51fcd090e7
+Observation RWC_ATT_o-ldr.ldapr-dmb Never 0 100000000
+Time RWC_ATT_o-ldr.ldapr-dmb 69.47
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

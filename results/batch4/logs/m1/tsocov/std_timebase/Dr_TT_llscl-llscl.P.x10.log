@@ -1,0 +1,14 @@
+Test Dr_TT_llscl-llscl Allowed
+Histogram (3 states)
+39192087:>0:X0=1; 1:X0=0;
+40905663:>0:X0=0; 1:X0=1;
+154   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 80097904
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=6d3ce823a5696021270ab4563e564b45
+Observation Dr_TT_llscl-llscl Never 0 80097904
+Time Dr_TT_llscl-llscl 9.99
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

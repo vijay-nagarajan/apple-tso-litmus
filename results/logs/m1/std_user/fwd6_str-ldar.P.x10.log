@@ -1,0 +1,18 @@
+Test fwd6_str-ldar Allowed
+Histogram (7 states)
+35763088:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+5624137:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+9233248:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+37062435:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+21686 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+1172687:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+11122719:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=164209db5cd5956b56c3b31b1f5d4401
+Observation fwd6_str-ldar Never 0 100000000
+Time fwd6_str-ldar 13.92
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

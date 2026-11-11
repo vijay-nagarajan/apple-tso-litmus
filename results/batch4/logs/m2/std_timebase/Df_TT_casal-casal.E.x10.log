@@ -1,0 +1,14 @@
+Test Df_TT_casal-casal Allowed
+Histogram (3 states)
+49999575:>0:X1=1; 0:X2=0; 1:X1=0; 1:X2=0;
+49999283:>0:X1=0; 0:X2=0; 1:X1=1; 1:X2=0;
+1142  :>0:X1=1; 0:X2=0; 1:X1=1; 1:X2=0;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X2=0 /\ 1:X2=0) is NOT validated
+Hash=4cadda3e12120b16ba96b49ea4b0f283
+Observation Df_TT_casal-casal Never 0 100000000
+Time Df_TT_casal-casal 10.36
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

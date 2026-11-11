@@ -1,0 +1,14 @@
+Test SB_TT_str.ldadd-dmb Allowed
+Histogram (3 states)
+49999459:>0:X0=1; 1:X0=0;
+49999826:>0:X0=0; 1:X0=1;
+715   :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=47287b81a8a3f396560c29a0cfbb9cd8
+Observation SB_TT_str.ldadd-dmb Never 0 100000000
+Time SB_TT_str.ldadd-dmb 9.65
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

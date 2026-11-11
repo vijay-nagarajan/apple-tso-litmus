@@ -1,0 +1,14 @@
+Test MP_TA_plain-ldar.ldapr Allowed
+Histogram (3 states)
+50035996:>1:X0=0; 1:X1=0;
+29368 :>1:X0=0; 1:X1=1;
+49934636:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=13ba38cb5458847e186d9ef8a3281e63
+Observation MP_TA_plain-ldar.ldapr Never 0 100000000
+Time MP_TA_plain-ldar.ldapr 13.69
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

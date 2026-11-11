@@ -1,0 +1,18 @@
+Test RWC_ATT_o-ldr.ldapr-stlr.ldar Allowed
+Histogram (7 states)
+10315239:>1:X0=0; 1:X1=0; 2:X0=0;
+24669306:>1:X0=0; 1:X1=1; 2:X0=0;
+8652744:>1:X0=1; 1:X1=1; 2:X0=0;
+23025449:>1:X0=0; 1:X1=0; 2:X0=1;
+15193100:>1:X0=1; 1:X1=0; 2:X0=1;
+506   :>1:X0=0; 1:X1=1; 2:X0=1;
+18143656:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=1f3fd443874113386c82ccff2aebd2e8
+Observation RWC_ATT_o-ldr.ldapr-stlr.ldar Never 0 100000000
+Time RWC_ATT_o-ldr.ldapr-stlr.ldar 18.69
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

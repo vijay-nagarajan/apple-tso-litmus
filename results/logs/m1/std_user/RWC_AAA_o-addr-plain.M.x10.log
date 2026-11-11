@@ -1,0 +1,18 @@
+Test RWC_AAA_o-addr-plain Allowed
+Histogram (7 states)
+31984215:>1:X0=0; 1:X1=0; 2:X0=0;
+29848459:>1:X0=0; 1:X1=1; 2:X0=0;
+5244107:>1:X0=1; 1:X1=1; 2:X0=0;
+7984134:>1:X0=0; 1:X1=0; 2:X0=1;
+3610824:>1:X0=1; 1:X1=0; 2:X0=1;
+952677:>1:X0=0; 1:X1=1; 2:X0=1;
+20375584:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=7fe7f56c1bb561d87025172994f0ec87
+Observation RWC_AAA_o-addr-plain Never 0 100000000
+Time RWC_AAA_o-addr-plain 35.74
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

@@ -1,0 +1,14 @@
+Test LB_TA_dmb-dmb Allowed
+Histogram (3 states)
+28006 :>0:X0=0; 1:X0=0;
+49981472:>0:X0=1; 1:X0=0;
+49990522:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=20df1b69b5158033192454c647c8cf60
+Observation LB_TA_dmb-dmb Never 0 100000000
+Time LB_TA_dmb-dmb 15.73
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

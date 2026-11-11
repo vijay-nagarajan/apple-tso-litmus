@@ -1,0 +1,18 @@
+Test WRC_TTA_o-plain-addr Allowed
+Histogram (7 states)
+19777456:>1:X0=0; 2:X0=0; 2:X1=0;
+23107882:>1:X0=1; 2:X0=0; 2:X1=0;
+6001589:>1:X0=0; 2:X0=1; 2:X1=0;
+667   :>1:X0=0; 2:X0=0; 2:X1=1;
+11326390:>1:X0=1; 2:X0=0; 2:X1=1;
+31431312:>1:X0=0; 2:X0=1; 2:X1=1;
+8354704:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=29493e65e84c1f25521fbee2d98a7c5e
+Observation WRC_TTA_o-plain-addr Never 0 100000000
+Time WRC_TTA_o-plain-addr 26.26
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

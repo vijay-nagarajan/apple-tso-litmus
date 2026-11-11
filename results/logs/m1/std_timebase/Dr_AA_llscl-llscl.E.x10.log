@@ -1,0 +1,14 @@
+Test Dr_AA_llscl-llscl Allowed
+Histogram (3 states)
+47877856:>0:X0=1; 1:X0=0;
+45712356:>0:X0=0; 1:X0=1;
+50    :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 93590262
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=6d3ce823a5696021270ab4563e564b45
+Observation Dr_AA_llscl-llscl Never 0 93590262
+Time Dr_AA_llscl-llscl 14.55
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

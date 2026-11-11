@@ -1,0 +1,15 @@
+Test SB_TT_stlr.ldr-dmb Allowed
+Histogram (4 states)
+171   *>0:X0=0; 1:X0=0;
+49999920:>0:X0=1; 1:X0=0;
+49999844:>0:X0=0; 1:X0=1;
+65    :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 171, Negative: 99999829
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=26cf02454e349447531b48315c5053ed
+Observation SB_TT_stlr.ldr-dmb Sometimes 171 99999829
+Time SB_TT_stlr.ldr-dmb 7.84
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

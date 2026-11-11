@@ -1,0 +1,14 @@
+Test Df_TT_casa-casa Allowed
+Histogram (3 states)
+49989584:>0:X1=1; 0:X2=0; 1:X1=0; 1:X2=0;
+49993498:>0:X1=0; 0:X2=0; 1:X1=1; 1:X2=0;
+16918 :>0:X1=1; 0:X2=0; 1:X1=1; 1:X2=0;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X2=0 /\ 1:X2=0) is NOT validated
+Hash=7b127858fa82901207c798dd720adce8
+Observation Df_TT_casa-casa Never 0 100000000
+Time Df_TT_casa-casa 8.38
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

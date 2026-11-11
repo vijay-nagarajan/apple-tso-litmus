@@ -1,0 +1,14 @@
+Test SB_TT_swpal.cas-dmb Allowed
+Histogram (3 states)
+50079469:>0:X0=1; 1:X0=0;
+49827010:>0:X0=0; 1:X0=1;
+93521 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=52d6f686cef88e42433d16ce84d65268
+Observation SB_TT_swpal.cas-dmb Never 0 100000000
+Time SB_TT_swpal.cas-dmb 14.67
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

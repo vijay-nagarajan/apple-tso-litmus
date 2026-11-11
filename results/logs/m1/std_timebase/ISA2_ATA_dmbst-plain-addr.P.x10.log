@@ -1,0 +1,18 @@
+Test ISA2_ATA_dmbst-plain-addr Allowed
+Histogram (7 states)
+27302398:>1:X0=0; 2:X0=0; 2:X1=0;
+21171 :>1:X0=1; 2:X0=0; 2:X1=0;
+16361016:>1:X0=0; 2:X0=1; 2:X1=0;
+1676714:>1:X0=0; 2:X0=0; 2:X1=1;
+44185339:>1:X0=1; 2:X0=0; 2:X1=1;
+7411097:>1:X0=0; 2:X0=1; 2:X1=1;
+3042265:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=b2632ce217652bcec77df19bf242f8d5
+Observation ISA2_ATA_dmbst-plain-addr Never 0 100000000
+Time ISA2_ATA_dmbst-plain-addr 28.16
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

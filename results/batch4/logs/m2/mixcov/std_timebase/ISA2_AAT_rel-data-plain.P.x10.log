@@ -1,0 +1,18 @@
+Test ISA2_AAT_rel-data-plain Allowed
+Histogram (7 states)
+20476766:>1:X0=0; 2:X0=0; 2:X1=0;
+2436  :>1:X0=1; 2:X0=0; 2:X1=0;
+28580339:>1:X0=0; 2:X0=1; 2:X1=0;
+1067350:>1:X0=0; 2:X0=0; 2:X1=1;
+36611882:>1:X0=1; 2:X0=0; 2:X1=1;
+7664112:>1:X0=0; 2:X0=1; 2:X1=1;
+5597115:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=b2a7bc6a53b9b22546d54aa1cccb32b5
+Observation ISA2_AAT_rel-data-plain Never 0 100000000
+Time ISA2_AAT_rel-data-plain 23.75
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

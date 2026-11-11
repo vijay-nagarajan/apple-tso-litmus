@@ -1,0 +1,15 @@
+Test Df_AA_swpa-swpa Allowed
+Histogram (4 states)
+338   *>0:X1=0; 1:X1=0;
+49994272:>0:X1=1; 1:X1=0;
+49995040:>0:X1=0; 1:X1=1;
+10350 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 338, Negative: 99999662
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=dec54a181eaf31a9593050ad4f3938d8
+Observation Df_AA_swpa-swpa Sometimes 338 99999662
+Time Df_AA_swpa-swpa 6.98
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

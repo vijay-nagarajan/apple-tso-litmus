@@ -1,0 +1,14 @@
+Test Df_TT_swpa-swpa Allowed
+Histogram (3 states)
+49995134:>0:X1=1; 1:X1=0;
+49992540:>0:X1=0; 1:X1=1;
+12326 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=42947da90690ad5f8220ed7bcd641f83
+Observation Df_TT_swpa-swpa Never 0 100000000
+Time Df_TT_swpa-swpa 10.24
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

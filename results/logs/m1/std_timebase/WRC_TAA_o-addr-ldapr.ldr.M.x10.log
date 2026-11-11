@@ -1,0 +1,18 @@
+Test WRC_TAA_o-addr-ldapr.ldr Allowed
+Histogram (7 states)
+16201346:>1:X0=0; 2:X0=0; 2:X1=0;
+15075520:>1:X0=1; 2:X0=0; 2:X1=0;
+18348405:>1:X0=0; 2:X0=1; 2:X1=0;
+39828 :>1:X0=0; 2:X0=0; 2:X1=1;
+22052462:>1:X0=1; 2:X0=0; 2:X1=1;
+17889411:>1:X0=0; 2:X0=1; 2:X1=1;
+10393028:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=25056aeaed76edbf25c675698e958fd5
+Observation WRC_TAA_o-addr-ldapr.ldr Never 0 100000000
+Time WRC_TAA_o-addr-ldapr.ldr 71.79
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

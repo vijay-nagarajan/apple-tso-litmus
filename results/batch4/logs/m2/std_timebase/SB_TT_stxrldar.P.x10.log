@@ -1,0 +1,15 @@
+Test SB_TT_stxrldar Allowed
+Histogram (4 states)
+4946757*>0:X0=0; 1:X0=0;
+47389049:>0:X0=1; 1:X0=0;
+47661763:>0:X0=0; 1:X0=1;
+485   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 4946757, Negative: 95051297
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=62bac38d365b14498363df7496163f38
+Observation SB_TT_stxrldar Sometimes 4946757 95051297
+Time SB_TT_stxrldar 7.54
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

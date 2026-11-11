@@ -1,0 +1,15 @@
+Test Dw_AT_base-swp Allowed
+Histogram (4 states)
+1088587*>0:X0=0; 1:X1=0;
+48897322:>0:X0=1; 1:X1=0;
+49990280:>0:X0=0; 1:X1=1;
+23811 :>0:X0=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 1088587, Negative: 98911413
+Condition exists (0:X0=0 /\ 1:X1=0) is validated
+Hash=9f7678bb3b97af3f351b8741cf538740
+Observation Dw_AT_base-swp Sometimes 1088587 98911413
+Time Dw_AT_base-swp 8.32
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

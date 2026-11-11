@@ -1,0 +1,18 @@
+Test RWC_ATA_o-plain-relacq Allowed
+Histogram (7 states)
+27662427:>1:X0=0; 1:X1=0; 2:X0=0;
+11530397:>1:X0=0; 1:X1=1; 2:X0=0;
+11264614:>1:X0=1; 1:X1=1; 2:X0=0;
+11722775:>1:X0=0; 1:X1=0; 2:X0=1;
+9627585:>1:X0=1; 1:X1=0; 2:X0=1;
+39734 :>1:X0=0; 1:X1=1; 2:X0=1;
+28152468:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=7dfdc0cb332c724d0fdde93c0df1f441
+Observation RWC_ATA_o-plain-relacq Never 0 100000000
+Time RWC_ATA_o-plain-relacq 53.28
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

@@ -1,0 +1,14 @@
+Test SB_TT_swp.casa-dmb Allowed
+Histogram (3 states)
+50078952:>0:X0=1; 1:X0=0;
+49814730:>0:X0=0; 1:X0=1;
+106318:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=4bc2038dc66e59013db7a110ebb00b77
+Observation SB_TT_swp.casa-dmb Never 0 100000000
+Time SB_TT_swp.casa-dmb 14.78
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

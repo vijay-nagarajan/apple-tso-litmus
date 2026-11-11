@@ -1,0 +1,19 @@
+Test RWC_TAA_o-addr-plain Allowed
+Histogram (8 states)
+23459616:>1:X0=0; 1:X1=0; 2:X0=0;
+61    *>1:X0=1; 1:X1=0; 2:X0=0;
+19554271:>1:X0=0; 1:X1=1; 2:X0=0;
+15288744:>1:X0=1; 1:X1=1; 2:X0=0;
+14316323:>1:X0=0; 1:X1=0; 2:X0=1;
+6710939:>1:X0=1; 1:X1=0; 2:X0=1;
+48499 :>1:X0=0; 1:X1=1; 2:X0=1;
+20621547:>1:X0=1; 1:X1=1; 2:X0=1;
+Ok
+
+Witnesses
+Positive: 61, Negative: 99999939
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is validated
+Hash=7fe7f56c1bb561d87025172994f0ec87
+Observation RWC_TAA_o-addr-plain Sometimes 61 99999939
+Time RWC_TAA_o-addr-plain 30.53
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

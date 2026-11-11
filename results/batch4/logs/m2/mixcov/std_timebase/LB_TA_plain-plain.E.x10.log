@@ -1,0 +1,14 @@
+Test LB_TA_plain-plain Allowed
+Histogram (3 states)
+1376175:>0:X0=0; 1:X0=0;
+49677533:>0:X0=1; 1:X0=0;
+48946292:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=01957d13ebf9dc97feb53b81dae73504
+Observation LB_TA_plain-plain Never 0 100000000
+Time LB_TA_plain-plain 9.06
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

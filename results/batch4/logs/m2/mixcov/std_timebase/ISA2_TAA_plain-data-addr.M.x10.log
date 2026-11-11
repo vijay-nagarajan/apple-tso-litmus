@@ -1,0 +1,18 @@
+Test ISA2_TAA_plain-data-addr Allowed
+Histogram (7 states)
+27098956:>1:X0=0; 2:X0=0; 2:X1=0;
+15465817:>1:X0=1; 2:X0=0; 2:X1=0;
+5802224:>1:X0=0; 2:X0=1; 2:X1=0;
+202850:>1:X0=0; 2:X0=0; 2:X1=1;
+18301124:>1:X0=1; 2:X0=0; 2:X1=1;
+19202947:>1:X0=0; 2:X0=1; 2:X1=1;
+13926082:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=c40489f491ae4cd0768de06ae6115487
+Observation ISA2_TAA_plain-data-addr Never 0 100000000
+Time ISA2_TAA_plain-data-addr 53.83
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

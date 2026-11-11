@@ -1,0 +1,14 @@
+Test Df_TT_swp-swp Allowed
+Histogram (3 states)
+49992163:>0:X1=1; 1:X1=0;
+49995075:>0:X1=0; 1:X1=1;
+12762 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=50ffd2d75e3e3212026624b54321c338
+Observation Df_TT_swp-swp Never 0 100000000
+Time Df_TT_swp-swp 11.86
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

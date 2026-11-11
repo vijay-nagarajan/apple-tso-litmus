@@ -1,0 +1,18 @@
+Test ISA2_TAA_plain-addr-ldapr.ldr Allowed
+Histogram (7 states)
+17668270:>1:X0=0; 2:X0=0; 2:X1=0;
+20102522:>1:X0=1; 2:X0=0; 2:X1=0;
+11432843:>1:X0=0; 2:X0=1; 2:X1=0;
+176077:>1:X0=0; 2:X0=0; 2:X1=1;
+12828352:>1:X0=1; 2:X0=0; 2:X1=1;
+29015097:>1:X0=0; 2:X0=1; 2:X1=1;
+8776839:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=ed70db467b9106d3a3fcbc4527b8cfe7
+Observation ISA2_TAA_plain-addr-ldapr.ldr Never 0 100000000
+Time ISA2_TAA_plain-addr-ldapr.ldr 69.08
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

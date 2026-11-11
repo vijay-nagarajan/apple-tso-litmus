@@ -1,0 +1,18 @@
+Test fwd12_stlxr-ldxr_T Allowed
+Histogram (7 states)
+30029451:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+11730409:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+10833787:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+35367371:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+48175 :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+3849406:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+8133884:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99992483
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=c2ad3b2204a4275b35a5d0f81d739326
+Observation fwd12_stlxr-ldxr_T Never 0 99992483
+Time fwd12_stlxr-ldxr_T 15.32
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

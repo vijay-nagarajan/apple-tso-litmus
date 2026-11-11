@@ -1,0 +1,15 @@
+Test Df_AT_llscal-base Allowed
+Histogram (4 states)
+48163 *>0:X1=0; 1:X0=0;
+49946544:>0:X1=1; 1:X0=0;
+49951794:>0:X1=0; 1:X0=1;
+4082  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 48163, Negative: 99902420
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=0f5f078231b4acbfa11e0640f4b18a80
+Observation Df_AT_llscal-base Sometimes 48163 99902420
+Time Df_AT_llscal-base 8.23
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

@@ -1,0 +1,14 @@
+Test Dr_AT_llsca-swp Allowed
+Histogram (3 states)
+45800955:>0:X0=1; 1:X0=0;
+49344861:>0:X0=0; 1:X0=1;
+42800 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 95188616
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=072d5b512e240eaccfb282fadc9e795c
+Observation Dr_AT_llsca-swp Never 0 95188616
+Time Dr_AT_llsca-swp 25.46
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

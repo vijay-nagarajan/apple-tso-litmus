@@ -1,0 +1,14 @@
+Test MP_TA_plain-acq Allowed
+Histogram (3 states)
+49999344:>1:X0=0; 1:X1=0;
+19921 :>1:X0=0; 1:X1=1;
+49980735:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=1a79e4bddedf01666a13d8a71c0081c2
+Observation MP_TA_plain-acq Never 0 100000000
+Time MP_TA_plain-acq 7.51
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

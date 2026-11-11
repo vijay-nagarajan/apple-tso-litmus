@@ -1,0 +1,15 @@
+Test Dw_AA_ldaddl-ldaddl Allowed
+Histogram (4 states)
+32493355*>0:X1=0; 1:X1=0;
+36879995:>0:X1=1; 1:X1=0;
+30626422:>0:X1=0; 1:X1=1;
+228   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 32493355, Negative: 67506645
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=ae1d5daf7d2db4a05f7a226dc6565619
+Observation Dw_AA_ldaddl-ldaddl Sometimes 32493355 67506645
+Time Dw_AA_ldaddl-ldaddl 8.01
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

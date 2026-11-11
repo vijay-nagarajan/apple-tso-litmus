@@ -1,0 +1,14 @@
+Test SB_TT_swpldar Allowed
+Histogram (3 states)
+50043200:>0:X0=1; 1:X0=0;
+49906822:>0:X0=0; 1:X0=1;
+49978 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=be6339f65c98d419a37b625053fc9301
+Observation SB_TT_swpldar Never 0 100000000
+Time SB_TT_swpldar 13.97
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

@@ -1,0 +1,14 @@
+Test Dr_AA_swpl-swpl Allowed
+Histogram (3 states)
+48825028:>0:X0=1; 1:X0=0;
+48937361:>0:X0=0; 1:X0=1;
+2237611:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=aa34d0f132f2a1fedd23923e4421f21c
+Observation Dr_AA_swpl-swpl Never 0 100000000
+Time Dr_AA_swpl-swpl 18.40
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

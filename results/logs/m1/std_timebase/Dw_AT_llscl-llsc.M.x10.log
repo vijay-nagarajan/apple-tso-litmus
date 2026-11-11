@@ -1,0 +1,15 @@
+Test Dw_AT_llscl-llsc Allowed
+Histogram (4 states)
+6287623*>0:X1=0; 1:X1=0;
+47806503:>0:X1=1; 1:X1=0;
+45882350:>0:X1=0; 1:X1=1;
+1880  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 6287623, Negative: 93690733
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=1558b2a73fddb0a4e452649d5d6999de
+Observation Dw_AT_llscl-llsc Sometimes 6287623 93690733
+Time Dw_AT_llscl-llsc 13.01
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

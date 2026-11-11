@@ -1,0 +1,15 @@
+Test Dr_AT_llsc-swp Allowed
+Histogram (4 states)
+1     *>0:X0=0; 1:X0=0;
+42142584:>0:X0=1; 1:X0=0;
+48058133:>0:X0=0; 1:X0=1;
+240500:>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 1, Negative: 90441217
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=fd7ed5984ab2c9d5bc5c44550127e611
+Observation Dr_AT_llsc-swp Sometimes 1 90441217
+Time Dr_AT_llsc-swp 17.85
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

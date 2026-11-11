@@ -1,0 +1,14 @@
+Test SB_TT_stlrldaxr Allowed
+Histogram (3 states)
+48972651:>0:X0=1; 1:X0=0;
+48223492:>0:X0=0; 1:X0=1;
+2411  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 97198554
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=5ffb6d092d0b72a7cfbeb44d7ba6b4c6
+Observation SB_TT_stlrldaxr Never 0 97198554
+Time SB_TT_stlrldaxr 16.84
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

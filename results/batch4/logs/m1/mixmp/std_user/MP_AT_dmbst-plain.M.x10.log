@@ -1,0 +1,14 @@
+Test MP_AT_dmbst-plain Allowed
+Histogram (3 states)
+50004525:>1:X0=0; 1:X1=0;
+392944:>1:X0=0; 1:X1=1;
+49602531:>1:X0=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0) is NOT validated
+Hash=4bd3926c5a03301652323ed8d5099233
+Observation MP_AT_dmbst-plain Never 0 100000000
+Time MP_AT_dmbst-plain 15.59
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

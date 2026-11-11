@@ -1,0 +1,18 @@
+Test ISA2_ATA_str.stlr-plain-plain Allowed
+Histogram (7 states)
+30030049:>1:X0=0; 2:X0=0; 2:X1=0;
+8443785:>1:X0=1; 2:X0=0; 2:X1=0;
+22519900:>1:X0=0; 2:X0=1; 2:X1=0;
+4654247:>1:X0=0; 2:X0=0; 2:X1=1;
+20241089:>1:X0=1; 2:X0=0; 2:X1=1;
+9649411:>1:X0=0; 2:X0=1; 2:X1=1;
+4461519:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=277b8f22a108c38a7827425f0b85403f
+Observation ISA2_ATA_str.stlr-plain-plain Never 0 100000000
+Time ISA2_ATA_str.stlr-plain-plain 34.87
+MEMMODEL mask=2 arm_sets=2000 tso_sets=1000

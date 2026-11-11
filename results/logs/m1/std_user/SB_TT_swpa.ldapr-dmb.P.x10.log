@@ -1,0 +1,14 @@
+Test SB_TT_swpa.ldapr-dmb Allowed
+Histogram (3 states)
+49995233:>0:X0=1; 1:X0=0;
+49991284:>0:X0=0; 1:X0=1;
+13483 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=eab9356eafdcab58da04895be678a60b
+Observation SB_TT_swpa.ldapr-dmb Never 0 100000000
+Time SB_TT_swpa.ldapr-dmb 7.08
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

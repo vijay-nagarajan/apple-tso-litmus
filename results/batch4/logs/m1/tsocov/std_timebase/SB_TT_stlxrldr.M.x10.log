@@ -1,0 +1,15 @@
+Test SB_TT_stlxrldr Allowed
+Histogram (4 states)
+2451601*>0:X0=0; 1:X0=0;
+49130752:>0:X0=1; 1:X0=0;
+48376809:>0:X0=0; 1:X0=1;
+1825  :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 2451601, Negative: 97509386
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=7605937ebbc1a3534d195d815ca6931f
+Observation SB_TT_stlxrldr Sometimes 2451601 97509386
+Time SB_TT_stlxrldr 16.25
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

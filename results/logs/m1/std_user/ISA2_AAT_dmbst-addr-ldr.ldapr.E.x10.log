@@ -1,0 +1,18 @@
+Test ISA2_AAT_dmbst-addr-ldr.ldapr Allowed
+Histogram (7 states)
+32669532:>1:X0=0; 2:X0=0; 2:X1=0;
+664935:>1:X0=1; 2:X0=0; 2:X1=0;
+20870617:>1:X0=0; 2:X0=1; 2:X1=0;
+1538976:>1:X0=0; 2:X0=0; 2:X1=1;
+30159654:>1:X0=1; 2:X0=0; 2:X1=1;
+12609496:>1:X0=0; 2:X0=1; 2:X1=1;
+1486790:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=0446c40da88485884f103202f227162b
+Observation ISA2_AAT_dmbst-addr-ldr.ldapr Never 0 100000000
+Time ISA2_AAT_dmbst-addr-ldr.ldapr 20.32
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

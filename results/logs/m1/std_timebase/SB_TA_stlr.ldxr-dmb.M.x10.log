@@ -1,0 +1,14 @@
+Test SB_TA_stlr.ldxr-dmb Allowed
+Histogram (3 states)
+49742758:>0:X0=1; 1:X0=0;
+49436472:>0:X0=0; 1:X0=1;
+3725  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99182955
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=dd71270f71c8c1e3043dd49559993f2d
+Observation SB_TA_stlr.ldxr-dmb Never 0 99182955
+Time SB_TA_stlr.ldxr-dmb 15.82
+MEMMODEL mask=1 arm_sets=1000 tso_sets=1000

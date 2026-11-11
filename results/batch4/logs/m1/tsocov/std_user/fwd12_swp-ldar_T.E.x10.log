@@ -1,0 +1,18 @@
+Test fwd12_swp-ldar_T Allowed
+Histogram (7 states)
+9890892:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+23630492:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+23247250:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+23090891:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+3664  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+10219212:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+9917599:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=9f9cbc508d88c43c8e3c5bb5dfd8aed4
+Observation fwd12_swp-ldar_T Never 0 100000000
+Time fwd12_swp-ldar_T 18.81
+MEMMODEL mask=1 arm_sets=2000 tso_sets=1000

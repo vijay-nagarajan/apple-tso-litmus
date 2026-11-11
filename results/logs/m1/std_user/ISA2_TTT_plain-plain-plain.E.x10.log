@@ -1,0 +1,18 @@
+Test ISA2_TTT_plain-plain-plain Allowed
+Histogram (7 states)
+30900606:>1:X0=0; 2:X0=0; 2:X1=0;
+2552070:>1:X0=1; 2:X0=0; 2:X1=0;
+16071829:>1:X0=0; 2:X0=1; 2:X1=0;
+18117 :>1:X0=0; 2:X0=0; 2:X1=1;
+28935574:>1:X0=1; 2:X0=0; 2:X1=1;
+17236807:>1:X0=0; 2:X0=1; 2:X1=1;
+4284997:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=d97e22e64d42745c1a5354c0f1a326cf
+Observation ISA2_TTT_plain-plain-plain Never 0 100000000
+Time ISA2_TTT_plain-plain-plain 17.98
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

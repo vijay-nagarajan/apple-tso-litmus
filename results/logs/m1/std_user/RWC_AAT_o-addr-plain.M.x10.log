@@ -1,0 +1,19 @@
+Test RWC_AAT_o-addr-plain Allowed
+Histogram (8 states)
+33603745:>1:X0=0; 1:X1=0; 2:X0=0;
+2     *>1:X0=1; 1:X1=0; 2:X0=0;
+31751670:>1:X0=0; 1:X1=1; 2:X0=0;
+3936778:>1:X0=1; 1:X1=1; 2:X0=0;
+6771350:>1:X0=0; 1:X1=0; 2:X0=1;
+4183406:>1:X0=1; 1:X1=0; 2:X0=1;
+336327:>1:X0=0; 1:X1=1; 2:X0=1;
+19416722:>1:X0=1; 1:X1=1; 2:X0=1;
+Ok
+
+Witnesses
+Positive: 2, Negative: 99999998
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is validated
+Hash=7fe7f56c1bb561d87025172994f0ec87
+Observation RWC_AAT_o-addr-plain Sometimes 2 99999998
+Time RWC_AAT_o-addr-plain 39.61
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

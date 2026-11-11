@@ -1,0 +1,15 @@
+Test Dr_AT_base-swp Allowed
+Histogram (4 states)
+32    *>0:X0=0; 1:X0=0;
+49999628:>0:X0=1; 1:X0=0;
+49999927:>0:X0=0; 1:X0=1;
+413   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 32, Negative: 99999968
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=403ad9627d22ca90fb49c01a283f39af
+Observation Dr_AT_base-swp Sometimes 32 99999968
+Time Dr_AT_base-swp 15.35
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

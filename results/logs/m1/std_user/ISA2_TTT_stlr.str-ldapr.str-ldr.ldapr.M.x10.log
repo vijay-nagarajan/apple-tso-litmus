@@ -1,0 +1,18 @@
+Test ISA2_TTT_stlr.str-ldapr.str-ldr.ldapr Allowed
+Histogram (7 states)
+25854554:>1:X0=0; 2:X0=0; 2:X1=0;
+8462814:>1:X0=1; 2:X0=0; 2:X1=0;
+10350724:>1:X0=0; 2:X0=1; 2:X1=0;
+2820406:>1:X0=0; 2:X0=0; 2:X1=1;
+22305963:>1:X0=1; 2:X0=0; 2:X1=1;
+22610483:>1:X0=0; 2:X0=1; 2:X1=1;
+7595056:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=20ac0658af8543c546b43e7d01c0d84d
+Observation ISA2_TTT_stlr.str-ldapr.str-ldr.ldapr Never 0 100000000
+Time ISA2_TTT_stlr.str-ldapr.str-ldr.ldapr 35.96
+MEMMODEL mask=7 arm_sets=0 tso_sets=3000

@@ -1,0 +1,15 @@
+Test Dw_AT_swpa-llsc Allowed
+Histogram (4 states)
+159815*>0:X1=0; 1:X1=0;
+49999202:>0:X1=1; 1:X1=0;
+49839447:>0:X1=0; 1:X1=1;
+957   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 159815, Negative: 99839606
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=13ef40f1db0c37d3d98dfb2030afd3d0
+Observation Dw_AT_swpa-llsc Sometimes 159815 99839606
+Time Dw_AT_swpa-llsc 13.77
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

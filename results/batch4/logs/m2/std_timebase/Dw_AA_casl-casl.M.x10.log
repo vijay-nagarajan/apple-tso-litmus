@@ -1,0 +1,15 @@
+Test Dw_AA_casl-casl Allowed
+Histogram (4 states)
+494295*>0:X1=0; 1:X1=0;
+49762612:>0:X1=1; 1:X1=0;
+49742967:>0:X1=0; 1:X1=1;
+126   :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 494295, Negative: 99505705
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=314cfa48962cb93eb79894204dc251ea
+Observation Dw_AA_casl-casl Sometimes 494295 99505705
+Time Dw_AA_casl-casl 17.41
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

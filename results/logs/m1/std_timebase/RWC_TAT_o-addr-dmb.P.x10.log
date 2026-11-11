@@ -1,0 +1,18 @@
+Test RWC_TAT_o-addr-dmb Allowed
+Histogram (7 states)
+7890491:>1:X0=0; 1:X1=0; 2:X0=0;
+12442069:>1:X0=0; 1:X1=1; 2:X0=0;
+26589361:>1:X0=1; 1:X1=1; 2:X0=0;
+33733470:>1:X0=0; 1:X1=0; 2:X0=1;
+9767318:>1:X0=1; 1:X1=0; 2:X0=1;
+1340  :>1:X0=0; 1:X1=1; 2:X0=1;
+9575951:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=dcd958c2cf7879b139af117dc216526b
+Observation RWC_TAT_o-addr-dmb Never 0 100000000
+Time RWC_TAT_o-addr-dmb 26.51
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

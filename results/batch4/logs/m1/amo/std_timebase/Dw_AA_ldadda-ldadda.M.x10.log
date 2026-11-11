@@ -1,0 +1,14 @@
+Test Dw_AA_ldadda-ldadda Allowed
+Histogram (3 states)
+49994274:>0:X1=1; 1:X1=0;
+49993439:>0:X1=0; 1:X1=1;
+12287 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=173a34dd630071037512c607360af6c6
+Observation Dw_AA_ldadda-ldadda Never 0 100000000
+Time Dw_AA_ldadda-ldadda 17.01
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

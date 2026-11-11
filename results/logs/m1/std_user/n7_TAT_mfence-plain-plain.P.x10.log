@@ -1,0 +1,18 @@
+Test n7_TAT_mfence-plain-plain Allowed
+Histogram (7 states)
+29914819:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+9631440:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+11697216:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+30774125:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+201241:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+5872193:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+11908966:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=ae85c49a652e33fca76e1f0177f85e09
+Observation n7_TAT_mfence-plain-plain Never 0 100000000
+Time n7_TAT_mfence-plain-plain 13.42
+MEMMODEL mask=5 arm_sets=1000 tso_sets=2000

@@ -1,0 +1,14 @@
+Test SB_TT_swpl.casl-dmb Allowed
+Histogram (3 states)
+49995337:>0:X0=1; 1:X0=0;
+49984624:>0:X0=0; 1:X0=1;
+20039 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=4a632dda72481139bd0e62e904ea622e
+Observation SB_TT_swpl.casl-dmb Never 0 100000000
+Time SB_TT_swpl.casl-dmb 12.93
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

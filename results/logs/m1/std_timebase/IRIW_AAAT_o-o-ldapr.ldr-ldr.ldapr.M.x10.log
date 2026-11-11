@@ -1,0 +1,26 @@
+Test IRIW_AAAT_o-o-ldapr.ldr-ldr.ldapr Allowed
+Histogram (15 states)
+17682771:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=0;
+3184059:>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=0;
+3993641:>2:X0=0; 2:X1=1; 3:X0=0; 3:X1=0;
+8628344:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=0;
+728757:>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=0;
+10868986:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=0;
+1173517:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=0;
+5186941:>2:X0=0; 2:X1=0; 3:X0=0; 3:X1=1;
+11430836:>2:X0=1; 2:X1=0; 3:X0=0; 3:X1=1;
+32275 :>2:X0=0; 2:X1=1; 3:X0=0; 3:X1=1;
+3423234:>2:X0=1; 2:X1=1; 3:X0=0; 3:X1=1;
+6819938:>2:X0=0; 2:X1=0; 3:X0=1; 3:X1=1;
+1607995:>2:X0=1; 2:X1=0; 3:X0=1; 3:X1=1;
+6531999:>2:X0=0; 2:X1=1; 3:X0=1; 3:X1=1;
+18706707:>2:X0=1; 2:X1=1; 3:X0=1; 3:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (2:X0=1 /\ 2:X1=0 /\ 3:X0=1 /\ 3:X1=0) is NOT validated
+Hash=2da7f2fb374d219d2bde835c1ce1b34d
+Observation IRIW_AAAT_o-o-ldapr.ldr-ldr.ldapr Never 0 100000000
+Time IRIW_AAAT_o-o-ldapr.ldr-ldr.ldapr 81.52
+MEMMODEL mask=8 arm_sets=3000 tso_sets=1000

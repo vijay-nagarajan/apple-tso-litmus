@@ -1,0 +1,18 @@
+Test n7_TTA_mfence-plain-rcpc Allowed
+Histogram (7 states)
+16453580:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=0;
+19938735:>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=0;
+13480814:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=0;
+21534704:>0:X0=1; 0:X1=0; 2:X0=0; 2:X1=1;
+2443  :>0:X0=1; 0:X1=1; 2:X0=0; 2:X1=1;
+8844665:>0:X0=1; 0:X1=0; 2:X0=1; 2:X1=1;
+19745059:>0:X0=1; 0:X1=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=1 /\ 0:X1=0 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=836831b20b84ae0746444a4f70a3af7b
+Observation n7_TTA_mfence-plain-rcpc Never 0 100000000
+Time n7_TTA_mfence-plain-rcpc 17.22
+MEMMODEL mask=3 arm_sets=1000 tso_sets=2000

@@ -1,0 +1,14 @@
+Test LB_TT_ldrstlxr-ldrstlxr Allowed
+Histogram (3 states)
+7358073:>0:X0=0; 1:X0=0;
+47365599:>0:X0=1; 1:X0=0;
+45202723:>0:X0=0; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99926395
+Condition exists (0:X0=1 /\ 1:X0=1) is NOT validated
+Hash=b636f0af030d0669003dec0c65d67345
+Observation LB_TT_ldrstlxr-ldrstlxr Never 0 99926395
+Time LB_TT_ldrstlxr-ldrstlxr 11.86
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

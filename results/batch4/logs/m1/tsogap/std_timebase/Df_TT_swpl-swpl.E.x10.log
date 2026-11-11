@@ -1,0 +1,14 @@
+Test Df_TT_swpl-swpl Allowed
+Histogram (3 states)
+49991532:>0:X1=1; 1:X1=0;
+49992159:>0:X1=0; 1:X1=1;
+16309 :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=004e6a976cbee3ce63e04b1e8430ebd9
+Observation Df_TT_swpl-swpl Never 0 100000000
+Time Df_TT_swpl-swpl 11.71
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

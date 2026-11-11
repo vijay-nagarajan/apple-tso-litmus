@@ -1,0 +1,15 @@
+Test Df_AT_swpa-base Allowed
+Histogram (4 states)
+765540*>0:X1=0; 1:X0=0;
+49400582:>0:X1=1; 1:X0=0;
+49827207:>0:X1=0; 1:X0=1;
+6671  :>0:X1=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 765540, Negative: 99234460
+Condition exists (0:X1=0 /\ 1:X0=0) is validated
+Hash=94e976882db334219233711c43a41180
+Observation Df_AT_swpa-base Sometimes 765540 99234460
+Time Df_AT_swpa-base 12.41
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

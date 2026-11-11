@@ -1,0 +1,15 @@
+Test SB_AT_str.ldar-dmb Allowed
+Histogram (4 states)
+14    *>0:X0=0; 1:X0=0;
+49999499:>0:X0=1; 1:X0=0;
+50000035:>0:X0=0; 1:X0=1;
+452   :>0:X0=1; 1:X0=1;
+Ok
+
+Witnesses
+Positive: 14, Negative: 99999986
+Condition exists (0:X0=0 /\ 1:X0=0) is validated
+Hash=5a73d5e9ede53f31e83bd1fb73d8e521
+Observation SB_AT_str.ldar-dmb Sometimes 14 99999986
+Time SB_AT_str.ldar-dmb 9.28
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

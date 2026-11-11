@@ -1,0 +1,14 @@
+Test Dr_TT_cas-cas Allowed
+Histogram (3 states)
+49989346:>0:X0=1; 1:X0=0;
+49988190:>0:X0=0; 1:X0=1;
+22464 :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=e06e8c41333a2b836849f6c310e2c29b
+Observation Dr_TT_cas-cas Never 0 100000000
+Time Dr_TT_cas-cas 7.92
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

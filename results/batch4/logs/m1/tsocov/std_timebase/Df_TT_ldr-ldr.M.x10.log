@@ -1,0 +1,15 @@
+Test Df_TT_ldr-ldr Allowed
+Histogram (4 states)
+795953*>0:X1=0; 1:X1=0;
+49395810:>0:X1=1; 1:X1=0;
+49804294:>0:X1=0; 1:X1=1;
+3943  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 795953, Negative: 99204047
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=a66763f1432eafa1e9d536a332dacaf2
+Observation Df_TT_ldr-ldr Sometimes 795953 99204047
+Time Df_TT_ldr-ldr 13.36
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

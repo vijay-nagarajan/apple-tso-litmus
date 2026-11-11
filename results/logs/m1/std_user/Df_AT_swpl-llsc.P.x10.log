@@ -1,0 +1,15 @@
+Test Df_AT_swpl-llsc Allowed
+Histogram (4 states)
+402   *>0:X1=0; 1:X1=0;
+49995684:>0:X1=1; 1:X1=0;
+49918646:>0:X1=0; 1:X1=1;
+3760  :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 402, Negative: 99918090
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=61922db2a363131292dfbe2e14f73d53
+Observation Df_AT_swpl-llsc Sometimes 402 99918090
+Time Df_AT_swpl-llsc 5.24
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

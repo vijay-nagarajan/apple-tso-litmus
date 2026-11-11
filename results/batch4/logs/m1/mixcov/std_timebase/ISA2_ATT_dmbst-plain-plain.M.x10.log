@@ -1,0 +1,18 @@
+Test ISA2_ATT_dmbst-plain-plain Allowed
+Histogram (7 states)
+20197557:>1:X0=0; 2:X0=0; 2:X1=0;
+1781444:>1:X0=1; 2:X0=0; 2:X1=0;
+13150086:>1:X0=0; 2:X0=1; 2:X1=0;
+824236:>1:X0=0; 2:X0=0; 2:X1=1;
+31835047:>1:X0=1; 2:X0=0; 2:X1=1;
+17465182:>1:X0=0; 2:X0=1; 2:X1=1;
+14746448:>1:X0=1; 2:X0=1; 2:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 2:X0=1 /\ 2:X1=0) is NOT validated
+Hash=6d6adcec038d8c581906528ec40286d4
+Observation ISA2_ATT_dmbst-plain-plain Never 0 100000000
+Time ISA2_ATT_dmbst-plain-plain 72.97
+MEMMODEL mask=6 arm_sets=1000 tso_sets=2000

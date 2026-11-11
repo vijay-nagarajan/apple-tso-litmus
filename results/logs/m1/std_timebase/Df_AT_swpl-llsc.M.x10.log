@@ -1,0 +1,15 @@
+Test Df_AT_swpl-llsc Allowed
+Histogram (4 states)
+98286 *>0:X1=0; 1:X1=0;
+49937571:>0:X1=1; 1:X1=0;
+49894652:>0:X1=0; 1:X1=1;
+15388 :>0:X1=1; 1:X1=1;
+Ok
+
+Witnesses
+Positive: 98286, Negative: 99847611
+Condition exists (0:X1=0 /\ 1:X1=0) is validated
+Hash=61922db2a363131292dfbe2e14f73d53
+Observation Df_AT_swpl-llsc Sometimes 98286 99847611
+Time Df_AT_swpl-llsc 17.82
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

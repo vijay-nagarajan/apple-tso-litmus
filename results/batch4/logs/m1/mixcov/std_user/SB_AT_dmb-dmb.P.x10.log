@@ -1,0 +1,14 @@
+Test SB_AT_dmb-dmb Allowed
+Histogram (3 states)
+49991986:>0:X0=1; 1:X0=0;
+49998977:>0:X0=0; 1:X0=1;
+9037  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=00e12755d09637bc8fc1b6017bc0e527
+Observation SB_AT_dmb-dmb Never 0 100000000
+Time SB_AT_dmb-dmb 6.94
+MEMMODEL mask=2 arm_sets=1000 tso_sets=1000

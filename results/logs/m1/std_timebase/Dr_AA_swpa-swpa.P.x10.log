@@ -1,0 +1,14 @@
+Test Dr_AA_swpa-swpa Allowed
+Histogram (3 states)
+49756022:>0:X0=1; 1:X0=0;
+49759563:>0:X0=0; 1:X0=1;
+484415:>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=3cc10c3c55bad3af99d6bb3cb86f155d
+Observation Dr_AA_swpa-swpa Never 0 100000000
+Time Dr_AA_swpa-swpa 10.43
+MEMMODEL mask=0 arm_sets=2000 tso_sets=0

@@ -1,0 +1,14 @@
+Test Df_TT_casfail-casfail Allowed
+Histogram (3 states)
+49991631:>0:X1=1; 0:X16=0; 1:X1=0; 1:X16=0;
+49980089:>0:X1=0; 0:X16=0; 1:X1=1; 1:X16=0;
+28280 :>0:X1=1; 0:X16=0; 1:X1=1; 1:X16=0;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (0:X1=0 /\ 1:X1=0 /\ 0:X16=0 /\ 1:X16=0) is NOT validated
+Hash=c5e73ddd9a3d41a584f8941df07a8709
+Observation Df_TT_casfail-casfail Never 0 100000000
+Time Df_TT_casfail-casfail 14.78
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

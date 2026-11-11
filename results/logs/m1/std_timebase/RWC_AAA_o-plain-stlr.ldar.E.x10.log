@@ -1,0 +1,18 @@
+Test RWC_AAA_o-plain-stlr.ldar Allowed
+Histogram (7 states)
+2061262:>1:X0=0; 1:X1=0; 2:X0=0;
+32730973:>1:X0=0; 1:X1=1; 2:X0=0;
+15490612:>1:X0=1; 1:X1=1; 2:X0=0;
+26703434:>1:X0=0; 1:X1=0; 2:X0=1;
+21344307:>1:X0=1; 1:X1=0; 2:X0=1;
+367   :>1:X0=0; 1:X1=1; 2:X0=1;
+1669045:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=7dfdc0cb332c724d0fdde93c0df1f441
+Observation RWC_AAA_o-plain-stlr.ldar Never 0 100000000
+Time RWC_AAA_o-plain-stlr.ldar 44.33
+MEMMODEL mask=0 arm_sets=3000 tso_sets=0

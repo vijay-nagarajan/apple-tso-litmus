@@ -1,0 +1,18 @@
+Test RWC_AAT_o-addr-dmb Allowed
+Histogram (7 states)
+27092588:>1:X0=0; 1:X1=0; 2:X0=0;
+15225085:>1:X0=0; 1:X1=1; 2:X0=0;
+7717801:>1:X0=1; 1:X1=1; 2:X0=0;
+8873561:>1:X0=0; 1:X1=0; 2:X0=1;
+13216674:>1:X0=1; 1:X1=0; 2:X0=1;
+25736 :>1:X0=0; 1:X1=1; 2:X0=1;
+27848555:>1:X0=1; 1:X1=1; 2:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 100000000
+Condition exists (1:X0=1 /\ 1:X1=0 /\ 2:X0=0) is NOT validated
+Hash=dcd958c2cf7879b139af117dc216526b
+Observation RWC_AAT_o-addr-dmb Never 0 100000000
+Time RWC_AAT_o-addr-dmb 54.66
+MEMMODEL mask=4 arm_sets=2000 tso_sets=1000

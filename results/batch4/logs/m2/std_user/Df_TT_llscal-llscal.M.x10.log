@@ -1,0 +1,14 @@
+Test Df_TT_llscal-llscal Allowed
+Histogram (3 states)
+49991791:>0:X1=1; 1:X1=0;
+49959092:>0:X1=0; 1:X1=1;
+58    :>0:X1=1; 1:X1=1;
+No
+
+Witnesses
+Positive: 0, Negative: 99950941
+Condition exists (0:X1=0 /\ 1:X1=0) is NOT validated
+Hash=4a21997d1d30bd2e3fc48691efa1784c
+Observation Df_TT_llscal-llscal Never 0 99950941
+Time Df_TT_llscal-llscal 16.85
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000

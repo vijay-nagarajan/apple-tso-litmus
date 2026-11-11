@@ -1,0 +1,14 @@
+Test SB_TT_swp.ldaxr-dmb Allowed
+Histogram (3 states)
+50042376:>0:X0=1; 1:X0=0;
+47830128:>0:X0=0; 1:X0=1;
+8779  :>0:X0=1; 1:X0=1;
+No
+
+Witnesses
+Positive: 0, Negative: 97881283
+Condition exists (0:X0=0 /\ 1:X0=0) is NOT validated
+Hash=dd31224ef8882c260ff228e0395c9f02
+Observation SB_TT_swp.ldaxr-dmb Never 0 97881283
+Time SB_TT_swp.ldaxr-dmb 14.73
+MEMMODEL mask=3 arm_sets=0 tso_sets=2000
