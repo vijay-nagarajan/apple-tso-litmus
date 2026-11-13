@@ -9,5 +9,5 @@ let apple-all = [W]; po-loc; [R & (A | Q)]            (* A1 *)
 
 (* A CAS is an AMO that always writes:
    one whose comparison fails writes back the value it read. *)
-let CAS-read = domain([Exp & R]; iico_data+; [PRED])
-empty CAS-read \ domain(amo) as cas-writes
+let CASR = domain([Exp & R]; iico_data+; [PRED])
+empty CASR \ domain(amo) as cas-writes
