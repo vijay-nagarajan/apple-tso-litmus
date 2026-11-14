@@ -115,11 +115,11 @@ def run(D):
       ('store $\\to$ store', 'plain', 'MP', ['MP_AA_plain-dmb'], '', None),
       ('store $\\to$ store', '%s;%s' % (I('STLR'), I('STR')), 'MP', ['MP_AA_stlr.str-dmb'], '', None),
       ('store $\\to$ store', '%s, %s' % (I('DMB LD'), I('DSB LD')), 'MP', ['MP_AA_dmbld-dmb', 'MP_AA_dsbld-dmb'], 'A2', None),
-      ('load $\\to$ load', 'acquire first, %s, %s, %s, %s, address, control and %s (12)' % (I('DMB'), I('DMB LD'), I('DSB'), I('DSB LD'), I('ISB')),
+      ('load $\\to$ load', 'acquire first, %s, %s, %s, %s, address dependency, control dependency and %s (12)' % (I('DMB'), I('DMB LD'), I('DSB'), I('DSB LD'), I('ISB')),
        'MP', RRo, '', [('plain', ['MP_AA_dmb-plain'], '')]),
       ('load $\\to$ load', 'plain; %s;%s; %s;%s; %s' % (I('LDR'), I('LDAPR'), I('LDR'), I('LDAR'), I('DMB ST')), 'MP',
        ['MP_AA_dmb-plain', 'MP_AA_dmb-ldr.ldapr', 'MP_AA_dmb-ldr.ldar', 'MP_AA_dmb-dmbst'], '', None),
-      ('load $\\to$ load', 'control', 'MP', ['MP_AA_dmb-ctrl'], '', None),
+      ('load $\\to$ load', 'control dependency', 'MP', ['MP_AA_dmb-ctrl'], '', None),
       ('load $\\to$ load', I('DSB ST'), 'MP', ['MP_AA_dmb-dsbst'], '', None),
       ('load $\\to$ store', 'release or acquire, %s, %s, %s, %s, dependencies (13)' % (I('DMB'), I('DMB LD'), I('DSB'), I('DSB LD')),
        'LB', RWo, '', [('plain', ['LB_AA_plain-dmb'], 'A3')]),
@@ -130,11 +130,11 @@ def run(D):
        ['SB_AA_plain-dmb', 'SB_AA_str.ldapr-dmb', 'SB_AA_str.ldar-dmb', 'SB_AA_dmbst-dmb'], '', None),
       ('store $\\to$ load', '%s;%s; %s;%s' % (I('STLR'), I('LDR'), I('STLR'), I('LDAPR')), 'SB', ['SB_AA_stlr.ldr-dmb', 'SB_AA_stlr.ldapr-dmb'], '', None),
       ('store $\\to$ load', '%s, %s' % (I('DMB LD'), I('DSB LD')), 'SB', ['SB_AA_dmbld-dmb', 'SB_AA_dsbld-dmb'], 'A2', None),
-      ('same address', '%s;%s' % (I('STLR'), I('LDAR')), 'n7', ['fwd5_stlr-ldar'], '', [('%s;%s' % (I('STLR'), I('LDR')), ['fwd8_stlr-ldr-addr'], '')]),
-      ('same address', '%s;%s' % (I('STR'), I('LDR')), 'n7', ['fwd7_str-ldr-addr'], '', None),
-      ('same address', '%s;%s' % (I('STLR'), I('LDR')), 'n7', ['fwd8_stlr-ldr-addr'], '', None),
-      ('same address', '%s;%s' % (I('STXR'), I('LDR')), 'n7', ['fwd10_stxr-ldr-addr', 'fwd11_stxr-ldr'], '', None),
-      ('same address', '%s, %s or %s, then %s or %s' % (I('STR'), I('STLR'), I('STXR'), I('LDAPR'), I('LDAR')), 'n7',
+      ('store $\\to$ read-back', '%s;%s' % (I('STLR'), I('LDAR')), 'n7', ['fwd5_stlr-ldar'], '', [('%s;%s' % (I('STLR'), I('LDR')), ['fwd8_stlr-ldr-addr'], '')]),
+      ('store $\\to$ read-back', '%s;%s' % (I('STR'), I('LDR')), 'n7', ['fwd7_str-ldr-addr'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STLR'), I('LDR')), 'n7', ['fwd8_stlr-ldr-addr'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STXR'), I('LDR')), 'n7', ['fwd10_stxr-ldr-addr', 'fwd11_stxr-ldr'], '', None),
+      ('store $\\to$ read-back', '%s, %s or %s, then %s or %s' % (I('STR'), I('STLR'), I('STXR'), I('LDAPR'), I('LDAR')), 'n7',
        ['fwd3_str-ldapr', 'fwd6_str-ldar', 'fwd4_stlr-ldapr', 'fwd9_stxr-ldar'], 'A1', None),
     ]
     rows[0] = ('store $\\to$ store', '%s;%s, %s;%s, %s, %s, %s, %s (6)' % (I('STR'), I('STLR'), I('STLR'), I('STLR'), I('DMB'), I('DMB ST'), I('DSB'), I('DSB ST')),
@@ -142,15 +142,7 @@ def run(D):
     for p, me, sh, ts, nt, c in rows:
         for t in ts: assert L[t]['modes'] in ('AA', 'AAA'), t
     ppo_table(os.path.join(D, 'res-arm-ppo.tex'), 'arm', rows,
-        'The Arm rows of preserved program order on the two machines, every thread in Arm mode, $6\\times10^8$ iterations '
-        'of each test on each machine. An entry is the order of magnitude of the number of times the outcome appeared '
-        '($10^k$: from $10^k$ to $10^{k+1}-1$; a range spans the row\'s tests). An ordered row\'s control is the same test with '
-        'the pair left plain; on the M2, the store $\\to$ store control is the same test with a TSO-mode partner, since in these runs it appeared only with that partner (\\cref{sec:compound-partner}). '
-        'Shading: \\rfz\\ and \\rsn{$10^{4}$}, the machines agree with the model (forbidden and never seen, allowed and seen); '
-        '\\rst{A2}, allowed by the model but never seen, and forbidden by A2 (\\cref{sec:models-apple}): the machines are stronger; '
-        '\\rux, allowed but never seen, and no order of the machines forbids it. No forbidden outcome was seen. '
-        'The n7 tests~\\cite{x86tso-tphols} order Thread~0\'s last two loads by an acquire or an address dependency, so that on Arm '
-        'only a read-back of the store before it is visible can produce the outcome.', 'tab:arm-results')
+        'The Arm rows of preserved program order, every thread in Arm mode, each test run $6\\times10^8$ times on each machine. An entry is the order of magnitude of the number of times the outcome appeared ($10^k$: from $10^k$ to $10^{k+1}-1$; a range spans the row\'s tests). An ordered row\'s control is the same test without its ordering: plain accesses, with no barrier or dependency; for n7, \\ins{LDR} in place of \\ins{LDAR}. The store $\\to$ store control is also given with a TSO-mode partner, the only partner with which it appeared on the M2 (\\cref{sec:compound-partner}). Shading: \\rfz\\ and \\rsn{$10^{4}$}, the machines agree with the model; \\rst{A2}, allowed by the model but never seen, and forbidden by A2 (\\cref{sec:models-apple}); \\rux, allowed but never seen, and no order of the machines forbids it.', 'tab:arm-results')
     # ---------------- Table: TSO ppo ----------------
     TWW = ['MP_TT_%s-plain' % m for m in ('plain', 'str.stlr', 'stlr.str', 'stlr.stlr', 'dmb', 'dmbld', 'dmbst', 'dsb', 'dsbld', 'dsbst')]
     TRR = ['MP_TT_plain-%s' % m for m in ('ldr.ldapr', 'ldr.ldar', 'ldapr.ldr', 'ldapr.ldapr', 'ldapr.ldar', 'ldar.ldr', 'ldar.ldapr',
@@ -176,23 +168,22 @@ def run(D):
         'The rows of the sequential composition on the two machines, every thread in TSO mode, $6\\times10^8$ iterations '
         'of each test on each machine. Entries as in \\cref{tab:arm-results}. TSO orders every store $\\to$ store, '
         'load $\\to$ load and load $\\to$ store row whatever the mechanism; their control is the same test with that thread '
-        'in Arm mode, where the pair is not ordered. A number in parentheses counts the mechanisms of a row; with the 12 '
-        'store $\\to$ load mechanisms, the 44 of the first three rows make up the 56 of \\cref{sec:method-tests}. '
-        'The same-address rows are n7 with every thread in TSO mode and each store and load form on Thread~0.', 'tab:tsoarm-results')
+        'in Arm mode, where the pair is not ordered. The store $\\to$ load control is SB with plain accesses. A number in parentheses counts the mechanisms of a row. '
+        'The read-back rows are n7, in which a thread stores \\ins{x} and reads it back; each row gives the forms of that store and load.', 'tab:tsoarm-results')
     # TSO same-address rows: n7 with every thread TSO (n7_TTT and addon_fwdtso), each store and load form on Thread 0
     fwd_rows = [
-      ('same address', '%s;%s' % (I('STR'), I('LDR')), 'n7', ['n7_TTT_plain-plain-plain', 'fwd12_str-ldr_TTT', 'fwd7_str-ldr-addr_TTT'], '', None),
-      ('same address', '%s;%s' % (I('STLR'), I('LDR')), 'n7', ['fwd8_stlr-ldr-addr_TTT'], '', None),
-      ('same address', '%s;%s' % (I('STXR'), I('LDR')), 'n7', ['fwd10_stxr-ldr-addr_TTT', 'fwd11_stxr-ldr_TTT'], '', None),
-      ('same address', '%s;%s' % (I('STLXR'), I('LDR')), 'n7', ['fwd12_stlxr-ldr_TTT'], '', None),
-      ('same address', '%s or %s, then %s' % (I('STR'), I('STLR'), I('LDXR')), 'n7', ['fwd12_str-ldxr_TTT', 'fwd12_stlr-ldxr_TTT'], '', None),
-      ('same address', '%s;%s' % (I('STLXR'), I('LDXR')), 'n7', ['fwd12_stlxr-ldxr_TTT'], '', None),
-      ('same address', '%s, %s, %s or %s, then an acquire load' % (I('STR'), I('STLR'), I('STXR'), I('STLXR')), 'n7',
+      ('store $\\to$ read-back', '%s;%s' % (I('STR'), I('LDR')), 'n7', ['n7_TTT_plain-plain-plain', 'fwd12_str-ldr_TTT', 'fwd7_str-ldr-addr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STLR'), I('LDR')), 'n7', ['fwd8_stlr-ldr-addr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STXR'), I('LDR')), 'n7', ['fwd10_stxr-ldr-addr_TTT', 'fwd11_stxr-ldr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STLXR'), I('LDR')), 'n7', ['fwd12_stlxr-ldr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s or %s, then %s' % (I('STR'), I('STLR'), I('LDXR')), 'n7', ['fwd12_str-ldxr_TTT', 'fwd12_stlr-ldxr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s;%s' % (I('STLXR'), I('LDXR')), 'n7', ['fwd12_stlxr-ldxr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s, %s, %s or %s, then an acquire load' % (I('STR'), I('STLR'), I('STXR'), I('STLXR')), 'n7',
        ['fwd3_str-ldapr_TTT', 'fwd6_str-ldar_TTT', 'fwd4_stlr-ldapr_TTT', 'fwd9_stxr-ldar_TTT', 'fwd12_str-ldaxr_TTT', 'fwd12_stlxr-ldapr_TTT'], 'A1', None),
-      ('same address', 'a release, then %s or %s' % (I('LDAR'), I('LDAXR')), 'n7',
+      ('store $\\to$ read-back', 'a release, then %s or %s' % (I('LDAR'), I('LDAXR')), 'n7',
        ['fwd5_stlr-ldar_TTT', 'fwd12_stlr-ldaxr_TTT', 'fwd12_stlxr-ldar_TTT', 'fwd12_stlxr-ldaxr_TTT'], '', None),
-      ('same address', 'an AMO, then any load', 'n7', ['fwd12_swp-ldr_TTT', 'fwd12_swp-ldapr_TTT', 'fwd12_swp-ldar_TTT', 'fwd12_swp-ldxr_TTT', 'fwd12_swp-ldaxr_TTT'], '', None),
-      ('same address', '%s after the read-back' % I('DMB LD'), 'n7', ['fwd1_str-ldr-dmbld_TTT', 'fwd2_stlr-ldr-dmbld_TTT'], 'A2', None),
+      ('store $\\to$ read-back', 'an AMO, then any load', 'n7', ['fwd12_swp-ldr_TTT', 'fwd12_swp-ldapr_TTT', 'fwd12_swp-ldar_TTT', 'fwd12_swp-ldxr_TTT', 'fwd12_swp-ldaxr_TTT'], '', None),
+      ('store $\\to$ read-back', '%s after the read-back' % I('DMB LD'), 'n7', ['fwd1_str-ldr-dmbld_TTT', 'fwd2_stlr-ldr-dmbld_TTT'], 'A2', None),
     ]
     assert sorted(t for r in fwd_rows for t in r[3] if t in XV) == sorted(XV), 'every addon_fwdtso test in exactly one row'
     # verdicts of mixed tests: use compound column
@@ -217,12 +208,13 @@ def run(D):
         'A1--A3. A control is a forbidden test with one edge left unordered; controls that A3 forbids are omitted, and the '
         'range spans the shape\'s controls. Entries as in \\cref{tab:arm-results}.', 'tab:arm-multi')
     st = multi_table(os.path.join(D, 'res-tso-multi.tex'), lambda md: set(md) == {'T'},
-        'WRC, ISA2, RWC and IRIW with every thread in TSO mode, under every combination of TSO\'s own order and the '
-        'annotations \\ins{LDAPR} and \\ins{STLR}, $6\\times10^8$ iterations of each test on each machine. Where TSO orders '
-        'every edge, a control is the same test with one thread in Arm mode. Format as in \\cref{tab:arm-multi}.', 'tab:tso-multi')
+        'WRC, ISA2, RWC and IRIW with every thread in TSO mode, under every combination of the doubtful mechanisms '
+        '(\\cref{sec:method-tests}), $6\\times10^8$ iterations of each test on each machine. TSO orders every edge but '
+        'store $\\to$ load, so a control puts one thread in Arm mode, with plain accesses; RWC also has a control '
+        'with every thread in TSO mode and its store $\\to$ load edge unordered. Format as in \\cref{tab:arm-multi}.', 'tab:tso-multi')
     sm = multi_table(os.path.join(D, 'res-mixed-multi.tex'), lambda md: len(set(md)) > 1,
         'WRC, ISA2, RWC and IRIW under every assignment of modes that mixes Arm and TSO, $6\\times10^8$ iterations of each '
-        'test on each machine. Format as in \\cref{tab:arm-multi}. A control may run every thread in Arm mode.', 'tab:mixcov-results')
+        'test on each machine. Format as in \\cref{tab:arm-multi}. Where TSO orders the edge that a control leaves unordered, the control puts that thread in Arm mode, so a few controls have every thread in Arm mode.', 'tab:mixcov-results')
     # ---------------- Arm RMW table ----------------
     def amo_cell(ts, col='arm', note=''):
         v = verdict(ts, col).replace('not ordered', 'allowed').replace('ordered', 'forbidden')
@@ -247,7 +239,7 @@ def run(D):
         out.append('%s & %s & %s & %s\\\\' % (a, o, c, amo_cell(ll)))
     out += ['\\bottomrule', '\\end{tabular}',
             '\\caption{Dekker with RMWs, both threads in Arm mode: the RMW replaces each thread\'s load (\\ins{STR x}; RMW \\ins{y}), '
-            'its store (RMW \\ins{x}; \\ins{LDR y}), or neither, between the two (\\ins{STR x}; RMW \\ins{z}; \\ins{LDR y}). '
+            'its store (RMW \\ins{x}; \\ins{LDR y}), or a third location between the two (\\ins{STR x}; RMW \\ins{z}; \\ins{LDR y}). '
             'The AMO is \\ins{SWP}; where the RMW replaces the store, also \\ins{LDADD} and \\ins{CAS}, whose rows agree. The LL/SC pair is '
             '\\ins{LDXR}/\\ins{STXR}, with \\ins{LDAXR} for acquire and \\ins{STLXR} for release. For LL/SC pairs only runs in which both '
             'store-exclusives succeed are counted, $4.4\\times10^8$ to $6\\times10^8$. Entries as in \\cref{tab:arm-results}.}',
@@ -271,8 +263,8 @@ def run(D):
     expect(DfA, 'tso', 'Never'); expect(DfL, 'tso', 'Sometimes')
     rows = [
       ('an AMO as the store, as the load, or between (%d)' % len(amo), 'locked', sorted(amo.values())),
-      ('a store, then the load-exclusive of an LL/SC pair (%d)' % len(atom), 'atomicity', sorted(atom.values())),
-      ('a release (%s, or an LL/SC pair with %s), then %s or %s (%d)' % (I('STLR'), I('STLXR'), I('LDAR'), I('LDAXR'), len(rel)), 'release, acquire', sorted(rel.values())),
+      ('a store, then a successful LL/SC pair (%d)' % len(atom), 'atomicity', sorted(atom.values())),
+      ('%s, then %s; or an LL/SC pair with %s, then %s or %s (%d)' % (I('STLR'), I('LDAXR'), I('STLXR'), I('LDAR'), I('LDAXR'), len(rel)), 'release, acquire', sorted(rel.values())),
       ('an LL/SC pair, then %s, %s or %s (%d)' % (I('LDR'), I('LDAPR'), I('LDAR'), len(unord)), 'not ordered', sorted(unord.values())),
       ('Dekker, an AMO between store and load, every form and ordering, and a failing %s (13)' % I('CAS'), 'locked', DfA),
       ('Dekker, an LL/SC pair between store and load, each annotation (3)', 'not ordered', DfL),
@@ -284,7 +276,7 @@ def run(D):
         out.append('%s & %s & %s & %s\\\\' % (d, v, mag(ts, 'm1', '', f), mag(ts, 'm2', '', f)))
     out += ['\\bottomrule', '\\end{tabularx}',
             '\\caption{RMWs on TSO threads, $6\\times10^8$ iterations of each test on each machine. The first four rows are every '
-            'store $\\to$ load pair with an exclusive or an AMO access, each in SB with \\ins{DMB} on the other thread; the controls are '
+            'store $\\to$ load pair with an exclusive or an AMO access, each in SB with \\ins{DMB} on the other thread. The last two rows are hand-written, with the RMW on a third location between each thread\'s store and load. The controls are '
             'SB without the RMW (%s on the M1, %s on the M2) and Dekker without the RMW (%s, %s). For LL/SC pairs only runs in which the '
             'store-exclusives succeed are counted. Entries as in \\cref{tab:arm-results}.}' % (mag(['SB_TT_plain-dmb'], 'm1', plain=True), mag(['SB_TT_plain-dmb'], 'm2', plain=True),
                                                                                    mag(['Df_TT_ldr-ldr'], 'm1', plain=True), mag(['Df_TT_ldr-ldr'], 'm2', plain=True)),

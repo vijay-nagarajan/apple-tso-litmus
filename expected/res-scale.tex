@@ -10,7 +10,7 @@ Arm forbids & Dekker, \ins{SWPAL} replaces the store & \ins{SWPL} & 0 / 5.2 & 0 
  & Dekker, \ins{SWPL} replaces the load & \ins{SWPL} as store & 0 / 2.4 & 0 / 0.6 & 0 / 0.9\\
  & SB, \ins{DMB} & SB, one \ins{DMB} & 0 / 5.6 & 0 / 3.2 & 0 / 4.9\\
 \midrule
-Dropped & Dekker, \ins{SWPA} replaces the store & \ins{SWPL} & \textbf{12} / 3.2 & \textbf{4} / 15\rlap{$^{a}$} & \textbf{2} / 5.0\\
+Rare & Dekker, \ins{SWPA} replaces the store & \ins{SWPL} & \textbf{12} / 3.2 & \textbf{4} / 15 & \textbf{2} / 5.0\\
 \midrule
 A2, Arm & SB, \ins{DMB LD} & SB, one \ins{DMB} & 0 / 4.6 & 0 / 4.2 & 0 / 3.0\\
  & SB, \ins{DSB LD} & SB, one \ins{DMB} & 0 / 4.7 & 0 / 5.1 & 0 / 2.5\\
@@ -27,6 +27,6 @@ A1, TSO & n7, \ins{LDAPR} & plain load & -- & 0 & 0\\
  & n7, \ins{LDAR} & plain load & -- & 0 & 0\\
 \bottomrule
 \end{tabular}
-\caption{The tests behind the added orders, run with unpinned threads, $2.5\times10^{10}$ times each ($5\times10^9$ for n7, which has three threads). Each cell gives the times the outcome appeared and, for Dekker, SB and LB, the overlapping iterations in millions. Every control appeared on every setup on which it ran. --: not run; macOS cannot set TSO mode, so the M2 Max runs only Arm-mode tests. $^{a}$$10^{11}$ iterations at four strides; all four at the stride used here, whose overlap count is given.}
+\caption{The tests behind the added orders, run with unpinned threads, $2.5\times10^{10}$ times each ($5\times10^9$ for n7, which has three threads). A cell a / b gives the times the outcome appeared (a) and the overlapping iterations in millions (b); the n6 and n7 rows have no overlap count. Every control appeared on every setup on which it ran. --: not run; macOS cannot set TSO mode, so the M2 Max runs only Arm-mode tests.}
 \label{tab:scale}
 \end{table}

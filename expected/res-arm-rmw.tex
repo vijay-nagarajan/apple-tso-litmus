@@ -20,6 +20,6 @@ as a fence & release & allowed & \rsn{$10^{6}$} & \rsn{$10^{5}$} & allowed & \rs
  & both & forbidden & \rfz & \rfz & allowed & \rsn{$10^{5}$} & \rsn{$10^{4}$}\\
 \bottomrule
 \end{tabular}
-\caption{Dekker with RMWs, both threads in Arm mode: the RMW replaces each thread's load (\ins{STR x}; RMW \ins{y}), its store (RMW \ins{x}; \ins{LDR y}), or neither, between the two (\ins{STR x}; RMW \ins{z}; \ins{LDR y}). The AMO is \ins{SWP}; where the RMW replaces the store, also \ins{LDADD} and \ins{CAS}, whose rows agree. The LL/SC pair is \ins{LDXR}/\ins{STXR}, with \ins{LDAXR} for acquire and \ins{STLXR} for release. For LL/SC pairs only runs in which both store-exclusives succeed are counted, $4.4\times10^8$ to $6\times10^8$. Entries as in \cref{tab:arm-results}.}
+\caption{Dekker with RMWs, both threads in Arm mode: the RMW replaces each thread's load (\ins{STR x}; RMW \ins{y}), its store (RMW \ins{x}; \ins{LDR y}), or a third location between the two (\ins{STR x}; RMW \ins{z}; \ins{LDR y}). The AMO is \ins{SWP}; where the RMW replaces the store, also \ins{LDADD} and \ins{CAS}, whose rows agree. The LL/SC pair is \ins{LDXR}/\ins{STXR}, with \ins{LDAXR} for acquire and \ins{STLXR} for release. For LL/SC pairs only runs in which both store-exclusives succeed are counted, $4.4\times10^8$ to $6\times10^8$. Entries as in \cref{tab:arm-results}.}
 \label{tab:arm-atomics}
 \end{table}

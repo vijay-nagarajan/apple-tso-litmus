@@ -92,8 +92,7 @@ def cell(r, s):
     if d is None: return '--'
     h = '\\textbf{%d}' % d['hits'] if d['hits'] else '0'
     if r['overlap'] == '-': return h
-    foot = '\\rlap{$^{a}$}' if (r['test'], s) == ('Dw_AA_swpa-swpa', 'linux_m2') else ''
-    return '%s / %s%s' % (h, fmt_m(d['ov']), foot)
+    return '%s / %s' % (h, fmt_m(d['ov']))
 tex = ['\\begin{table}[!htbp]', '\\centering', '\\footnotesize', '\\setlength{\\tabcolsep}{4pt}',
        '\\begin{tabular}{@{}lllccc@{}}', '\\toprule', '& Test & Control & M2 Max, macOS & M2, Linux & M1, Linux\\\\', '\\midrule']
 for r in ROWS:
@@ -102,12 +101,11 @@ for r in ROWS:
                ' & '.join(cell(r, s) for s in SETUPS)))
 tex += ['\\bottomrule', '\\end{tabular}',
         '\\caption{The tests behind the added orders, run with unpinned threads, $2.5\\times10^{10}$ times each ($5\\times10^9$ for n7, '
-        'which has three threads). Each cell gives the times the outcome appeared and, for Dekker, SB and LB, the overlapping '
-        'iterations in millions. Every control appeared on every setup on which it ran. --: not run; macOS cannot set TSO mode, so the M2 Max runs only Arm-mode tests. $^{a}$$10^{11}$ iterations '
-        'at four strides; all four at the stride used here, whose overlap count is given.}', '\\label{tab:scale}', '\\end{table}']
+        'which has three threads). A cell a / b gives the times the outcome appeared (a) and the overlapping iterations in millions (b); '
+        'the n6 and n7 rows have no overlap count. Every control appeared on every setup on which it ran. --: not run; macOS cannot set TSO mode, so the M2 Max runs only Arm-mode tests.}', '\\label{tab:scale}', '\\end{table}']
 open(os.path.join(sys.argv[1], 'res-scale.tex'), 'w').write('\n'.join(tex) + '\n')
 
-# ---------------- footnote a: the 1e11 run behind the M2 Linux SWPA cell, and the Nov 9 replication ----------------
+# ---------------- the 1e11 run behind the M2 Linux SWPA cell (Sec 5 cites it; the table gives its stride-7 run), and the Nov 9 replication ----------------
 big = [x.rstrip('\n').split('\t') for x in open(os.path.join(R, 'linux_m2/swpabig/results_swpabig_m2.tsv')) if x.strip()]
 bt = [x for x in big if x[10] == 'test']
 tot = sum(int(x[5]) for x in bt); hits = sum(int(x[4]) for x in bt); h7 = sum(int(x[4]) for x in bt if x[9] == '7')
@@ -153,7 +151,7 @@ r1 = sw['linux_m1']['ov'] / sw['linux_m1']['hits']; r2 = sw['linux_m2']['ov'] / 
 r2p = (sw['linux_m2']['ov'] + cho) / (sw['linux_m2']['hits'] + chh)
 ok = sig1(r1) == (3, 6) and sig1(r2) == (3, 6)
 check('Sec 8: Linux rate "about once in 3e6 overlapping iterations on both machines"', True if ok else 'NOTE',
-      'M1 1 in %.2g; M2 (table cell, 1e11 run) 1 in %.2g; M2 pooled with the Nov 9 replication 1 in %.2g' % (r1, r2, r2p))
+      'M1 1 in %.2g; M2 (table cell, the stride-7 run of the 1e11 run) 1 in %.2g; M2 pooled with the Nov 9 replication 1 in %.2g' % (r1, r2, r2p))
 RL = 3e6
 d81, d133 = OV('R08', 'linux_m1'), OV('R10', 'linux_m1')
 check('Sec 8: M1 overlaps "DSB LD on TSO threads, 8.1e7" and "failing CASAL, 1.3e8"', round(d81 / 1e6) == 81 and round(d133 / 1e7) == 13, '%d, %d' % (d81, d133))

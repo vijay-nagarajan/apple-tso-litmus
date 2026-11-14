@@ -24,9 +24,9 @@ seen = lambda n: H[(n, 'm1')] + H[(n, 'm2')] > 0
 both = lambda n: H[(n, 'm1')] > 0 and H[(n, 'm2')] > 0
 mag = lambda x: 0 if x == 0 else int(math.log10(x))
 mixed = lambda r: len(set(r['modes'])) > 1
-def _plain(t):   # drop the review markup \newtext{..} / \rev{..} (keep the text), so claims match the words
+def _plain(t):   # drop the review markup \newtext{..}, \rev{..}, \audit{..}, \rvb{..} etc. (keep the text), so claims match the words
     while True:
-        m = re.search(r'\\(?:newtext|rev)\{', t)
+        m = re.search(r'\\(?:newtext|rev|newer|audit|rv[b-f])\{', t)
         if not m: return t
         i, d = m.end(), 1
         while d:
@@ -55,7 +55,7 @@ nA = [n for n, r in ALL.items() if set(r['modes']) == {'A'}]; nT = [n for n, r i
 nx86 = len([l for l in open(os.path.join(A, 'tests', 'x86', 'list.txt')) if l.strip()])
 claim('compose.tex', 'On all %d tests whose threads all run in Arm mode' % len(nA))
 claim('compose.tex', 'The %d tests whose threads all run in TSO mode' % nx86)
-claim('artifacts.tex', 'the %d x86 programs' % nx86)
+claim('artifacts.tex', 'and %d programs in x86 assembly' % nx86)
 claim('results-arm.tex', 'in any of the %d tests whose threads all run in Arm mode' % len(nA),
       not any(seen(n) for n in nA if ALL[n]['arm'] == 'Never'), 'an Arm-forbidden all-Arm outcome seen')
 claim('results-tso.tex', 'in any of the %d tests whose threads all run in TSO mode' % len(nT),
@@ -65,8 +65,8 @@ P = [l.rstrip('\n').split('\t') for l in open(os.path.join(A, 'tests', 'ppo_tabl
 pA = [p for p in P if p[0] == 'A']; pT = [p for p in P if p[0] == 'T']
 rmwtok = ('swp', 'cas', 'ldadd', 'ldxr', 'ldaxr', 'llsc')
 pTr = [p for p in pT if any(t in p[2] for t in rmwtok)]
-claim('method.tex', 'The same %d mechanisms appear in each mode, %d rows in all' % (len(pA), len(pA) + len(pT) - len(pTr)), len(pA) == len(pT) - len(pTr))
-claim('method.tex', 'with an exclusive or AMO access is tested, %d pairs' % len(pTr))
+claim('method.tex', 'so each has the same %d mechanisms, %d rows in all' % (len(pA), len(pA) + len(pT) - len(pTr)), len(pA) == len(pT) - len(pTr))
+claim('method.tex', 'in which either access is an exclusive or an AMO, %d pairs in all' % len(pTr))
 claim('results-tso.tex', 'None of these %d rows was observed' % len([p for p in pT if p[1] in ('WW', 'RR', 'RW')]),
       not any(seen(p[5]) for p in pT if p[1] in ('WW', 'RR', 'RW')), 'a TSO ww/rr/rw row seen')
 # mixed programs (Sec 7)
@@ -94,12 +94,11 @@ claim('results-compound.tex', 'They agree in %d of the %d pairs of runs, %d on e
 claim('results-compound.tex', 'never reordered with an Arm-mode reader, and reordered %d times in $6\\times10^8$ with a TSO-mode reader' % H[('MP_AT_plain-plain', 'm2')],
       dl == [('MP_AA_plain-dmb', 'MP_AT_plain-plain', 'm2')] and H[('MP_AA_plain-dmb', 'm2')] == 0)
 claim('results-compound.tex', 'A second run of the Arm-mode test showed the outcome %d times' % H[('MPr_AA_plain-dmb', 'm2')], NC[('MPr_AA_plain-dmb', 'm2')] == 6)
-claim('method.tex', 'appeared %d times in one run on the M1 and %d in another' % (H[('MP_AA_plain-dmb', 'm1')], H[('MPr_AA_plain-dmb', 'm1')]), NC[('MPr_AA_plain-dmb', 'm1')] == 6)
-# one address, mixed modes
+# read-back tests, mixed modes
 SA = [n for n, r in M.items() if r['family'] in ('n6', 'n7') or r['family'].startswith('fwd')]
 fS = [n for n in SA if M[n]['compound-apple'] == 'Never']; aS = [n for n in SA if M[n]['compound-apple'] == 'Sometimes']
 claim('results-compound.tex', 'We also ran the same tests with Arm observers: %d tests' % len(SA))
-claim('results-compound.tex', 'The model of the machines forbids %d of them, and neither machine showed any. Of the %d it allows, %d appeared on both machines.'
+claim('results-compound.tex', 'The model of the machines forbids %d of them, and neither machine showed any. Of the %d it allows, %d appeared on both machines,'
       % (len(fS), len(aS), len([n for n in aS if both(n)])), not any(seen(n) for n in fS))
 # RMWs, mixed modes
 WR = [n for n, r in M.items() if r['group'].startswith('1') and any(e.startswith('T:WR:') and any(t in e for t in rmwtok) for e in r['entry_or_reason'].split(';'))]
@@ -130,7 +129,7 @@ def obs(p):
 mac = [obs(os.path.join(A, 'results', 'addon_scale', 'macos_m2', 'swpa_st%d.log' % s)) for s in (1, 3, 5, 7)]
 big = [l.split('\t') for l in open(os.path.join(A, 'results', 'addon_scale', 'linux_m2', 'swpabig', 'results_swpabig_m2.tsv')) if l.strip()]
 big = [(int(f[4]), int(f[5])) for f in big if f[10] == 'test']
-claim('results-arm.tex', 'In $10^{11}$ iterations on the M2 with unpinned threads, it appeared %d times under macOS and %d times under Linux'
+claim('results-arm.tex', 'In $10^{11}$ iterations on the M2 with unpinned threads, \\ins{SWPA} showed it %d times under macOS and %d times under Linux'
       % (sum(h for h, _ in mac), sum(h for h, _ in big)), sum(i for _, i in mac) == sum(i for _, i in big) == 10 ** 11)
 # intro, Fig 1(e): SB with STR;LDAR on TSO threads (the other thread DMB)
 e = 'SB_TT_str.ldar-dmb'

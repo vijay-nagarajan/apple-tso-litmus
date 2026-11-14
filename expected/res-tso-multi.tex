@@ -13,6 +13,6 @@ WRC & 4 & \rfz & 1 & \rsn{$10^{4}$} & \rsn{$10^{1}$}\\
 ISA2 & 8 & \rfz & 2 & \rsn{$10^{0}$--$10^{1}$} & \rsn{$10^{0}$}\\
 \bottomrule
 \end{tabular}
-\caption{WRC, ISA2, RWC and IRIW with every thread in TSO mode, under every combination of TSO's own order and the annotations \ins{LDAPR} and \ins{STLR}, $6\times10^8$ iterations of each test on each machine. Where TSO orders every edge, a control is the same test with one thread in Arm mode. Format as in \cref{tab:arm-multi}.}
+\caption{WRC, ISA2, RWC and IRIW with every thread in TSO mode, under every combination of the doubtful mechanisms (\cref{sec:method-tests}), $6\times10^8$ iterations of each test on each machine. TSO orders every edge but store $\to$ load, so a control puts one thread in Arm mode, with plain accesses; RWC also has a control with every thread in TSO mode and its store $\to$ load edge unordered. Format as in \cref{tab:arm-multi}.}
 \label{tab:tso-multi}
 \end{table}

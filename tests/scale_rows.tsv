@@ -2,7 +2,7 @@ row	group	test_label	control_label	test	control	nthreads	overlap
 R01	Arm forbids	Dekker, \ins{SWPAL} replaces the store	\ins{SWPL}	Dw_AA_swpal-swpal	Dw_AA_swpl-swpl	2	0:X1=1 1:X1=1
 R02		Dekker, \ins{SWPL} replaces the load	\ins{SWPL} as store	Dr_AA_swpl-swpl	Dw_AA_swpl-swpl	2	0:X0=1 1:X0=1
 R03		SB, \ins{DMB}	SB, one \ins{DMB}	SB_AA_dmb-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
-R04	Dropped	Dekker, \ins{SWPA} replaces the store	\ins{SWPL}	Dw_AA_swpa-swpa	Dw_AA_swpl-swpl	2	0:X1=1 1:X1=1
+R04	Rare	Dekker, \ins{SWPA} replaces the store	\ins{SWPL}	Dw_AA_swpa-swpa	Dw_AA_swpl-swpl	2	0:X1=1 1:X1=1
 R05	A2, Arm	SB, \ins{DMB LD}	SB, one \ins{DMB}	SB_AA_dmbld-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
 R06		SB, \ins{DSB LD}	SB, one \ins{DMB}	SB_AA_dsbld-dmb	SB_AA_plain-dmb	2	0:X0=1 1:X0=1
 R07	A2, TSO	SB, \ins{DMB LD}	SB, one \ins{DMB}	SB_TT_dmbld-dmb	SB_TT_plain-dmb	2	0:X0=1 1:X0=1

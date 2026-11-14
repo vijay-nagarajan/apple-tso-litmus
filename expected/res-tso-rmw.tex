@@ -6,13 +6,13 @@
 Store $\to$ load pairs with an RMW, both threads in TSO mode & Sequential composition & M1 & M2\\
 \midrule
 an AMO as the store, as the load, or between (86) & locked & \rfz & \rfz\\
-a store, then the load-exclusive of an LL/SC pair (6) & atomicity & \rfz & \rfz\\
-a release (\ins{STLR}, or an LL/SC pair with \ins{STLXR}), then \ins{LDAR} or \ins{LDAXR} (3) & release, acquire & \rfz & \rfz\\
+a store, then a successful LL/SC pair (6) & atomicity & \rfz & \rfz\\
+\ins{STLR}, then \ins{LDAXR}; or an LL/SC pair with \ins{STLXR}, then \ins{LDAR} or \ins{LDAXR} (3) & release, acquire & \rfz & \rfz\\
 an LL/SC pair, then \ins{LDR}, \ins{LDAPR} or \ins{LDAR} (5) & not ordered & \rsn{$10^{5}$--$10^{6}$} & \rsn{$10^{4}$--$10^{5}$}\\
 Dekker, an AMO between store and load, every form and ordering, and a failing \ins{CAS} (13) & locked & \rfz & \rfz\\
 Dekker, an LL/SC pair between store and load, each annotation (3) & not ordered & \rsn{$10^{5}$} & \rsn{$10^{4}$}\\
 \bottomrule
 \end{tabularx}
-\caption{RMWs on TSO threads, $6\times10^8$ iterations of each test on each machine. The first four rows are every store $\to$ load pair with an exclusive or an AMO access, each in SB with \ins{DMB} on the other thread; the controls are SB without the RMW ($10^{5}$ on the M1, $10^{6}$ on the M2) and Dekker without the RMW ($10^{6}$, $10^{5}$). For LL/SC pairs only runs in which the store-exclusives succeed are counted. Entries as in \cref{tab:arm-results}.}
+\caption{RMWs on TSO threads, $6\times10^8$ iterations of each test on each machine. The first four rows are every store $\to$ load pair with an exclusive or an AMO access, each in SB with \ins{DMB} on the other thread. The last two rows are hand-written, with the RMW on a third location between each thread's store and load. The controls are SB without the RMW ($10^{5}$ on the M1, $10^{6}$ on the M2) and Dekker without the RMW ($10^{6}$, $10^{5}$). For LL/SC pairs only runs in which the store-exclusives succeed are counted. Entries as in \cref{tab:arm-results}.}
 \label{tab:tso-atomics}
 \end{table}

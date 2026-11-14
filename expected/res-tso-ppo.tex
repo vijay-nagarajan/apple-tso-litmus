@@ -16,7 +16,7 @@ store $\to$ load & \ins{STLR};\ins{LDAR}, \ins{DMB}, \ins{DSB}, \ins{DSB ST} (4)
  & plain; \ins{STR};\ins{LDAPR}; \ins{STR};\ins{LDAR}; \ins{STLR};\ins{LDR}; \ins{STLR};\ins{LDAPR}; \ins{DMB ST} & SB & not ordered & \rsn{$10^{5}$--$10^{6}$} & \rsn{$10^{4}$--$10^{6}$} & \\
  & \ins{DMB LD}, \ins{DSB LD} & SB & not ordered & \rst{A2} & \rst{A2} & \\
 \addlinespace
-same address & \ins{STR};\ins{LDR} & n7 & not ordered & \rsn{$10^{4}$} & \rsn{$10^{3}$} & \\
+store $\to$ read-back & \ins{STR};\ins{LDR} & n7 & not ordered & \rsn{$10^{4}$} & \rsn{$10^{3}$} & \\
  & \ins{STLR};\ins{LDR} & n7 & not ordered & \rsn{$10^{4}$} & \rsn{$10^{4}$} & \\
  & \ins{STXR};\ins{LDR} & n7 & not ordered & \rsn{$10^{1}$} & \rsn{0--$10^{0}$} & \\
  & \ins{STLXR};\ins{LDR} & n7 & not ordered & \rux & \rsn{$10^{1}$} & \\
@@ -28,6 +28,6 @@ same address & \ins{STR};\ins{LDR} & n7 & not ordered & \rsn{$10^{4}$} & \rsn{$1
  & \ins{DMB LD} after the read-back & n7 & not ordered & \rst{A2} & \rst{A2} & \\
 \bottomrule
 \end{tabularx}
-\caption{The rows of the sequential composition on the two machines, every thread in TSO mode, $6\times10^8$ iterations of each test on each machine. Entries as in \cref{tab:arm-results}. TSO orders every store $\to$ store, load $\to$ load and load $\to$ store row whatever the mechanism; their control is the same test with that thread in Arm mode, where the pair is not ordered. A number in parentheses counts the mechanisms of a row; with the 12 store $\to$ load mechanisms, the 44 of the first three rows make up the 56 of \cref{sec:method-tests}. The same-address rows are n7 with every thread in TSO mode and each store and load form on Thread~0.}
+\caption{The rows of the sequential composition on the two machines, every thread in TSO mode, $6\times10^8$ iterations of each test on each machine. Entries as in \cref{tab:arm-results}. TSO orders every store $\to$ store, load $\to$ load and load $\to$ store row whatever the mechanism; their control is the same test with that thread in Arm mode, where the pair is not ordered. The store $\to$ load control is SB with plain accesses. A number in parentheses counts the mechanisms of a row. The read-back rows are n7, in which a thread stores \ins{x} and reads it back; each row gives the forms of that store and load.}
 \label{tab:tsoarm-results}
 \end{table}
